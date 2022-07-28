@@ -38,7 +38,13 @@ nav li a:hover {
   background-color: yellow;
 }
 
-footer {
+.socialmediascolumns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px 0 10px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
