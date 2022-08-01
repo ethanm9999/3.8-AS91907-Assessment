@@ -15,6 +15,7 @@ ul{
 
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -44,7 +45,31 @@ nav li a:hover {
   margin: 10px 0 10px 0;
 }
 
+.container{
+  margin: 20px;
+  padding: 20px;
+}
+
+.topcontainer{
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 20%;
+  padding: 5px;
+}
+
+.socialmedias{
+  margin: 20px;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px;
 }
