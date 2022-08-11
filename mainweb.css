@@ -58,14 +58,21 @@ img {
   margin: 10px 0 10px 0;
 }
 
+.socialmedias h2{
+  text-align: center;
+}
+
 .container{
   margin: 20px;
   padding: 20px;
 }
 
-.topcontainer{
-  margin-top: 60px;
-  padding: 20px;
+.container p {
+  text-align: center;
+}
+
+.container h1{
+  text-align: center;
 }
 
 .row {
