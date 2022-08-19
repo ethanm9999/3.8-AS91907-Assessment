@@ -142,6 +142,8 @@ footer p {
 .bottom_border {
   border-bottom:1px solid #323f45;
   padding-bottom:20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .foote_bottom_ul_amrc {
@@ -170,7 +172,7 @@ footer p {
 }
 
 .social_footer_ul li {
-  padding-left:20px;
+  padding-left:10px;
   padding-top:10px;
   float:left;
 }
