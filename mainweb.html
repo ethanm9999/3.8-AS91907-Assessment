@@ -6,23 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="mainweb.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".fa-magnifying-glass").click(function(){
+        $(".icon").toggleClass("active");
+        $("input[type='text']").toggleClass("active");
+      });
+    });
+  </script>
   <title>Queenstown Guide</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
-      <li><a href="#">Communities</a></li>
-      <li><a href="#">Map</h2></a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="help.html">Help</a></li>
-      <input type="text" name="Search towns..." value="">
-      <div class="date">
-        <li>2022, 11 Aug</li>
-        <li>weather/temp in queenstown<i>sunny</i></li>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="menu">
+        <ul>
+          <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
+          <li><a href="#">Communities</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
       </div>
-    </ul>
-  </nav>
+      <div class="searchbar">
+        <input type="text" placeholder="Search towns..">
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="topcontainer">
     <div class="topimgcontainer">
@@ -33,74 +47,79 @@
     </section>
   </section>
 
-  <div class="slider-container">
-    <input type="radio" name="images" id="i1" checked>
-    <input type="radio" name="images" id="i2">
-    <input type="radio" name="images" id="i3">
-
-    <div class="slide_img" id="one">
-      <img src="Images/queenstownimage.jpeg" alt="queenstown">
-
-      <label for="i3" class="pre"></label>
-      <label for="i2" class="next"></label>
-    </div>
-    <div class="slide_img" id="two">
-      <img src="Images/queenstowndaylight.jpg" alt="queenstown">
-
-      <label for="i1" class="pre"></label>
-      <label for="i3" class="next"></label>
-    </div>
-    <div class="slide_img" id="three">
-      <img src="Images/queenstowngardenlake.jpg" alt="queenstown">
-
-      <label for="i2" class="pre"></label>
-      <label for="i1" class="next"></label>
-    </div>
-
-    <div class="navdots">
-      <label class="dots" id="dot1" for="i1"></label>
-      <label class="dots" id="dot2" for="i2"></label>
-      <label class="dots" id="dot3" for="i3"></label>
-    </div>
+  <div class="date">
+        <li>2022, 11 Aug</li>
+        <li>weather/temp in queenstown<i>sunny</i></li>
   </div>
 
-  <section class="container">
+  <section class="container reveal">
+    <div class="slider-container">
+      <input type="radio" name="images" id="i1" checked>
+      <input type="radio" name="images" id="i2">
+      <input type="radio" name="images" id="i3">
+
+      <div class="slide_img" id="one">
+        <img src="Images/queenstownimage.jpg" alt="queenstown">
+
+        <label for="i3" class="pre"></label>
+        <label for="i2" class="next"></label>
+      </div>
+      <div class="slide_img" id="two">
+        <img src="Images/queenstowndaylight.jpg" alt="queenstown">
+
+        <label for="i1" class="pre"></label>
+        <label for="i3" class="next"></label>
+      </div>
+      <div class="slide_img" id="three">
+        <img src="Images/queenstowngardenlake.jpg" alt="queenstown">
+
+        <label for="i2" class="pre"></label>
+        <label for="i1" class="next"></label>
+      </div>
+
+      <div class="navdots">
+        <label class="dots" id="dot1" for="i1"></label>
+        <label class="dots" id="dot2" for="i2"></label>
+        <label class="dots" id="dot3" for="i3"></label>
+      </div>
+    </div>
     <a href="queenstown.html"><h1>Queenstown</h1></a></a>
     <p>Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
   </section>
 
-  <div class="slider-container">
-    <input type="radio" name="images" id="i1" checked>
-    <input type="radio" name="images" id="i2">
-    <input type="radio" name="images" id="i3">
-
-    <div class="slide_img" id="one">
-      <img src="Images/arrowtownimage.jpg" alt="queenstown">
-
-      <label for="i3" class="pre"></label>
-      <label for="i2" class="next"></label>
-    </div>
-    <div class="slide_img" id="two">
-      <img src="Images/arrowtownimg2.jpg" alt="queenstown">
-
-      <label for="i1" class="pre"></label>
-      <label for="i3" class="next"></label>
-    </div>
-    <div class="slide_img" id="three">
-      <img src="Images/arrowtownimg3.jpg" alt="queenstown">
-
-      <label for="i2" class="pre"></label>
-      <label for="i1" class="next"></label>
-    </div>
-
-    <div class="navdots">
-      <label class="dots" id="dot1" for="i1"></label>
-      <label class="dots" id="dot2" for="i2"></label>
-      <label class="dots" id="dot3" for="i3"></label>
-    </div>
-  </div>
 
   <section class="container">
+    <div class="slider-container">
+      <input type="radio" name="images" id="i1" checked>
+      <input type="radio" name="images" id="i2">
+      <input type="radio" name="images" id="i3">
+
+      <div class="slide_img" id="one">
+        <img src="Images/arrowtownimage.jpg" alt="queenstown">
+
+        <label for="i3" class="pre"></label>
+        <label for="i2" class="next"></label>
+      </div>
+      <div class="slide_img" id="two">
+        <img src="Images/arrowtownimg2.jpg" alt="queenstown">
+
+        <label for="i1" class="pre"></label>
+        <label for="i3" class="next"></label>
+      </div>
+      <div class="slide_img" id="three">
+        <img src="Images/arrowtownimg3.jpg" alt="queenstown">
+
+        <label for="i2" class="pre"></label>
+        <label for="i1" class="next"></label>
+      </div>
+
+      <div class="navdots">
+        <label class="dots" id="dot1" for="i1"></label>
+        <label class="dots" id="dot2" for="i2"></label>
+        <label class="dots" id="dot3" for="i3"></label>
+      </div>
+    </div>
+
    <a href="#"><h1>Arrowtown</h1></a>
    <p>Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!</p>
  </section>
@@ -222,4 +241,26 @@
     <!--social_footer_ul ends here-->
   </div>
 </footer>
+
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+</script>
 </body>

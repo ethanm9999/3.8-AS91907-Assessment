@@ -9,28 +9,90 @@ a {
   text-decoration: none;
 }
 
-nav {
-  position: fixed;
-  top: 0;
+.wrapper {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  position: fixed;
   overflow: hidden;
-  background-color: #263238;
-  z-index: 99;
+  z-index: 100;
 }
 
-nav ul li a {
+.menu ul a i{
+  color: #FFF;
+}
+
+.wrapper .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: gray;
+  padding: 0 30px;
+  height: 60px;
+  opacity: .8;
+}
+
+.wrapper .navbar .menu ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.wrapper .navbar .menu ul li a{
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper .searchbar {
+  position: relative;
+}
+
+.wrapper .searchbar input[type="text"]{
+  border: 0;
+  padding: 0 0px;
+  width: 0px;
+  height: 35px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .searchbar .icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  width: 35px;
+  height: 100%;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.2s ease;
+}
+
+.wrapper .searchbar .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.wrapper .searchbar .icon.active{
+  background: #062333;
+  transition: all 0.3s ease;
+}
+
+.wrapper .searchbar input[type="text"].active{
+  width: 250px;
+  padding: 0 10px;
+  transition: all 0.5s 0.2s ease;
+}
+
+.menu ul li a {
   position: relative;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
   color: gray;
-  font-size: 18px;
-  letter-spacing: 0.5px;
   padding: 0 10px;
 }
 
-nav ul li a:after{
+.menu ul li a:after{
   content: "";
   position: absolute;
   height: 3px;
@@ -41,45 +103,41 @@ nav ul li a:after{
   transition: 0.3s;
 }
 
-nav ul li a:hover::after {
+.menu ul li a:hover::after {
   width: 100%;
 }
 
-nav ul{
-  display: flex;
-  list-style: none;
-  padding: 10px;
-  align-items:
-
-}
 
 .topcontainer {
   min-height: 100vh;
+  background-size: contain;
+  background-position: center;
 }
 
+
 section:nth-child(odd){
-  color: white;
   background: white;
 }
 
 section:nth-child(even){
-  background: blue;
+  background: white;
 }
 
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none:
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 input[type=text] {
-  background-color: white;
-  background-image: url('magnifying-glass-solid.svg');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
+  width: 50px;
+  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
@@ -191,6 +249,10 @@ img {
 #i2:checked ~ .navdots #dot2,
 #i3:checked ~ .navdots #dot3{
   background: #fff;
+}
+
+.container {
+
 }
 
 .container p {
@@ -326,4 +388,10 @@ footer p {
   width:20px;
   height:20px;
   text-align:center;
+}
+
+@media (min-height: 100vh){
+  .wrapper{
+    color: gray;
+  }
 }
