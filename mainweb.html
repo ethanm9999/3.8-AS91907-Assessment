@@ -15,6 +15,10 @@
       });
     });
   </script>
+  <script>
+    var dt= new Date();
+    document.getElementById('date-time').innerHTML=dt;
+  </script>
   <title>Queenstown Guide</title>
 </head>
 <body>
@@ -39,20 +43,17 @@
   </div>
 
   <section class="topcontainer">
-    <div class="topimgcontainer">
-      <img src="Images/Otagoimage.jpg" alt="otago">
-    </div>
-    <section class="welcomecontainer">
+    <img src="Images/Otagoimage.jpg" alt="otago">
+    <div class="topcontainerbtmtext">
       <p>KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
-    </section>
+    </div>
+    <div class="date">
+          <span id="date-time"></span>
+          <div id="ww_e26349efc2592" v='1.20' loc='auto' a='{"t":"responsive","lang":"en","ids":[],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","el_wfc":3}'><a href="https://sharpweather.com/widgets/" id="ww_e26349efc2592_u" target="_blank">Weather Forecast widget for website</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_e26349efc2592"></script>
+    </div>
   </section>
 
-  <div class="date">
-        <li>2022, 11 Aug</li>
-        <li>weather/temp in queenstown<i>sunny</i></li>
-  </div>
-
-  <section class="container reveal">
+  <section class="sectcontainer reveal">
     <div class="slider-container">
       <input type="radio" name="images" id="i1" checked>
       <input type="radio" name="images" id="i2">
@@ -83,12 +84,12 @@
         <label class="dots" id="dot3" for="i3"></label>
       </div>
     </div>
-    <a href="queenstown.html"><h1>Queenstown</h1></a></a>
+    <a href="queenstown.html">Queenstown</a>
     <p>Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
   </section>
 
 
-  <section class="container">
+  <section class="sectcontainer">
     <div class="slider-container">
       <input type="radio" name="images" id="i1" checked>
       <input type="radio" name="images" id="i2">
@@ -120,11 +121,11 @@
       </div>
     </div>
 
-   <a href="#"><h1>Arrowtown</h1></a>
+   <a href="#">Arrowtown</a>
    <p>Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!</p>
  </section>
 
- <section class="container">
+ <section class="sectcontainer">
    <div class="row">
      <div class="column">
        <img src="Images/glenorchyimage.jpeg" alt="glenorchy">
@@ -136,11 +137,11 @@
        <img src="Images/glenorchyimg3.jpg" alt="glenorchy">
      </div>
    </div>
-   <a href="#"><h1>Glenorchy</h1></a>
+   <a href="#">Glenorchy</a>
    <p>Just 45 minutes from Queenstown, Glenorchy is nestled on the northern shores of Lake Wakatipu & is the gateway to hiking trails and Middle‑earth™ magic.</p>
  </section>
 
- <section class="container">
+ <section class="sectcontainer">
    <div class="row">
      <div class="column">
        <img src="Images/wanakatree.jpeg" alt="wanakatree">
@@ -152,11 +153,11 @@
        <img src="Images/wanakalavenderfarm.jpg" alt="wanakatree">
      </div>
    </div>
-   <a href="#"><h1>Wanaka</h1></a>
+   <a href="#">Wanaka</a>
    <p>A lively town buzzing with a carefree spirit, Wanaka’s picture-perfect location and easy access to the outdoors makes it the ultimate base for your holiday</p>
  </section>
 
- <section class="container">
+ <section class="sectcontainer">
    <div class="row">
      <div class="column">
        <img src="Images/cromwell.jpeg" alt="cromwell">
@@ -168,7 +169,7 @@
        <img src="Images/cromwellimg3.jpg" alt="cromwell">
      </div>
    </div>
-   <a href="#"><h1>Cromwell</h1></a>
+   <a href="#">Cromwell</a>
    <p>Cromwell was established by gold miners, but now its treasure is stone fruit. Explore nearby ghost towns and soak up the tranquil lakeside scenery.</p>
  </section>
 

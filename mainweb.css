@@ -27,7 +27,7 @@ a {
   width: 100%;
   background: gray;
   padding: 0 30px;
-  height: 60px;
+  height: 80px;
   opacity: .8;
 }
 
@@ -107,13 +107,26 @@ a {
   width: 100%;
 }
 
-
-.topcontainer {
-  min-height: 100vh;
+.topcontainer img{
+  position: relative;
+  width: 100%;
+  height: auto;
   background-size: contain;
   background-position: center;
 }
 
+.topcontainer {
+  text-align: center;
+  align-items: center;
+}
+
+.topcontainerbtmtext {
+  position: absolute;
+  bottom: 0;
+  transform: translate(13%, -50%);
+  font-size: 48px;
+  color: white;
+}
 
 section:nth-child(odd){
   background: white;
@@ -125,7 +138,7 @@ section:nth-child(even){
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: all 2s ease;
 }
@@ -151,11 +164,6 @@ img {
   animation: ani 2s linear;
 }
 
-.topimgcontainer img{
-  width: 100%;
-  height: auto;
-}
-
 .welcomecontainer {
   text-align: center;
   margin-top: 20px;
@@ -171,8 +179,29 @@ img {
   padding: 5px;
 }
 
+.sectcontainer{
+  text-align: center;
+  align-items: center;
+}
+
+.sectcontainer a{
+  font-size: 48px;
+  color: gray;
+}
+.sectcontainer p{
+  padding: 30px;
+  margin: 30px 60px 30px 60px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sectcontainer a:hover{
+  color: blue;
+  transition: 1s ease;
+}
+
 .slider-container{
-  margin: 120px;
+  margin: 80px 200px 50px 200px;
   text-align: center;
   position: relative;
   width: 70%;
@@ -249,18 +278,6 @@ img {
 #i2:checked ~ .navdots #dot2,
 #i3:checked ~ .navdots #dot3{
   background: #fff;
-}
-
-.container {
-
-}
-
-.container p {
-  text-align: center;
-}
-
-.container h1{
-  text-align: center;
 }
 
 /*footer*/
