@@ -5,44 +5,243 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image" href="Images/leaficon.jpg">
   <link rel="stylesheet" href="mainweb.css">
-  <title>Help</title>
+  <link rel="stylesheet" href="mainweb.js">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".fa-magnifying-glass").click(function(){
+        $(".icon").toggleClass("active");
+        $("input[type='text']").toggleClass("active");
+      });
+    });
+  </script>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+  <title>Maps</title>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a></li>
-      <li><h2><a href="#">Communities</a></h2></li>
-      <li><a href="#"><h2>Map</h2></a></li>
-      <li><a href="#"><h2>Destinations</h2></a></li>
-      <li><a href="help.html"><h2>Help</h2></a></li>
-    </ul>
-  </nav>
+<body onload="initClock()">
+  <div class="wrapper">
+    <div id="navbar" class="navbar">
+      <div class="menu">
+        <ul>
+          <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
+          <li><a href="#">Communities</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+      <div class="rightmenu">
+        <ul>
+          <li>
+            <div class="searchbar">
+              <input type="text" placeholder="Search towns..">
+              <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btndarkmode">
+              <div class="btndarkmodeindicator">
+                <div class="btndarkmodecontainer">
+                  <i class="btndarkmodeicon fa-solid fa-sun"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <i class="fa-language"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <section class="helpexplain">
-    <p>This website is used for tourism purposes, which may subject to change by season, weather, and number of people visiting through.</p>
+  <div class="cookie-content">
+      <h1>Allow Cookies</h1>
+      <p>by clicking termsand conditions you agree to our policy..... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat cum sequi, in aperiam optio error, soluta nisi saepe asperiores dolore quaerat magnam quae aliquam voluptas ad quibusdam temporibus a. Facilis sapiente, ducimus assumenda fugiat esse, distinctio non quaerat consequuntur quod dignissimos repellendus nulla minus cum laudantium aspernatur necessitatibus blanditiis neque eum! Modi, totam quibusdam nemo ad tenetur, velit voluptatem eligendi, harum voluptatum labore placeat adipisci.</p>
+      <button class="cookiebtn">Accept</button>
+  </div>
+
+  <section class="helpcontainer">
+    <h1>Help</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat, laborum aliquid porro explicabo eum, soluta voluptatibus voluptates incidunt, ad cum. Vero labore suscipit, et nobis maiores ad illum quos ullam, eligendi dolore, accusantium quidem autem, explicabo nam alias animi ea amet culpa cupiditate sapiente! Ex quos praesentium maxime velit rerum necessitatibus quasi reiciendis deleniti quibusdam hic commodi perferendis, placeat laboriosam. Repellendus laboriosam voluptatem facere possimus est non aperiam accusantium animi omnis, dolore, ut quaerat adipisci a dignissimos vero cumque velit ad at tenetur commodi placeat. Ad provident porro fugiat illum cupiditate officia excepturi repellendus rerum enim eaque. Doloribus illum esse tempore at exercitationem voluptas praesentium reprehenderit fuga quaerat veritatis, dolorum rem accusamus corrupti asperiores neque debitis voluptatum qui cumque nobis, magnam ab ducimus. Ipsa hic quaerat repudiandae ut consequuntur inventore qui quas praesentium animi, quo distinctio molestias. Quia necessitatibus commodi doloribus, iure laudantium similique beatae delectus, voluptates dolorum maiores omnis in nesciunt vitae possimus officia eveniet illo eum, expedita quos accusamus totam rerum maxime nostrum quis neque. Deleniti, dignissimos earum! Aliquam deleniti optio illo sed, quaerat tenetur. Repellat laboriosam fugiat nobis, quibusdam nesciunt nostrum minima. Ad possimus nemo beatae animi, nisi atque itaque. Cumque quae, corrupti incidunt consequatur nulla?</p>
   </section>
 
-  <footer>
-    <section>
-      <h2>Column 1</h2>
-      <h2>Email box:</h2>
-    </section>
-    <section>
-      <h2>Column 2</h2>
-    </section>
-    <section>
-      <h2>Column 3</h2>
-    </section>
-    <section>
-      <h2>Column 4</h2>
-    </section>
-    <section>
-      <h2>Column 5</h2>
-      <p><script src="https://kit.fontawesome.com/d04b8e1de1.js" crossorigin="anonymous"></script></p>
-      <p>Frankton, Queenstown, NZ, 9300</p>
-    </section>
-  </footer>
-  <p>&copy 2022 Ethan Mendoza Queenstown Guide website. All rights reserved. </p>
+  <!--footer starts from here-->
+<footer class="footer">
+  <div class="container bottom_border">
+    <div class="row">
+      <div class="footer-container">
+        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+        <!--headin5_amrc-->
+        <p><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </p>
+        <p><i class="fa fa-phone"></i>  +64273941923  </p>
+        <p><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </p>
+      </div>
+      <div class="footer-container">
+        <h5 class="headin5_amrc col_white_amrc pt2">Plan&Go</h5>
+        <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Earnslaw</a></li>
+            <li><a href="#">Travel Deals</a></li>
+            <li><a href="#">Coronet&Remarkables Snow Rentals</a></li>
+            <li><a href="#">Jet Boat Rent</a></li>
+            <li><a href="#">Eat&Drinks</a></li>
+          </ul>
+        <!--footer_ul_amrc ends here-->
+      </div>
+      <div class="footer-container">
+        <h5 class="headin5_amrc col_white_amrc pt2">Explorations</h5>
+        <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Hiking & Tramping</a></li>
+            <li><a href="#">Walking</a></li>
+            <li><a href="#">Biking</a></li>
+            <li><a href="#">Helicopter Rent</a></li>
+            <li><a href="#">Milford&Glenorchy Plane</a></li>
+          </ul>
+        <!--footer_ul_amrc ends here-->
+      </div>
+      <div class="footer-container">
+        <h5 class="headin5_amrc col_white_amrc pt2">Booking</h5>
+        <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Car Rent</a></li>
+            <li><a href="#">Lodge</a></li>
+            <li><a href="#">Backpackers & Trampers</a></li>
+          </ul>
+        <!--footer_ul_amrc ends here-->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <!--foote_bottom_ul_amrc ends here-->
+    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <ul class="social_footer_ul">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+    </ul>
+    <!--social_footer_ul ends here-->
+  </div>
+</footer>
+<script src="mainweb.js"></script>
+
+<!-- Transition navbar on scroll -->
+<script type="text/javascript">
+  function changewp(){
+    var navbar = document.getElementById('navbar');
+    var scrollValue = window.scrollY;
+    if(scrollValue < 10){
+      navbar.classList.remove('navColor');
+    }
+    else{
+      navbar.classList.add('navColor');
+    }
+  }
+
+  window.addEventListener('scroll', changewp);
+</script>
+
+<!-- Javascript Scroll fade in -->
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+</script>
+
+<script type="text/javascript">
+const cookieContainer = document.querySelector(".cookie-content")
+const cookieButton = document.querySelector(".cookiebtn")
+
+cookieButton.addEventListener("click", () => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+  if (!localStorage.getItem("cookieBannerDisplayed"))
+  cookieContainer.classList.add("active");
+}, 2000);
+</script>
+
+<!-- Darkmode -->
+<script type="text/javascript">
+const body = document.querySelector('body');
+const btn = document.querySelector('.btndarkmode');
+const icon = document.querySelector('.btndarkmodeicon');
+
+function store(value){
+  localStorage.setItem('darkmode', value);
+}
+
+function load(){
+  const darkmode = localStorage.getItem('darkmode');
+
+  if(!darkmode){
+    store(false);
+    icon.classList.add('fa-sun');
+  } else if(darkmode == 'true'){
+  body.classList.add('darkmode');
+  icon.classList.add('fa-moon');
+  }
+    else if(darkmode == 'false'){
+    icon.classList.add('fa-sun');
+  }
+}
+
+load();
+
+btn.addEventListener('click', () => {
+
+  body.classList.toggle('darkmode');
+  icon.classList.add('animated');
+
+  store(body.classList.contains('darkmode'));
+
+  if(body.classList.contains('darkmode')){
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+  else{
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  }
+
+  setTimeout( () => {
+    icon.classList.remove('animated');
+  }, 500)
+})
+</script>
 </body>
-</html>

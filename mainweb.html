@@ -24,7 +24,7 @@
 </head>
 <body onload="initClock()">
   <div class="wrapper">
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <div class="menu">
         <ul>
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
@@ -34,14 +34,29 @@
           <li><a href="help.html">Help</a></li>
         </ul>
       </div>
-      <div class="searchbar">
-        <input type="text" placeholder="Search towns..">
-        <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-      </div>
-      <div class="dark-mode">
-        <button>Dark</button>
+      <div class="rightmenu">
+        <ul>
+          <li>
+            <div class="searchbar">
+              <input type="text" placeholder="Search towns..">
+              <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btndarkmode">
+              <div class="btndarkmodeindicator">
+                <div class="btndarkmodecontainer">
+                  <i class="btndarkmodeicon fa-solid fa-sun"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <i class="fa-language"></i>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -111,37 +126,17 @@
 
 
   <section class="sectcontainer">
-    <div class="slider-container">
-      <input type="radio" name="images" id="i1" checked>
-      <input type="radio" name="images" id="i2">
-      <input type="radio" name="images" id="i3">
-
-      <div class="slide_img" id="one">
-        <img src="Images/arrowtownimage.jpg" alt="queenstown">
-
-        <label for="i3" class="pre"></label>
-        <label for="i2" class="next"></label>
+    <div class="row">
+      <div class="column">
+        <img src="Images/arrowtownimage.jpg" alt="glenorchy">
       </div>
-      <div class="slide_img" id="two">
-        <img src="Images/arrowtownimg2.jpg" alt="queenstown">
-
-        <label for="i1" class="pre"></label>
-        <label for="i3" class="next"></label>
+      <div class="column">
+        <img src="Images/arrowtownimg2.jpg" alt="glenorchy">
       </div>
-      <div class="slide_img" id="three">
-        <img src="Images/arrowtownimg3.jpg" alt="queenstown">
-
-        <label for="i2" class="pre"></label>
-        <label for="i1" class="next"></label>
-      </div>
-
-      <div class="navdots">
-        <label class="dots" id="dot1" for="i1"></label>
-        <label class="dots" id="dot2" for="i2"></label>
-        <label class="dots" id="dot3" for="i3"></label>
+      <div class="column">
+        <img src="Images/arrowtownimg3.jpg" alt="glenorchy">
       </div>
     </div>
-
    <a href="#">Arrowtown</a>
    <p>Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!</p>
  </section>
@@ -252,7 +247,7 @@
       <li><a href="#">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center">Copyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
     <ul class="social_footer_ul">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -263,54 +258,24 @@
     <!--social_footer_ul ends here-->
   </div>
 </footer>
-
-<!-- Script of Date and Time functional -->
-<script type="text/javascript">
-function updateClock(){
-  var now = new Date();
-  var dname = now.getDay(),
-  mo = now.getMonth(),
-  dnum = now.getDate(),
-  yr = now.getFullYear(),
-  hou = now.getHours(),
-  min = now.getMinutes(),
-  sec = now.getSeconds(),
-  pe = "AM";
-
-  if(hou == 0){
-    hou = 12;
-  }
-  if(hou > 12){
-    hou = hou - 12;
-    pe = "PM";
-  }
-
-  Number.prototype.pad = function(digits){
-    for(var n = this.toString(); n.length < digits; n = 0 + n);
-    return n;
-  }
-
-  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-  var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-  for(var i = 0; i < ids.length; i++)
-  document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-}
-
-function initClock(){
-  updateClock();
-  window.setInterval("updateClock()", 1);
-}
-</script>
+<script src="mainweb.js"></script>
 
 <!-- Transition navbar on scroll -->
 <script type="text/javascript">
-  window.addEventListener("scroll", function(){
-    var navheader = document.querySelector(".wrapper");
-    navheader.classList.toggle("sticky", window.scrollY > 0);
-  })
+  function changewp(){
+    var navbar = document.getElementById('navbar');
+    var scrollValue = window.scrollY;
+    if(scrollValue < 10){
+      navbar.classList.remove('navColor');
+    }
+    else{
+      navbar.classList.add('navColor');
+    }
+  }
+
+  window.addEventListener('scroll', changewp);
 </script>
+
 <!-- Javascript Scroll fade in -->
 <script type="text/javascript">
   window.addEventListener('scroll', reveal);
@@ -347,5 +312,54 @@ setTimeout(() => {
   if (!localStorage.getItem("cookieBannerDisplayed"))
   cookieContainer.classList.add("active");
 }, 2000);
+</script>
+
+<!-- Darkmode -->
+<script type="text/javascript">
+const body = document.querySelector('body');
+const btn = document.querySelector('.btndarkmode');
+const icon = document.querySelector('.btndarkmodeicon');
+
+function store(value){
+  localStorage.setItem('darkmode', value);
+}
+
+function load(){
+  const darkmode = localStorage.getItem('darkmode');
+
+  if(!darkmode){
+    store(false);
+    icon.classList.add('fa-sun');
+  } else if(darkmode == 'true'){
+  body.classList.add('darkmode');
+  icon.classList.add('fa-moon');
+  }
+    else if(darkmode == 'false'){
+    icon.classList.add('fa-sun');
+  }
+}
+
+load();
+
+btn.addEventListener('click', () => {
+
+  body.classList.toggle('darkmode');
+  icon.classList.add('animated');
+
+  store(body.classList.contains('darkmode'));
+
+  if(body.classList.contains('darkmode')){
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+  else{
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  }
+
+  setTimeout( () => {
+    icon.classList.remove('animated');
+  }, 500)
+})
 </script>
 </body>
