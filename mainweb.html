@@ -54,7 +54,7 @@
             </div>
           </li>
           <li>
-            <i class="fa-language"></i>
+            <a href=""><i class="fa-language"></i></a>
           </li>
         </ul>
       </div>
@@ -70,23 +70,23 @@
   <section class="topcontainer">
     <img src="Images/Otagoimage.jpg" alt="otago">
     <div class="topcontainerbtmtext">
+      <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+      </div>
       <p>KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/n45d03168d66/queenstown/" data-label_1="QUEENSTOWN" data-label_2="WEATHER" data-mode="Current" data-theme="original" >QUEENSTOWN WEATHER</a>
     </div>
-    <div class="datetime">
-      <div class="date">
-        <span id="dayname">Day</span>,
-        <span id="month">Month</span>
-        <span id="daynum">00</span>,
-        <span id="year">Year</span>
-      </div>
-      <div class="time">
-        <span id="hour">00</span>:
-        <span id="minutes">00</span>:
-        <span id="seconds">00</span>
-        <span id="period">AM</span>
-      </div>
-    </div>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/n45d03168d66/queenstown/" data-label_1="QUEENSTOWN" data-label_2="WEATHER" data-mode="Current" data-theme="original" >QUEENSTOWN WEATHER</a>
   </section>
 
   <section class="sectcontainer reveal">
@@ -137,7 +137,7 @@
         <img src="Images/arrowtownimg3.jpg" alt="glenorchy">
       </div>
     </div>
-   <a href="#">Arrowtown</a>
+   <a href="arrowtown.html">Arrowtown</a>
    <p>Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!</p>
  </section>
 
@@ -247,7 +247,7 @@
       <li><a href="#">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <p class="text-center">Copyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
     <ul class="social_footer_ul">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -317,6 +317,7 @@ setTimeout(() => {
 <!-- Darkmode -->
 <script type="text/javascript">
 const body = document.querySelector('body');
+const body = document.querySelector('section');
 const btn = document.querySelector('.btndarkmode');
 const icon = document.querySelector('.btndarkmodeicon');
 

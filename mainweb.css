@@ -203,6 +203,11 @@ iframe{
   animation: spin 0.5s;
 }
 
+/* Queenstown container website */
+.container1 {
+  display: flex;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -256,21 +261,23 @@ body.darkmode{
 
 .datetime {
   color: #fff;
-  background: #10101E;
   width: 380px;
   padding: 15px 10px;
-  border: 3px solid #2E94E3;
-  border-radius: 5px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(25));
   margin: auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .date {
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
+  display:flex;
   letter-spacing: 3px;
+}
+
+.date span:not(:last-child){
+  margin: 0 6px;
 }
 
 .time {
@@ -289,7 +296,6 @@ body.darkmode{
 }
 
 .time span:last-child{
-  background: #2E94E3;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
