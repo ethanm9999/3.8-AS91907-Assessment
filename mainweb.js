@@ -1,16 +1,56 @@
 // cookie policy
-$(document).on('ready', function() {
-  if (document.cookie.indexOf("accepted_cookies=") < 0) {
-    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
+let cookieModal = document.querySelector(".cookie-consent-modal")
+let acceptCookieBtn = document.querySelector(".cookiebtn.accept")
+let cancelCookieBtn = document.querySelector(".cookiebtn.cancel")
+
+cancelCookieBtn.addEventListener("click", function(){
+  cookieModal.classList.remove('active')
+})
+acceptCookieBtn.addEventListener("click", function(){
+  cookieModal.classList.remove('active')
+  localStorage.setItem("cookieAccepted", "yes")
+})
+
+setTimeout(function (){
+  let cookieAccepted = localStorage.getItem("cookieAccepted")
+  if (cookieAccepted != "yes"){
+    cookieModal.classList.add("active")
+  }
+}, 2000)
+
+function updateClock(){
+  var now = new Date();
+  var dname = now.getDay(),
+  mo = now.getMonth(),
+  dnum = now.getDate(),
+  yr = now.getFullYear(),
+  hou = now.getHours(),
+  min = now.getMinutes(),
+  sec = now.getSeconds(),
+  pe = "AM";
+
+  if(hou == 0){
+    hou = 12;
+  }
+  if(hou > 12){
+    hou = hou - 12;
+    pe = "PM";
   }
 
-  $('.accept-cookies').on('click', function() {
-    document.cookie = "accepted_cookies=yes;"
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
+  Number.prototype.pad = function(digits){
+    for(var n = this.toString(); n.length < digits; n = 0 + n);
+    return n;
+  }
 
-  // expand depending on your needs
-  $('.close-cookies').on('click', function() {
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
-})
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+  var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+  for(var i = 0; i < ids.length; i++)
+  document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+}
+
+function initClock(){
+  updateClock();
+  window.setInterval("updateClock()", 1);
+}
