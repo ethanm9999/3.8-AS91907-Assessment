@@ -135,6 +135,12 @@ iframe{
   display: inline-block;
 }
 
+.container1 img{
+  width: 700px;
+  length: 700px;
+}
+
+
 /* Change color on scroll Navbar */
 .navColor{
   background-color: gray;
@@ -208,6 +214,9 @@ iframe{
 /* Queenstown container website */
 .container1 {
   display: flex;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  text-align: center;
 }
 
 @keyframes spin {
@@ -227,8 +236,9 @@ iframe{
               inset 0 -4px 4px rgba(0,0,0, .3);
 }
 
-body.darkmode{
+section.darkmode{
   background-color: black;
+  color: white;
 }
 
 .darkmode .btndarkmodeicon{
@@ -237,12 +247,12 @@ body.darkmode{
 
 /* Languaages */
 
-.wrapper .lang-menu {
+.lang-menu {
   margin-top: 10px;
   position: relative;
 }
 
-.wrapper .selected-lang {
+.selected-lang {
   font-size: 18px;
   cursor: pointer;
   display: flex;
@@ -251,16 +261,17 @@ body.darkmode{
   width: 100px;
 }
 
-.wrapper .selected-lang:before{
+.selected-lang:before{
   content: '';
-  display: block;
+  display: inline-block;
   width: 60px;
   height: 32px;
-  background-image: url("https://countryflagsapi.com/png/us");
-  background-size: 70px;
+  background-size: contain;
+  background-image: url(Images/united-states.png);
+  background-repeat: no-repeat;
 }
 
-.wrapper .lang-menu ul {
+.lang-menu ul {
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -272,72 +283,92 @@ body.darkmode{
   left: 0;
 }
 
-.wrapper .lang-menu ul li {
+.lang-menu ul li {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.wrapper .lang-menu ul li a{
+.lang-menu ul li a{
   width: 125px;
   display: block;
   padding: 5px 10px;
 }
 
-.wrapper .lang-menu ul li a::before{
+.lang-menu ul li a:before{
   content: '';
   width: 60px;
-  height: 32px;
-  background-size: 70px;
-  display: block;
+  height: 35px;
+  background-size: contain;
+  display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
-  background-image: url("https://countryflagsapi.com/png/us");
+  background-repeat: no-repeat;
 }
 
 .lang-menu ul li a:hover{
   background-color: #f2f2f2;
 }
 
-.eng:before{
-  background-image: url("https://countryflagsapi.com/png/us");
-}
-
-.fil:before{
-  background-image: url("https://countryflagsapi.com/png/ph");
-}
-
-.cn:before{
-  background-image: url("https://countryflagsapi.com/png/cn");
-}
-
-.ru:before{
-  background-image: url("https://countryflagsapi.com/png/ru");
-}
-
-.spa:before{
-  background-image: url("https://countryflagsapi.com/png/es");
-}
-
-.fr:before{
-  background-image: url("https://countryflagsapi.com/png/fr");
-}
-
-.ar:before{
-  background-image: url("https://countryflagsapi.com/png/ae");
-}
-
 .lang-menu:hover ul {
   display: block;
 }
+
+a.en:before{
+  background-image: url(Images/united-states.png);
+}
+a.fil:before{
+  background-image: url(Images/philipines.png);
+}
+
+a.zh:before{
+  background-image: url(Images/china.png);
+}
+a.ru:before{
+  background-image: url(Images/russia.png);
+}
+
+a.es:before{
+  background-image: url(Images/spain.png);
+}
+
+a.fr:before{
+  background-image: url(Images/france.png);
+}
+
+/* JQuery Class */
+.selected-lang.change-en:before {
+  background-image: url(Images/united-states.png);
+}
+
+.selected-lang.change-fil:before {
+  background-image: url(Images/philipines.png);
+}
+
+.selected-lang.change-ru:before {
+  background-image: url(Images/russia.png);
+}
+
+.selected-lang.change-zh:before {
+  background-image: url(Images/china.png);
+}
+
+.selected-lang.change-es:before {
+  background-image: url(Images/spain.png);
+}
+
+.selected-lang.change-fr:before {
+  background-image: url(Images/france.png);
+}
+
 
 /*Top container */
 
 .topcontainerbtmtext img{
   width: 100%;
   border-bottom: 5px solid gray;
-  background-size: cover;
   background-position: center;
+  object-position: bottom;
 }
 
 .topcontainerbtmtext {
@@ -364,24 +395,45 @@ body.darkmode{
   position: absolute;
 }
 
+.toptowncontainer {
+  border-bottom: 5px gray solid;
+}
+
+/* Towns section contents */
+.container1:nth-child(odd){
+  background: #FFECE8;
+}
+
+.container1:nth-child(even){
+  background: white;
+}
+
 /* Welcome when accessing towns by users */
 
-.welcome img {
+.toptowncontainer .welcome img {
   background-size: cover;
   width: 100%;
   object-fit: contain;
 }
 
-.welcome {
+.toptowncontainer .welcome {
+  color: white;
   position: relative;
 }
 
-.welcome p{
+.toptowncontainer .welcome p{
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: 100%;
   text-align: center;
   font-size: 18px;
+}
+.toptowncontainer .welcome h1{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
 }
 
 /* Date and Time*/
@@ -429,14 +481,6 @@ body.darkmode{
   margin-top: 10px;
   padding: 0 5px;
   border-radius: 3px;
-}
-
-section:nth-child(odd){
-  background: white;
-}
-
-section:nth-child(even){
-  background: white;
 }
 
 .reveal{
