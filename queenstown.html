@@ -24,7 +24,7 @@
     <div id="navbar" class="navbar">
       <div class="menu">
         <ul>
-          <li><a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a></li>
+          <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
           <li><a href="#">Communities</a></li>
           <li><a href="maps.html">Map</a></li>
           <li><a href="#">Destinations</a></li>
@@ -78,10 +78,10 @@
 $(function() {
   $(".en").click(function() {
     // Nav
-    $(".menu ul").children().eq(1).text("Communities");
-    $(".menu ul").children().eq(2).text("Map");
-    $(".menu ul").children().eq(3).text("Destinations");
-    $(".menu ul").children().eq(4).text("Help");
+    $(".menu ul li").children().eq(0).text("Communities");
+    $(".menu ul li").children().eq(1).text("Map");
+    $(".menu ul li").children().eq(2).text("Destinations");
+    $(".menu ul li").children().eq(3).text("Help");
     $(".selected-lang").text("English");
     $(".selected-lang").removeClass("change-fil");
     $(".selected-lang").addClass("change-en");
@@ -90,8 +90,8 @@ $(function() {
     $(".title").text("Queenstown");
     $(".descriptiontranslate").text("Welcome! Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.");
     // footer
-    $(".footer-container ul:nth-child(1) li:nth-child(1) a").text("Earnslaw");
-    $(".footer-container ul:nth-child(1) li:nth-child(2) a").text("Travel Deals");
+    $(".footer_ul_amrc:nth-child(1) li:nth-child(1) a").text("Earnslaw");
+    $(".footer_ul_amrc:nth-child(1) li:nth-child(2) a").text("Travel Deals");
     $(".footer-container ul:nth-child(1) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
     $(".footer-container ul:nth-child(1) li:nth-child(4) a").text("Jet Boat Rent");
     $(".footer-container ul:nth-child(1) li:nth-child(5) a").text("Eat&Drinks");
@@ -111,10 +111,10 @@ $(function() {
 $(function() {
   $(".fil").click(function() {
     // Nav
-    $(".menu ul").children().eq(1).text("Komunidad");
-    $(".menu ul").children().eq(2).text("Mapa");
-    $(".menu ul").children().eq(3).text("Mga destinasyon");
-    $(".menu ul").children().eq(4).text("Tulong");
+    $(".menu ul li").children().eq(0).text("Komunidad");
+    $(".menu ul li").children().eq(1).text("Mapa");
+    $(".menu ul li").children().eq(2).text("Mga destinasyon");
+    $(".menu ul li").children().eq(3).text("Tulong");
     $(".selected-lang").text("Filipino");
     $(".selected-lang").addClass("change-fil");
     $(".selected-lang").removeClass("change-en");
@@ -144,10 +144,10 @@ $(function() {
 $(function() {
   $(".zh").click(function() {
     // Nav
-    $(".menu ul").children().eq(1).text("社区");
-    $(".menu ul").children().eq(2).text("地图");
-    $(".menu ul").children().eq(3).text("目的地");
-    $(".menu ul").children().eq(4).text("帮助");
+    $(".menu ul li").children().eq(0).text("社区");
+    $(".menu ul li").children().eq(1).text("地图");
+    $(".menu ul li").children().eq(2).text("目的地");
+    $(".menu ul li").children().eq(3).text("帮助");
     $(".selected-lang").text("Chinese");
     $(".selected-lang").addClass("change-zh");
     $(".selected-lang").removeClass("change-en");

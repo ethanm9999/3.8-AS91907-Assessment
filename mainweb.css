@@ -171,78 +171,12 @@ iframe{
   width: 100%;
 }
 
-.btndarkmode{
-  background-color: #fff;
-  width: 6em;
-  height: 2.5em;
-  border-radius: 10em;
-
-  box-shadow: inset 0 8px 30px rgba(0,0,0, .1);
-              inset 0 8px 4px rgba(0,0,0, .1);
-              inset 0 8px 2px rgba(0,0,0, .1);
-  margin: 0 20px;
-  cursor: pointer;
-}
-
-.btndarkmodeindicator{
-  background-color: #fff;
-  width: 3em;
-  height: 2.5em;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0,0,0, .2);
-  transition: transform .3s ease;
-}
-
-.btndarkmodecontainer{
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btndarkmodeicon{
-  color: #F4D03F;
-  font-size: 1.5rem;
-}
-
-.btndarkmodeicon.animated{
-  animation: spin 0.5s;
-}
-
 /* Queenstown container website */
 .container1 {
   display: flex;
   margin: 20px 0 20px 0;
   padding: 20px;
   text-align: center;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* Darkmode */
-.darkmode .btndarkmodeindicator{
-  transform: translateX(3.1em);
-  background-color: black;
-}
-
-.darkmode .btndarkmode{
-  box-shadow: inset 0 8px 60px rgba(0,0,0, .3);
-              inset 8px 0 8px rgba(0,0,0, .3);
-              inset 0 -4px 4px rgba(0,0,0, .3);
-}
-
-section.darkmode{
-  background-color: black;
-  color: white;
-}
-
-.darkmode .btndarkmodeicon{
-  color: #fff;
 }
 
 /* Languaages */
@@ -368,7 +302,7 @@ a.fr:before{
   width: 100%;
   border-bottom: 5px solid gray;
   background-position: center;
-  object-position: bottom;
+  background-size: contain;
 }
 
 .topcontainerbtmtext {
@@ -393,6 +327,7 @@ a.fr:before{
 }
 .topcontainerbtmtext a{
   position: absolute;
+  font-size: 18px;
 }
 
 .toptowncontainer {
@@ -541,90 +476,54 @@ input[type=text]:focus{
   transition: 1s ease;
 }
 
-.sectcontainer img {
-  width: 300px;
-  height: 300px;
+/* Slider */
+
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
 }
 
-.slider-container{
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
+.img-container img {
+  background-size: cover;
+  width: 1200px;
+}
+
+/* Slide animation */
+
+@-webkit-keyframes slide_animation {
+  0% {left: 0px;}
+  10% {left: 0px;}
+  20% {left: 1200px;}
+  30% {left: 1200px;}
+  40% {left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left: 0px;}
+}
+
+.slide-images{
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
   position: relative;
-  width: 70%;
-  height: 0;
-  padding-bottom: 40%;
-  align-items: center;
-  background:#4c4c4c;
-  border: solid 10px #2c2c2c;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
 }
 
-.slide_img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.slide_img img {
-  width: 100%;
-  height: 100%;
-}
-
-#i1, #i2, #i3 {
-  display: none;
-}
-
-.pre, .next{
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 99;
-  cursor: pointer;
-}
-
-.pre{
-  left: 0;
-}
-
-.next{
-  right: 0;
-}
-
-.navdots {
-  width: 100%;
-  height: 11px;
-  bottom: 12%;
-  position: absolute;
-  text-align: center;
-  z-index: 99;
-}
-
-.dots {
-  top: -5px;
-  width: 18px;
-  height: 18px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 50%;
-  display: inline-block;
-  background: rgba(0,0,0,.6);
-}
-
-.slide_img {
-  z-index: -1;
-}
-
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three{
-  z-index: 9;
-}
-
-#i1:checked ~ .navdots #dot1,
-#i2:checked ~ .navdots #dot2,
-#i3:checked ~ .navdots #dot3{
-  background: #fff;
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
 }
 
 /*footer*/
@@ -683,7 +582,7 @@ footer p {
 
 .footer-container{
   margin: 10px;
-  padding: 10px;
+  padding: 30px;
 }
 
 .footer_ul2_amrc {
