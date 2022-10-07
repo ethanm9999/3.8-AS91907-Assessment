@@ -29,7 +29,7 @@
         <ul>
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
           <li><a href="#">Communities</a></li>
-          <li><a href="#">Map</a></li>
+          <li><a href="maps.html">Map</a></li>
           <li><a href="#">Destinations</a></li>
           <li><a href="help.html">Help</a></li>
         </ul>
@@ -90,6 +90,8 @@
       $(".selected-lang").addClass("change-en");
       $(".selected-lang").removeClass("change-zh");
       $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
       //section
       $(".kiaora").text("KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE")
       $(".qttranslate").text("Queenstown")
@@ -435,7 +437,7 @@
   </section>
 
   <section class="sectcontainer">
-    <div class="slider-frame">
+    <div class="slider-frame" data-direction="left">
       <div class="slide-images">
         <div class="img-container">
           <img src="Images/queenstownimgnight.jpg" alt="queenstown">
@@ -448,8 +450,8 @@
         </div>
       </div>
     </div>
-    <a href="queenstown.html" class="qttranslate">Queenstown</a>
-    <p class="qtptranslate">Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
+    <a href="queenstown.html" class="qttranslate" data-direction="right">Queenstown</a>
+    <p class="qtptranslate" data-direction="right">Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
   </section>
 
   <section class="sectcontainer">
@@ -613,25 +615,38 @@
 
 <!-- Javascript Scroll fade in -->
 <script type="text/javascript">
-  window.addEventListener('scroll', reveal);
 
-  function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
-
-    for(var i = 0; i < reveals.length; i++){
-
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
-
-      if(revealtop < windowheight - revealpoint){
-        reveals[i].classList.add('active');
-      }
-      else{
-        reveals[i].classList.remove('active');
-      }
+function observe(entries, observer){
+  for (entry of entries) {
+    if (entry.isIntersecting) {
+      console.log(entry.target)
+      entry.target.style.transform = "none"
+      entry.target.style.opacity = "1"
     }
   }
+}
+const intersectionObserver = new IntersectionObserver(observe, {
+  threshold: 0.5
+})
+
+const elements = [
+    ...document.querySelectorAll("sectcontainer img"),
+    ...document.querySelectorAll("sectcontainer p"),
+    ...document.querySelectorAll("sectcontainer a"),
+    ...document.querySelectorAll("sectcontainer"),
+
+]
+
+for (let obj of elements) {
+    let direction = obj.getAttribute("data-direction")
+    if(direction){
+      obj.classList.add("fade-${direction}")
+    }
+    else{
+      obj.classList.add("fade-left")
+    }
+    intersectionObserver.observe(obj);
+}
 </script>
 
 <script type="text/javascript">

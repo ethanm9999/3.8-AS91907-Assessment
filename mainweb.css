@@ -526,6 +526,32 @@ input[type=text]:focus{
     float: left;
 }
 
+/*Fade in scroll*/
+
+.fade-left {
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.fade-right {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.fade-top {
+  transform: translateY(-60px);
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.fade-bottom {
+  transform: translateY(60px);
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
 /*footer*/
 .col_white_amrc {
    color:#FFF;
