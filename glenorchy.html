@@ -26,7 +26,7 @@
         <ul>
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
           <li><a href="#">Communities</a></li>
-          <li><a href="#">Map</a></li>
+          <li><a href="maps.html">Map</a></li>
           <li><a href="#">Destinations</a></li>
           <li><a href="help.html">Help</a></li>
         </ul>
@@ -42,40 +42,28 @@
             </div>
           </li>
           <li>
-            <div class="btndarkmode">
-              <div class="btndarkmodeindicator">
-                <div class="btndarkmodecontainer">
-                  <i class="btndarkmodeicon fa-solid fa-sun"></i>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
             <div class="lang-menu">
               <div class="selected-lang">
                   English
               </div>
               <ul>
                 <li>
-                  <a href="mainweb.html" class="eng">English</a>
+                  <a href="#" class="en">English (US)</a>
                 </li>
                 <li>
-                  <a href="#" class="fil">Filipino</a>
+                  <a href="#" class="fil">Tagalog</a>
                 </li>
                 <li>
-                  <a href="#" class="cn">Chinese</a>
+                  <a href="#" class="zh">中文</a>
                 </li>
                 <li>
-                  <a href="#" class="ru">Russian</a>
+                  <a href="#" class="ru">Русский</a>
                 </li>
                 <li>
-                  <a href="#" class="spa">Spanish</a>
+                  <a href="#" class="es">Español</a>
                 </li>
                 <li>
-                  <a href="#" class="fr">French</a>
-                </li>
-                <li>
-                  <a href="#" class="ar">Arabic</a>
+                  <a href="#" class="fr">Français</a>
                 </li>
               </ul>
             </div>
@@ -85,44 +73,370 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  // english //
+  $(function() {
+    $(".en").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communities");
+      $(".menu ul li").children().eq(1).text("Map");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Help");
+      $(".selected-lang").text("English");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Glenorchy");
+      $(".descriptiontranslate").text("Glenorchy’s spectacular landscapes have become a prime location for film scouts, depicting many scenes from The Lord of the Rings trilogy as well as featuring in the Narnia movies. Twenty kilometres away from Glenorchy, as bucolic farmland gives way to beech forests, lies Paradise. Some say it was christened for its natural charms, others for the paradise ducks that live in the area. Nobody can say for sure how it got its name, but the one thing people agree on is its breathtaking beauty.");
+      $(".qttitle1").text("Hike the Routeburn Track");
+      $(".pqttitle1").text("Just outside of Glenorchy begins one of New Zealand’s 10 Great Walks, the Routeburn Track. This 32-kilometer (20 miles) trail travels through the Southern Alps finishing on the road between Te Anau and Milford Sound. It’s breathtaking and one of the best hikes you can do in Glenorchy and on the South Island in general. Although hiking the full trail involves lots of planning (as well as booking in advance) you can easily hike parts of the Routeburn Track in a day on a trip to Glenorchy. Some of the shortest day hiking options are less than 10 kilometers (6.2 mi) return taking you through a moss-filled forest, up the Dart River, and to a stunning waterfall.");
+      $(".qttitle2").text("Visit Lord of the Rings film locations");
+      $(".pqttitle2").text("There are a lot of Lord of the Rings film locations in Glenorchy and even some from the Hobbit Movies. Unfortunately, they aren’t as easy to find as you may think. However, with a little preparation, you can see a few of the most famous ones on your own. Here are a few (some with pins to their locations) around Glenorchy: Misty Mountains – The Misty Mountains in LOTR were filmed in the mountains around Glenorchy. In fact, as you drive from Queenstown towards Glenorchy, look into the distance, and you’ll see exactly where the fellowship walks through the snow in the Fellowship of the Ring. Isengard – From the Isengard lookout you can stare out, and with a lot of imagination, picture Isengard in the valley. It’s a hard one to see because of all the animation used in the movie. Forest of Fangorn – While looking at Isengard, look to your right into the forest. Here sits the Forest of Fangorn! Ithilien Camp – Last is Ithilien Camp. This one is marked on google maps and there is a small fire pit where Frodo and Sam sat with Gollum and ate the rabbit.");
+      $(".qttitle3").text("Glenorchy Boardwalk");
+      $(".pqttitle3").text("If hiking isn’t really your thing then you simply must hike the Glenorchy Boardwalk. This super easy trail starts from the jetty in Glenorchy and follows a 5-kilometer (3 miles), completely flat boardwalk to the Glenorchy Lagoon. It’s not really a hike and is more of a nature walk. As you pass through the Glenorchy Lagoon you’ll get breathtaking views of the Humboldt Mountains and on a calm day, mirror-like reflections. I honestly love this boardwalk and think it’s the most underrated free activity in Glenorchy. If you’re a Lord of the Rings fan then you may recognize the lagoon as the Dead Marshes! Although the scene was also filmed in Wellington and Te Anau, the Glenorchy Lagoon was still the main feature. It can be hard to see without the computer animation, but if you use your imagination, you can totally see Frodo, Sam, and Gollum walking through the Dead Marshes here!");
+      $(".qttitle4").text("Explore Paradise");
+      $(".pqttitle4").text("Heard the saying “paradise on earth”? Well, it exists! And the best part is it’s only a short drive from Glenorchy! Paradise is a small region in Otago that lies on the eastern side of the Dart River. Paradise is home to most of the LOTR locations I’ve mentioned above and is easily one of the most popular places to explore while in Glenorchy. The Glenorchy-Paradise Road is a 13-kilometer (8 miles) stretch of gravel road every visitor to Glenorchy should explore. Along the way, well you guessed it, you’ll get to see what paradise on earth looks like. Stop as you please and enjoy all the breathtaking views. Oh, and be sure to get a photo with the Paradise sign!");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Find us");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Plan&Go");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Explorations");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Booking");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Travel Deals");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Jet Boat Rent");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Eat&Drinks");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking & Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Walking");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Biking");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Helicopter Rent");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Car Rent");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Home");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("About");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Services");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pricing");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // filipino
+  $(function() {
+    $(".fil").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Komunidad");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Mga destinasyon");
+      $(".menu ul li").children().eq(3).text("Tulong");
+      $(".selected-lang").text("Tagalog");
+      $(".selected-lang").addClass("change-fil");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Glenorchy");
+      $(".descriptiontranslate").text("Ang mga nakamamanghang tanawin ng Glenorchy ay naging isang pangunahing lokasyon para sa mga film scout, na naglalarawan ng maraming mga eksena mula sa The Lord of the Rings trilogy pati na rin ang tampok sa mga pelikulang Narnia. Dalawampung kilometro ang layo mula sa Glenorchy, habang ang bucolic farmland ay nagbibigay daan sa mga beech na kagubatan, ang Paradise. Ang ilan ay nagsasabi na ito ay bininyagan para sa likas na kagandahan nito, ang iba ay para sa paradise duck na nakatira sa lugar. Walang makapagsasabi kung paano ito nakuha ang pangalan nito, ngunit ang isang bagay na pinagkasunduan ng mga tao ay ang nakamamanghang kagandahan nito.");
+      $(".qttitle1").text("Maglakad sa Routeburn Track");
+      $(".pqttitle1").text("Sa labas lamang ng Glenorchy ay nagsisimula ang isa sa 10 Great Walks ng New Zealand, ang Routeburn Track. Ang 32-kilometro (20 milya) na trail na ito ay naglalakbay sa Southern Alps na nagtatapos sa kalsada sa pagitan ng Te Anau at Milford Sound. Ito ay nakamamanghang at isa sa mga pinakamahusay na hiking na maaari mong gawin sa Glenorchy at sa South Island sa pangkalahatan. Bagama't ang pag-hiking sa buong trail ay nagsasangkot ng maraming pagpaplano (pati na rin ang pag-book nang maaga) madali kang makakaakyat sa mga bahagi ng Routeburn Track sa isang araw sa isang paglalakbay sa Glenorchy. Ang ilan sa pinakamaikling araw na opsyon sa hiking ay wala pang 10 kilometro (6.2 mi) na pagbabalik na magdadala sa iyo sa isang kagubatan na puno ng lumot, pataas sa Dart River, at sa isang nakamamanghang talon.");
+      $(".qttitle2").text("Bisitahin ang mga lokasyon ng pelikula ng Lord of the Rings");
+      $(".pqttitle2").text("Mayroong maraming mga lokasyon ng pelikula ng Lord of the Rings sa Glenorchy at maging ang ilan mula sa Hobbit Movies. Sa kasamaang palad, hindi sila madaling mahanap gaya ng iniisip mo. Gayunpaman, sa kaunting paghahanda, makikita mo ang ilan sa mga pinakasikat sa iyong sarili. Narito ang ilan (ang ilan ay may mga pin sa kanilang mga lokasyon) sa paligid ng Glenorchy: Misty Mountains – Ang Misty Mountains sa LOTR ay kinunan sa mga bundok sa paligid ng Glenorchy. Sa katunayan, habang nagmamaneho ka mula Queenstown patungo sa Glenorchy, tumingin ka sa malayo, at makikita mo kung saan eksakto kung saan ang fellowship ay naglalakad sa snow sa Fellowship of the Ring. Isengard – Mula sa Isengard lookout maaari kang tumitig, at sa maraming imahinasyon, larawanan si Isengard sa lambak. Mahirap itong makita dahil sa lahat ng animation na ginamit sa pelikula. Kagubatan ng Fangorn – Habang nakatingin sa Isengard, tumingin sa iyong kanan sa kagubatan. Dito nakaupo ang Forest of Fangorn! Ithilien Camp – Huli ang Ithilien Camp. Ang isang ito ay minarkahan sa google maps at mayroong isang maliit na fire pit kung saan nakaupo sina Frodo at Sam kasama si Gollum at kinain ang kuneho.");
+      $(".qttitle3").text("Glenorchy Boardwalk");
+      $(".pqttitle3").text("Kung hindi mo talaga bagay ang hiking, kailangan mo lang maglakad sa Glenorchy Boardwalk. Ang napakadaling trail na ito ay nagsisimula mula sa jetty sa Glenorchy at sumusunod sa isang 5-kilometro (3 milya), ganap na patag na boardwalk hanggang sa Glenorchy Lagoon. Ito ay hindi talaga isang paglalakad at higit pa sa isang nature walk. Sa pagdaan mo sa Glenorchy Lagoon, makakatanggap ka ng mga nakamamanghang tanawin ng Humboldt Mountains at sa isang tahimik na araw, na parang salamin. Sa totoo lang, gusto ko ang boardwalk na ito at sa tingin ko ito ang pinaka-underrated na libreng aktibidad sa Glenorchy. Kung ikaw ay tagahanga ng Lord of the Rings, maaari mong makilala ang lagoon bilang Dead Marshes! Bagama't kinunan din ang eksena sa Wellington at Te Anau, ang Glenorchy Lagoon pa rin ang pangunahing tampok. Maaaring mahirap makita kung wala ang animation ng computer, ngunit kung gagamitin mo ang iyong imahinasyon, makikita mo si Frodo, Sam, at Gollum na naglalakad sa Dead Marshes dito!");
+      $(".qttitle4").text("Galugarin ang Paradise");
+      $(".pqttitle4").text("Narinig mo ang kasabihang 'paraiso sa lupa'? Well, ito ay umiiral! At ang pinakamagandang bahagi ay maigsing biyahe lamang ito mula sa Glenorchy! Ang Paradise ay isang maliit na rehiyon sa Otago na nasa silangang bahagi ng Dart River. Ang Paradise ay tahanan ng karamihan sa mga lokasyon ng LOTR na nabanggit ko sa itaas at madaling isa sa mga pinakasikat na lugar upang tuklasin habang nasa Glenorchy. Ang Glenorchy-Paradise Road ay isang 13-kilometro (8 milya) na kahabaan ng gravel road na dapat tuklasin ng bawat bisita sa Glenorchy. Sa daan, nahulaan mo, makikita mo kung ano ang hitsura ng paraiso sa lupa. Huminto kung gusto mo at tamasahin ang lahat ng mga nakamamanghang tanawin. Oh, at siguraduhing makakuha ng larawan na may karatulang Paraiso!");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Hanapin kami");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Magplano at Pumunta");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Mga Paggalugad");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Pagbu-book");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Mga Deal sa Paglalakbay");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Mga Coronet&Remarkables na Renta ng Niyebe");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Pagrenta Jet Boat");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Kumain & inumin");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking at Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Naglalakad");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Nagbibisikleta");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Renta ng Helicopter");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Arkilahan ng Kotse");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Bahay");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Tungkol sa");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Mga serbisyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pagpepresyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // chinese
+  $(function() {
+    $(".zh").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("社区");
+      $(".menu ul li").children().eq(1).text("地图");
+      $(".menu ul li").children().eq(2).text("目的地");
+      $(".menu ul li").children().eq(3).text("帮助");
+      $(".selected-lang").text("中文");
+      $(".selected-lang").addClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("格伦诺基");
+      $(".descriptiontranslate").text("格伦诺基壮观的风景已成为电影侦察员的主要地点，描绘了指环王三部曲中的许多场景以及纳尼亚电影中的特色。距离格伦诺基 20 公里的地方是天堂，田园风光的农田让位于山毛榉林。有人说它因其自然魅力而得名，其他人则因其生活在该地区的天堂鸭而得名。没有人能确定它是如何得名的，但人们一致同意的一件事是它令人叹为观止的美丽。");
+      $(".qttitle1").text("徒步 Routeburn 步道");
+      $(".pqttitle1").text("就在格伦诺基郊外，开始了新西兰 10 大步道之一的 Routeburn 步道。这条 32 公里（20 英里）的小径穿过南阿尔卑斯山，在蒂阿瑙和米尔福德峡湾之间的道路上结束。这是令人叹为观止的徒步旅行，也是您在格伦诺基和整个南岛可以进行的最佳徒步旅行之一。虽然远足完整的步道需要大量的计划（以及提前预订），但您可以在前往格伦诺基的一天之内轻松地远足 Routeburn 步道的部分路段。一些最短的一日徒步旅行选择不到 10 公里（6.2 英里）返回，带您穿过长满苔藓的森林，沿着达特河向上，到达令人惊叹的瀑布。");
+      $(".qttitle2").text("参观指环王电影拍摄地");
+      $(".pqttitle2").text("格伦诺基有很多《指环王》的取景地，甚至还有一些来自霍比特人电影的取景地。不幸的是，它们并不像您想象的那么容易找到。但是，稍作准备，您就可以自己看到一些最著名的。以下是格伦诺基周围的一些（有些位置带有别针）： 迷雾山脉 - LOTR 中的迷雾山脉是在格伦诺基周围的山区拍摄的。事实上，当您从皇后镇驱车前往格伦诺基时，向远处望去，您会确切地看到该团契在“指环团契”中穿过雪地的确切位置。艾森加德——从艾森加德瞭望台，您可以凝视窗外，想象一下山谷中的艾森加德。由于电影中使用了所有动画，因此很难看到。范贡森林 – 看着艾辛格时，向右看森林。这里坐落着法贡森林！伊西林营地 – 最后是伊西林营地。这个在谷歌地图上有标记，有一个小火坑，佛罗多和山姆和咕噜坐在一起吃兔子。");
+      $(".qttitle3").text("格伦诺基木板路");
+      $(".pqttitle3").text("如果徒步旅行真的不是你的事，那么你必须徒步穿越格伦诺基木板路。这条超级轻松的小径从格伦诺基的码头开始，沿着 5 公里（3 英里）的完全平坦的木板路到达格伦诺基泻湖。这不是真正的徒步旅行，更像是一次自然漫步。当您穿过格伦诺基泻湖时，您会看到洪堡山脉的壮丽景色，在平静的日子里，您会看到镜子般的倒影。老实说，我很喜欢这条木板路，并认为这是格伦诺基最被低估的免费活动。如果您是指环王的粉丝，那么您可能会将泻湖认作死沼泽！尽管该场景也在惠灵顿和蒂阿瑙拍摄，但格伦诺基泻湖仍然是主要特色。没有电脑动画可能很难看清，但如果你发挥想象力，你完全可以看到佛罗多、山姆和咕噜在这片死亡沼泽中穿行！");
+      $(".qttitle4").text("探索天堂");
+      $(".pqttitle4").text("听说过“人间天堂”吗？嗯，它存在！最好的部分是它距离格伦诺基只有很短的车程！天堂是奥塔哥的一个小区域，位于达特河的东侧。天堂是我上面提到的大多数 LOTR 地点的所在地，并且很容易成为在格伦诺基时最受欢迎的探索地点之一。 Glenorchy-Paradise Road 是一条 13 公里（8 英里）长的碎石路，每位到 Glenorchy 的游客都应该探索一下。一路上，你猜对了，你会看到人间天堂的样子。随心所欲地停下来，享受所有令人叹为观止的景色。哦，一定要拍一张带有天堂标志的照片！");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("找到我们");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("计划和去");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("探索");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("预订");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("厄恩斯劳");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("旅游优惠");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables 雪地出租");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("喷射快艇出租");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("饮食");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("远足和流浪");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("步行");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("骑自行车");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("直升机租金");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy 飞机");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("酒店");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("汽车出租");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("小屋");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("背包客和流浪者");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("家");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("关于");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("服务");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("价钱");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("博客");
+      $(".text-center").text("版权所有©2022 |伊桑·门多萨 (Ethan Mendoza) 的皇后镇指南")
+    });
+  });
+
+  // russian
+  $(function() {
+    $(".ru").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Сообщества");
+      $(".menu ul li").children().eq(1).text("карта");
+      $(".menu ul li").children().eq(2).text("Направления");
+      $(".menu ul li").children().eq(3).text("Помощь");
+      $(".selected-lang").text("Русский");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-ru");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Гленорчи");
+      $(".descriptiontranslate").text("Впечатляющие пейзажи Гленорчи стали отличным местом для киноскаутов, изображающих многие сцены из трилогии «Властелин колец», а также фигурирующие в фильмах о Нарнии. В двадцати километрах от Гленорчи, где буколические сельхозугодья уступают место буковым лесам, находится Рай. Одни говорят, что его окрестили за природное очарование, другие — за райских уток, которые живут в этом районе. Никто не может точно сказать, как он получил свое название, но люди сходятся во мнении, что это его захватывающая дух красота.");
+      $(".qttitle1").text("Поход по трассе Рутберн");
+      $(".pqttitle1").text("Недалеко от Гленорчи начинается одна из 10 великих троп Новой Зеландии — трасса Рутберн. Эта 32-километровая тропа проходит через Южные Альпы и заканчивается на дороге между Те-Анау и Милфорд-Саунд. Это захватывает дух и является одним из лучших походов, которые вы можете совершить в Гленорчи и на Южном острове в целом. Хотя прогулка по полной тропе требует тщательного планирования (а также предварительного бронирования), вы можете легко пройти часть маршрута Routeburn Track за день во время поездки в Гленорчи. Некоторые из самых коротких дневных походов проходят менее чем на 10 километров (6,2 мили) в обратном направлении и проходят через поросший мхом лес, вверх по реке Дарт и к потрясающему водопаду.");
+      $(".qttitle2").text("Посетите места съемок фильма «Властелин колец»");
+      $(".pqttitle2").text("В Гленорчи много мест, где снимались фильмы «Властелин колец», и даже некоторые из фильмов «Хоббит». К сожалению, найти их не так просто, как вы думаете. Однако, немного подготовившись, вы сможете увидеть несколько самых известных из них самостоятельно. Вот несколько (некоторые с булавками, указывающими их местонахождение) вокруг Гленорчи: Туманные горы — Туманные горы в LOTR были сняты в горах вокруг Гленорчи. На самом деле, когда вы едете из Квинстауна в сторону Гленорчи, посмотрите вдаль, и вы точно увидите, где Братство Кольца идет по снегу. Изенгард. Со смотровой площадки Изенгарда вы можете посмотреть и, проявив воображение, представить себе Изенгард в долине. Это трудно увидеть из-за всей анимации, используемой в фильме. Лес Фангорн — Глядя на Изенгард, посмотрите направо в лес. Здесь находится Лес Фангорн! Лагерь Итилиен — последний лагерь Итилиен. Этот отмечен на картах Google, и есть небольшая яма для костра, где Фродо и Сэм сидели с Голлумом и ели кролика.");
+      $(".qttitle3").text("Гленорчи Бордуолк");
+      $(".pqttitle3").text("Если походы вам не по душе, то вам просто необходимо прогуляться по променаду Гленорчи. Эта очень легкая тропа начинается от пристани в Гленорчи и следует по 5-километровому (3 милям) совершенно плоскому променаду до лагуны Гленорчи. Это не поход, а скорее прогулка на природе. Проходя через лагуну Гленорчи, вы увидите захватывающий вид на горы Гумбольдта, а в тихий день — зеркальные отражения. Я искренне люблю этот променад и думаю, что это самое недооцененное бесплатное занятие в Гленорчи. Если вы поклонник «Властелина колец», то вы можете узнать лагуну как Мертвые болота! Хотя сцена также снималась в Веллингтоне и Те-Анау, лагуна Гленорчи по-прежнему была главной достопримечательностью. Это может быть трудно увидеть без компьютерной анимации, но если вы включите свое воображение, вы можете полностью увидеть Фродо, Сэма и Голлума, идущих здесь по Мёртвым болотам!");
+      $(".qttitle4").text("Исследуйте рай");
+      $(".pqttitle4").text("Слышали выражение «рай на земле»? Что ж, он существует! И самое приятное, что это всего в нескольких минутах езды от Гленорчи! Парадайз — небольшой регион в Отаго, расположенный на восточной стороне реки Дарт. Рай является домом для большинства локаций LOTR, о которых я упоминал выше, и является одним из самых популярных мест для изучения в Гленорчи. Glenorchy-Paradise Road — это 13-километровый участок гравийной дороги, который должен посетить каждый посетитель Glenorchy. По пути, как вы уже догадались, вы увидите, как выглядит рай на земле. Остановитесь, как вам будет угодно, и насладитесь захватывающими дух видами. О, и обязательно сфотографируйтесь со знаком Рая!");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Найди нас");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Планируй и иди");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Исследования");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Бронирование");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Эрнслоу");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Туристические предложения");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Аренда снега Coronet&Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Аренда катера");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Еда и напитки");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Пешие прогулки и походы");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Ходьба");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Езда на велосипеде");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Аренда вертолета");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Милфорд и Гленорчи Плэйн");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Отель");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Прокат автомобилей");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Лодж");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Пешие туристы и бродяги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Дом");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("об условиях");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Услуги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Цены");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Блог");
+      $(".text-center").text("Copyright ©2022 | Путеводитель по Квинстауну от Ethan Mendoza")
+    });
+  });
+
+  // spanish
+  $(function() {
+    $(".es").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Comunidades");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Destinos");
+      $(".menu ul li").children().eq(3).text("Ayuda");
+      $(".selected-lang").text("Español");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-es");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-en");
+      //section
+      $(".title").text("Glenorchy");
+      $(".descriptiontranslate").text("Los espectaculares paisajes de Glenorchy se han convertido en un lugar privilegiado para los buscadores de películas, ya que representan muchas escenas de la trilogía de El Señor de los Anillos y también aparecen en las películas de Narnia. A veinte kilómetros de Glenorchy, mientras bucólicas tierras de cultivo dan paso a bosques de hayas, se encuentra Paradise. Algunos dicen que fue bautizado por sus encantos naturales, otros por los patos paradisíacos que habitan en la zona. Nadie puede decir con seguridad cómo obtuvo su nombre, pero lo único en lo que la gente está de acuerdo es en su impresionante belleza.");
+      $(".qttitle1").text("Camina por la pista de Routeburn");
+      $(".pqttitle1").text("Justo en las afueras de Glenorchy comienza una de las 10 grandes caminatas de Nueva Zelanda, el Routeburn Track. Este sendero de 32 kilómetros (20 millas) atraviesa los Alpes del Sur y termina en la carretera entre Te Anau y Milford Sound. Es impresionante y una de las mejores caminatas que puede hacer en Glenorchy y en la Isla Sur en general. Aunque caminar por el sendero completo implica mucha planificación (así como reservar con anticipación), puede caminar fácilmente partes de Routeburn Track en un día en un viaje a Glenorchy. Algunas de las opciones de caminatas de un día más corto son menos de 10 kilómetros (6,2 millas) de ida y vuelta que lo llevan a través de un bosque lleno de musgo, río arriba Dart y una impresionante cascada.");
+      $(".qttitle2").text("Visita los lugares de rodaje de El señor de los anillos");
+      $(".pqttitle2").text("Hay muchos lugares de rodaje de El señor de los anillos en Glenorchy e incluso algunos de las películas de El Hobbit. Desafortunadamente, no son tan fáciles de encontrar como crees. Sin embargo, con un poco de preparación, puedes ver algunos de los más famosos por tu cuenta. Aquí hay algunos (algunos con alfileres en sus ubicaciones) alrededor de Glenorchy: Misty Mountains: The Misty Mountains en LOTR se filmaron en las montañas alrededor de Glenorchy. De hecho, mientras conduce desde Queenstown hacia Glenorchy, mire a lo lejos y verá exactamente por dónde camina la comunidad a través de la nieve en la Comunidad del Anillo. Isengard: desde el mirador de Isengard puedes mirar hacia afuera y, con mucha imaginación, imaginarte Isengard en el valle. Es difícil de ver debido a toda la animación utilizada en la película. Bosque de Fangorn: mientras miras a Isengard, mira a tu derecha hacia el bosque. ¡Aquí se encuentra el Bosque de Fangorn! Campamento de Ithilien: el último es el Campamento de Ithilien. Este está marcado en Google Maps y hay un pequeño pozo de fuego donde Frodo y Sam se sentaron con Gollum y se comieron el conejo.");
+      $(".qttitle3").text("Paseo marítimo de Glenorchy");
+      $(".pqttitle3").text("Si el senderismo no es lo tuyo, simplemente debes caminar por el paseo marítimo de Glenorchy. Este sendero súper fácil comienza desde el embarcadero en Glenorchy y sigue un paseo marítimo completamente plano de 5 kilómetros (3 millas) hasta la laguna de Glenorchy. No es realmente una caminata y es más una caminata por la naturaleza. A medida que pasa por la laguna de Glenorchy, obtendrá impresionantes vistas de las montañas de Humboldt y, en un día tranquilo, reflejos como espejos. Honestamente, amo este paseo marítimo y creo que es la actividad gratuita más subestimada en Glenorchy. Si eres un fanático de El señor de los anillos, entonces puedes reconocer la laguna como Dead Marshes. Aunque la escena también se filmó en Wellington y Te Anau, la laguna de Glenorchy siguió siendo la protagonista. Puede ser difícil de ver sin la animación por computadora, pero si usas tu imaginación, ¡puedes ver a Frodo, Sam y Gollum caminando por Dead Marshes aquí!");
+      $(".qttitle4").text("Explora el paraíso");
+      $(".pqttitle4").text("¿Escuchó el dicho “paraíso en la tierra”? ¡Pues existe! ¡Y la mejor parte es que está a poca distancia en auto de Glenorchy! Paradise es una pequeña región en Otago que se encuentra en el lado este del río Dart. Paradise es el hogar de la mayoría de las ubicaciones de LOTR que mencioné anteriormente y es fácilmente uno de los lugares más populares para explorar mientras se encuentra en Glenorchy. Glenorchy-Paradise Road es un tramo de 13 kilómetros (8 millas) de camino de ripio que todo visitante de Glenorchy debería explorar. En el camino, bueno, lo adivinaste, podrás ver cómo es el paraíso en la tierra. Detente cuando quieras y disfruta de todas las impresionantes vistas. ¡Ah, y asegúrate de hacerte una foto con el cartel del Paraíso!");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // french
+  $(function() {
+    $(".fr").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communautés");
+      $(".menu ul li").children().eq(1).text("Carte");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Aider");
+      $(".selected-lang").text("Français");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-fr");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-es");
+      $(".selected-lang").removeClass("change-en");
+      //section
+      $(".title").text("Glenorchy");
+      $(".descriptiontranslate").text("Les paysages spectaculaires de Glenorchy sont devenus un lieu privilégié pour les dépisteurs de films, représentant de nombreuses scènes de la trilogie Le Seigneur des Anneaux ainsi que des films de Narnia. À vingt kilomètres de Glenorchy, alors que les terres agricoles bucoliques cèdent la place aux forêts de hêtres, se trouve Paradise. Certains disent qu'il a été baptisé pour ses charmes naturels, d'autres pour les canards paradisiaques qui vivent dans la région. Personne ne peut dire avec certitude comment il tire son nom, mais la seule chose sur laquelle les gens s'accordent, c'est sa beauté à couper le souffle.");
+      $(".qttitle1").text("Randonnée sur la piste Routeburn");
+      $(".pqttitle1").text("Juste à l'extérieur de Glenorchy commence l'une des 10 Great Walks de Nouvelle-Zélande, la Routeburn Track. Ce sentier de 32 kilomètres (20 miles) traverse les Alpes du Sud et se termine sur la route entre Te Anau et Milford Sound. C'est à couper le souffle et l'une des meilleures randonnées que vous puissiez faire à Glenorchy et sur l'île du Sud en général. Bien que la randonnée sur le sentier complet implique beaucoup de planification (ainsi que de réservation à l'avance), vous pouvez facilement parcourir des parties du Routeburn Track en une journée lors d'un voyage à Glenorchy. Certaines des options de randonnée d'une journée les plus courtes sont inférieures à 10 kilomètres (6,2 mi) aller-retour, vous emmenant à travers une forêt remplie de mousse, en remontant la rivière Dart et jusqu'à une magnifique cascade.");
+      $(".qttitle2").text("Visitez les lieux de tournage du Seigneur des Anneaux");
+      $(".pqttitle2").text("Il y a beaucoup de lieux de tournage du Seigneur des Anneaux à Glenorchy et même certains des films Hobbit. Malheureusement, ils ne sont pas aussi faciles à trouver que vous ne le pensez. Cependant, avec un peu de préparation, vous pouvez voir quelques-uns des plus célèbres par vous-même. En voici quelques-uns (certains avec des épingles à leurs emplacements) autour de Glenorchy : Misty Mountains – Les Misty Mountains dans LOTR ont été filmées dans les montagnes autour de Glenorchy. En fait, alors que vous conduisez de Queenstown vers Glenorchy, regardez au loin et vous verrez exactement où la communauté marche dans la neige dans la Communauté de l'Anneau. Isengard – Depuis le belvédère d'Isengard, vous pouvez regarder et avec beaucoup d'imagination, imaginer Isengard dans la vallée. C'est difficile à voir à cause de toutes les animations utilisées dans le film. Forêt de Fangorn – Tout en regardant Isengard, regardez à votre droite dans la forêt. Ici se trouve la forêt de Fangorn ! Camp d'Ithilien – Le dernier est le camp d'Ithilien. Celui-ci est marqué sur Google Maps et il y a un petit foyer où Frodon et Sam se sont assis avec Gollum et ont mangé le lapin.");
+      $(".qttitle3").text("Promenade de Glenorchy");
+      $(".pqttitle3").text("Si la randonnée n'est pas vraiment votre truc, vous devez simplement parcourir la promenade de Glenorchy. Ce sentier super facile commence à partir de la jetée de Glenorchy et suit une promenade complètement plate de 5 kilomètres (3 miles) jusqu'au lagon de Glenorchy. Ce n'est pas vraiment une randonnée et c'est plutôt une promenade dans la nature. En traversant la lagune de Glenorchy, vous aurez une vue imprenable sur les montagnes Humboldt et, par une journée calme, des reflets miroir. Honnêtement, j'adore cette promenade et je pense que c'est l'activité gratuite la plus sous-estimée de Glenorchy. Si vous êtes un fan du Seigneur des Anneaux, vous reconnaîtrez peut-être le lagon comme étant les Dead Marshes ! Bien que la scène ait également été filmée à Wellington et à Te Anau, la lagune de Glenorchy était toujours la principale caractéristique. Il peut être difficile de voir sans l'animation par ordinateur, mais si vous utilisez votre imagination, vous pouvez totalement voir Frodon, Sam et Gollum marcher dans les marais morts ici !");
+      $(".qttitle4").text("Explorez le paradis");
+      $(".pqttitle4").text("Vous avez entendu le dicton 'le paradis sur terre' ? Eh bien, ça existe ! Et la meilleure partie est que ce n'est qu'à une courte distance en voiture de Glenorchy ! Paradise est une petite région d'Otago qui se trouve du côté est de la rivière Dart. Paradise abrite la plupart des emplacements LOTR que j'ai mentionnés ci-dessus et est facilement l'un des endroits les plus populaires à explorer à Glenorchy. La Glenorchy-Paradise Road est un tronçon de 13 kilomètres (8 miles) de route de gravier que tout visiteur de Glenorchy devrait explorer. En chemin, vous l'aurez deviné, vous verrez à quoi ressemble le paradis sur terre. Arrêtez-vous à votre guise et profitez de toutes les vues à couper le souffle. Oh, et assurez-vous de prendre une photo avec le signe Paradise !");
+      //footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+  </script>
+
   <section class="toptowncontainer">
     <section class="welcome">
       <img src="Images/beautifulglenorchy.jpg" alt="arrowtown">
-      <p>Arrowtown</p>
-      <p>Welcome to queenstown, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, mollitia, tenetur. Cum ab, obcaecati reiciendis at rerum, dicta accusamus vel voluptatibus quos maxime distinctio, beatae ut dolor natus architecto. Nemo tempora magni iure dolorem. Odit accusamus enim eveniet, saepe maxime. Impedit autem quis enim accusamus porro rerum tempora veritatis dignissimos.</p>
+      <h1 class="title">Glenorchy</h1>
+      <p class="descriptiontranslate">Glenorchy’s spectacular landscapes have become a prime location for film scouts, depicting many scenes from The Lord of the Rings trilogy as well as featuring in the Narnia movies. Twenty kilometres away from Glenorchy, as bucolic farmland gives way to beech forests, lies Paradise.  Some say it was christened for its natural charms, others for the paradise ducks that live in the area. Nobody can say for sure how it got its name, but the one thing people agree on is its breathtaking beauty.</p>
     </section>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownbkhamst.jpg" alt="buckinghamst">
+    <img src="Images/routeburntrack.jpg" alt="routeburntrack">
     <div class="description1">
-      <h1>Wander the main street of Arrowtown</h1>
-      <p>Every trip to Arrowtown should involve a wander of Buckingham Street. This vibrant street is home to many of Arrowtown’s best places to visit including restaurants, bars, and stunning architecture. I often come here to enjoy the warm weather on a nice day and visit a restaurant or bar for a drink under the sun. If you want to pick up a souvenir or two do it in Arrowtown. There are almost more souvenir shops in Arrowtown than in Queenstown and they are all stacked with lots of cool gifts to take back home. There are also a ton of small boutique stores selling high-quality products such as clothing made of New Zealand wool and even honey at Honey & Cocoa Gift Co. What I love so much about shopping in Arrowtown is that you can pretty much see it all on one street – it’s basically an outdoor mall! As for the architecture, well it’s everywhere! Just look around, take in the views, and be sure to visit the old post office and telephone box – lots of kids these days would’ve never seen one!</p>
+      <h1 class="qttitle1">Hike the Routeburn Track</h1>
+      <p class="pqttitle1">Just outside of Glenorchy begins one of New Zealand’s 10 Great Walks, the Routeburn Track. This 32-kilometer (20 miles) trail travels through the Southern Alps finishing on the road between Te Anau and Milford Sound. It’s breathtaking and one of the best hikes you can do in Glenorchy and on the South Island in general. Although hiking the full trail involves lots of planning (as well as booking in advance) you can easily hike parts of the Routeburn Track in a day on a trip to Glenorchy. Some of the shortest day hiking options are less than 10 kilometers (6.2 mi) return taking you through a moss-filled forest, up the Dart River, and to a stunning waterfall.</p>
     </div>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownchinesesttmt.jpg" alt="arrowtownchinesesttmt">
+    <img src="Images/prettyglenorchy.jpg" alt="prettyglenorchy">
     <div class="description1">
-      <h1>Lorem ipsum.</h1>
-      <p>Buckingham Street was the place where Europeans wanted to live back in the gold mining days. However, Chinese miners were forced to live in small huts along Bush Creek just outside the main town. These huts certainly weren’t fancy and the comparison of how both cultures lived in Arrowtown is easy to see. The Arrowtown Chinese Settlement showcases this with actual huts from those days still standing today. Some of the huts have also been restored so visitors can step back in time and see just how hard Chinese settlers had it back then. Just imagine the cold nights! To reach the settlement walk along Buckingham Street towards Bush Creek. Located on the grassed area is the Chinese Settlement and it’s completely free to visit.</p>
+      <h1 class="qttitle2">Visit Lord of the Rings film locations</h1>
+      <p class="pqttitle2">There are a lot of Lord of the Rings film locations in Glenorchy and even some from the Hobbit Movies. Unfortunately, they aren’t as easy to find as you may think. However, with a little preparation, you can see a few of the most famous ones on your own. Here are a few (some with pins to their locations) around Glenorchy: <br> Misty Mountains – The Misty Mountains in LOTR were filmed in the mountains around Glenorchy. In fact, as you drive from Queenstown towards Glenorchy, look into the distance, and you’ll see exactly where the fellowship walks through the snow in the Fellowship of the Ring. <br> Isengard – From the Isengard lookout you can stare out, and with a lot of imagination, picture Isengard in the valley. It’s a hard one to see because of all the animation used in the movie. <br> Forest of Fangorn – While looking at Isengard, look to your right into the forest. Here sits the Forest of Fangorn! <br> Ithilien Camp – Last is Ithilien Camp. This one is marked on google maps and there is a small fire pit where Frodo and Sam sat with Gollum and ate the rabbit.
+      </p>
     </div>
   </section>
 
   <section class="container1">
     <img src="Images/arrowtownbeerslowcuts.jpg" alt="arrowtowndrinkbeer">
     <div class="description1">
-      <h1>Drink craft beer at Slow Cuts</h1>
-      <p>Craft beer and amazing food in a cute town? It really doesn’t get better than that and sometimes, the best thing to do in any city or town is just to sit back and people-watch while enjoying the atmosphere and good vibes. By far the best place to do that is at Slow Cuts in Arrowtown. Not only is the food to die for but they serve Lake and Wood Brew Co beer which is a local brewery in Arrowtown. This small brewery doesn’t have a taproom just yet, so the only place to try their delicious craft beer is at restaurants around Arrowtown and Queenstown.
-If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s really the perfect place for a relaxed lunch in Arrowtown.</p>
+      <h1 class="qttitle3">Glenorchy Boardwalk</h1>
+      <p class="pqttitle3">If hiking isn’t really your thing then you simply must hike the Glenorchy Boardwalk. This super easy trail starts from the jetty in Glenorchy and follows a 5-kilometer (3 miles), completely flat boardwalk to the Glenorchy Lagoon. It’s not really a hike and is more of a nature walk. As you pass through the Glenorchy Lagoon you’ll get breathtaking views of the Humboldt Mountains and on a calm day, mirror-like reflections. I honestly love this boardwalk and think it’s the most underrated free activity in Glenorchy. If you’re a Lord of the Rings fan then you may recognize the lagoon as the Dead Marshes! Although the scene was also filmed in Wellington and Te Anau, the Glenorchy Lagoon was still the main feature. It can be hard to see without the computer animation, but if you use your imagination, you can totally see Frodo, Sam, and Gollum walking through the Dead Marshes here!</p>
     </div>
   </section>
 
   <section class="container1">
     <img src="Images/arrowtownfall.jpg" alt="arrowtownfall">
     <div class="description1">
-      <h1>Explore Arrowtown in the fall</h1>
-      <p>There isn’t a more beautiful place to visit in the South Island during fall than Arrowtown. In the months between March and May, the trees around Arrowtown turn into a sea of yellow, red, and orange. Visiting Arrowtown in the fall is actually a well-known bucket list experience around New Zealand and I visit on multiple occasions every year.</p>
+      <h1 class="qttitle4">Explore Paradise</h1>
+      <p class="pqttitle4">Heard the saying “paradise on earth”? Well, it exists! And the best part is it’s only a short drive from Glenorchy! Paradise is a small region in Otago that lies on the eastern side of the Dart River. Paradise is home to most of the LOTR locations I’ve mentioned above and is easily one of the most popular places to explore while in Glenorchy. The Glenorchy-Paradise Road is a 13-kilometer (8 miles) stretch of gravel road every visitor to Glenorchy should explore. Along the way, well you guessed it, you’ll get to see what paradise on earth looks like. Stop as you please and enjoy all the breathtaking views. Oh, and be sure to get a photo with the Paradise sign!</p>
     </div>
   </section>
   <!--footer starts from here-->
@@ -182,7 +496,7 @@ If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s reall
       <li><a href="#">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <p class="text-center">Copyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
     <ul class="social_footer_ul">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>

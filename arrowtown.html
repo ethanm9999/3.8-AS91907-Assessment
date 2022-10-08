@@ -26,7 +26,7 @@
         <ul>
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
           <li><a href="#">Communities</a></li>
-          <li><a href="#">Map</a></li>
+          <li><a href="maps.html">Map</a></li>
           <li><a href="#">Destinations</a></li>
           <li><a href="help.html">Help</a></li>
         </ul>
@@ -42,40 +42,28 @@
             </div>
           </li>
           <li>
-            <div class="btndarkmode">
-              <div class="btndarkmodeindicator">
-                <div class="btndarkmodecontainer">
-                  <i class="btndarkmodeicon fa-solid fa-sun"></i>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
             <div class="lang-menu">
               <div class="selected-lang">
                   English
               </div>
               <ul>
                 <li>
-                  <a href="mainweb.html" class="eng">English</a>
+                  <a href="#" class="en">English</a>
                 </li>
                 <li>
                   <a href="#" class="fil">Filipino</a>
                 </li>
                 <li>
-                  <a href="#" class="cn">Chinese</a>
+                  <a href="#" class="zh">Chinese</a>
                 </li>
                 <li>
                   <a href="#" class="ru">Russian</a>
                 </li>
                 <li>
-                  <a href="#" class="spa">Spanish</a>
+                  <a href="#" class="es">Spanish</a>
                 </li>
                 <li>
                   <a href="#" class="fr">French</a>
-                </li>
-                <li>
-                  <a href="#" class="ar">Arabic</a>
                 </li>
               </ul>
             </div>
@@ -85,35 +73,361 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  // english //
+  $(function() {
+    $(".en").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communities");
+      $(".menu ul li").children().eq(1).text("Map");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Help");
+      $(".selected-lang").text("English");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Arrowtown");
+      $(".descriptiontranslate").text("Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!");
+      $(".qttitle1").text("Wander the main street of Arrowtown");
+      $(".pqttitle1").text("Every trip to Arrowtown should involve a wander of Buckingham Street. This vibrant street is home to many of Arrowtown’s best places to visit including restaurants, bars, and stunning architecture. I often come here to enjoy the warm weather on a nice day and visit a restaurant or bar for a drink under the sun. If you want to pick up a souvenir or two do it in Arrowtown. There are almost more souvenir shops in Arrowtown than in Queenstown and they are all stacked with lots of cool gifts to take back home. There are also a ton of small boutique stores selling high-quality products such as clothing made of New Zealand wool and even honey at Honey & Cocoa Gift Co. What I love so much about shopping in Arrowtown is that you can pretty much see it all on one street – it’s basically an outdoor mall! As for the architecture, well it’s everywhere! Just look around, take in the views, and be sure to visit the old post office and telephone box – lots of kids these days would’ve never seen one!");
+      $(".qttitle2").text("Buckingham Street");
+      $(".pqttitle2").text("Buckingham Street was the place where Europeans wanted to live back in the gold mining days. However, Chinese miners were forced to live in small huts along Bush Creek just outside the main town. These huts certainly weren’t fancy and the comparison of how both cultures lived in Arrowtown is easy to see. The Arrowtown Chinese Settlement showcases this with actual huts from those days still standing today. Some of the huts have also been restored so visitors can step back in time and see just how hard Chinese settlers had it back then. Just imagine the cold nights! To reach the settlement walk along Buckingham Street towards Bush Creek. Located on the grassed area is the Chinese Settlement and it’s completely free to visit.");
+      $(".qttitle3").text("Drink craft beer at Slow Cuts");
+      $(".pqttitle3").text("Craft beer and amazing food in a cute town? It really doesn’t get better than that and sometimes, the best thing to do in any city or town is just to sit back and people-watch while enjoying the atmosphere and good vibes. By far the best place to do that is at Slow Cuts in Arrowtown. Not only is the food to die for but they serve Lake and Wood Brew Co beer which is a local brewery in Arrowtown. This small brewery doesn’t have a taproom just yet, so the only place to try their delicious craft beer is at restaurants around Arrowtown and Queenstown. If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s really the perfect place for a relaxed lunch in Arrowtown.");
+      $(".qttitle4").text("Explore Arrowtown in the fall");
+      $(".pqttitle4").text("There isn’t a more beautiful place to visit in the South Island during fall than Arrowtown. In the months between March and May, the trees around Arrowtown turn into a sea of yellow, red, and orange. Visiting Arrowtown in the fall is actually a well-known bucket list experience around New Zealand and I visit on multiple occasions every year.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Find us");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Plan&Go");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Explorations");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Booking");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Travel Deals");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Jet Boat Rent");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Eat&Drinks");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking & Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Walking");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Biking");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Helicopter Rent");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Car Rent");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Home");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("About");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Services");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pricing");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // filipino
+  $(function() {
+    $(".fil").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Komunidad");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Mga destinasyon");
+      $(".menu ul li").children().eq(3).text("Tulong");
+      $(".selected-lang").text("Tagalog");
+      $(".selected-lang").addClass("change-fil");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Arrowtown");
+      $(".descriptiontranslate").text("Ang Arrowtown ay kaakit-akit at kakaiba, isang kasiya-siyang gold rush village na matatagpuan sa tabi ng kumikinang na Arrow River at sa ibaba ng mga nakamamanghang taluktok. 20 minuto lang mula sa Queenstown Airport, ito ang perpektong lugar upang manatili habang ginalugad mo ang rehiyon. Ang Arrowtown ay isang umuunlad na komunidad na puno ng karakter – pati na rin ang ilan sa pinakamagagandang kainan at pamimili sa bansa. Mabibighani ka sa heritage main street at sa magagandang walking at biking trail. Ito ay isang kayamanan ng New Zealand!");
+      $(".qttitle1").text("Maglakad sa pangunahing kalye ng Arrowtown");
+      $(".pqttitle1").text("Ang bawat paglalakbay sa Arrowtown ay dapat magsama ng isang libot sa Buckingham Street. Ang makulay na kalyeng ito ay tahanan ng marami sa pinakamagagandang lugar ng Arrowtown na bisitahin kabilang ang mga restaurant, bar, at nakamamanghang arkitektura. Madalas akong pumupunta dito para tamasahin ang mainit na panahon sa isang magandang araw at bumisita sa isang restaurant o bar para uminom sa ilalim ng araw. Kung gusto mong pumili ng isang souvenir o dalawa gawin ito sa Arrowtown. Mayroong halos mas maraming souvenir shop sa Arrowtown kaysa sa Queenstown at lahat sila ay nakasalansan ng maraming magagandang regalo na dadalhin sa bahay. Mayroon ding isang toneladang maliliit na tindahan ng boutique na nagbebenta ng mga de-kalidad na produkto tulad ng damit na gawa sa lana ng New Zealand at maging honey sa Honey & Cocoa Gift Co. Ang gusto ko talaga sa pamimili sa Arrowtown ay halos makikita mo ang lahat ng ito sa isang kalye – isa itong panlabas na mall! Tulad ng para sa arkitektura, mabuti ito sa lahat ng dako! Tumingin lamang sa paligid, tingnan ang mga tanawin, at siguraduhing bisitahin ang lumang post office at kahon ng telepono - maraming mga bata sa mga araw na ito ay hindi kailanman makikita ang isa!");
+      $(".qttitle2").text("Buckingham Street");
+      $(".pqttitle2").text("Ang Buckingham Street ay ang lugar kung saan gustong manirahan ng mga Europeo noong panahon ng pagmimina ng ginto. Gayunpaman, ang mga minero ng Tsino ay napilitang manirahan sa maliliit na kubo sa kahabaan ng Bush Creek sa labas lamang ng pangunahing bayan. Ang mga kubo na ito ay tiyak na hindi magarbong at ang paghahambing ng kung paano nabuhay ang parehong kultura sa Arrowtown ay madaling makita. Ipinakikita ito ng Arrowtown Chinese Settlement na may mga aktwal na kubo noong mga panahong iyon na nakatayo pa rin hanggang ngayon. Ang ilan sa mga kubo ay nai-restore din upang ang mga bisita ay makabalik sa nakaraan at makita kung gaano kahirap ang mga Chinese settler noon. Isipin mo na lang ang malamig na gabi! Para marating ang settlement walk sa kahabaan ng Buckingham Street patungo sa Bush Creek. Matatagpuan sa may damong lugar ang Chinese Settlement at libre itong bisitahin.");
+      $(".qttitle3").text("Uminom ng craft beer sa Slow Cuts");
+      $(".pqttitle3").text("Gumawa ng beer at kamangha-manghang pagkain sa isang cute na bayan? Ito ay talagang hindi mas mahusay kaysa sa na at kung minsan, ang pinakamahusay na bagay na gawin sa anumang lungsod o bayan ay ang umupo lamang at manood ng mga tao habang ine-enjoy ang kapaligiran at good vibes. Sa ngayon ang pinakamagandang lugar para gawin iyon ay sa Slow Cuts sa Arrowtown. Hindi lamang ang pagkain ang mamamatay ngunit naghahain sila ng Lake at Wood Brew Co na beer na isang lokal na serbesa sa Arrowtown. Ang maliit na brewery na ito ay wala pang taproom, kaya ang tanging lugar upang subukan ang kanilang masarap na craft beer ay sa mga restaurant sa paligid ng Arrowtown at Queenstown. Kung makarating ka sa Slow Cuts bago ang rush ng tanghalian, umupo sa labas. Ito ay talagang perpektong lugar para sa isang nakakarelaks na tanghalian sa Arrowtown.");
+      $(".qttitle4").text("I-explore ang Arrowtown sa taglagas");
+      $(".pqttitle4").text("Wala nang mas magandang lugar na bisitahin sa South Island sa panahon ng taglagas kaysa sa Arrowtown. Sa mga buwan sa pagitan ng Marso at Mayo, ang mga puno sa paligid ng Arrowtown ay nagiging dagat ng dilaw, pula, at kahel. Ang pagbisita sa Arrowtown sa taglagas ay talagang isang kilalang karanasan sa listahan ng bucket sa buong New Zealand at bumibisita ako sa maraming okasyon bawat taon.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Hanapin kami");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Magplano at Pumunta");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Mga Paggalugad");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Pagbu-book");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Mga Deal sa Paglalakbay");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Mga Coronet&Remarkables na Renta ng Niyebe");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Pagrenta Jet Boat");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Kumain & inumin");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking at Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Naglalakad");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Nagbibisikleta");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Renta ng Helicopter");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Arkilahan ng Kotse");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Bahay");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Tungkol sa");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Mga serbisyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pagpepresyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // chinese
+  $(function() {
+    $(".zh").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("社区");
+      $(".menu ul li").children().eq(1).text("地图");
+      $(".menu ul li").children().eq(2).text("目的地");
+      $(".menu ul li").children().eq(3).text("帮助");
+      $(".selected-lang").text("中文");
+      $(".selected-lang").addClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("箭镇");
+      $(".descriptiontranslate").text("箭镇迷人而古怪，是一个令人愉快的淘金村，坐落在波光粼粼的箭河旁，位于壮丽的山峰之下。距皇后镇机场仅 20 分钟路程，是您探索该地区时的理想下榻之所。箭镇是一个充满特色的繁荣社区——以及该国一些最好的餐饮和购物场所。您会被历史悠久的主要街道和美丽的步行道和自行车道迷住。这是新西兰的瑰宝！");
+      $(".qttitle1").text("漫步箭镇的主要街道");
+      $(".pqttitle1").text("每次去箭镇旅行都应该去白金汉街逛一逛。这条充满活力的街道是箭镇许多最佳游览场所的所在地，包括餐厅、酒吧和令人惊叹的建筑。我经常在美好的一天来这里享受温暖的天气，并在阳光下去餐厅或酒吧喝一杯。如果你想买一两件纪念品，那就去箭镇吧。箭镇的纪念品商店几乎比皇后镇的要多，而且都堆满了很多很酷的礼物可以带回家。 Honey & Cocoa Gift Co 也有大量小型精品店出售优质产品，例如新西兰羊毛制成的服装，甚至蜂蜜。我非常喜欢在箭镇购物，因为您几乎可以看到一切在一条街上——它基本上是一个户外购物中心！至于架构，它无处不在！只要环顾四周，欣赏美景，一定要参观旧邮局和电话亭——现在很多孩子都看不到！");
+      $(".qttitle2").text("白金汉街");
+      $(".pqttitle2").text("白金汉街是欧洲人想回到金矿开采时代居住的地方。然而，中国矿工被迫住在主城外的布什溪沿岸的小木屋里。这些小屋当然不是花哨的，而且两种文化在箭镇的生活方式的比较很容易看出。箭镇华人聚居地展示了这一点，当时的实际小屋至今仍屹立不倒。一些小屋也已经修复，因此游客可以回到过去，看看当时的中国定居者有多辛苦。想象一下寒冷的夜晚！沿着白金汉街向布什溪步行到达定居点。位于草地上的是华人聚居区，完全免费参观。");
+      $(".qttitle3").text("在 Slow Cuts 喝精酿啤酒");
+      $(".pqttitle3").text("在一个可爱的小镇制作啤酒和美味的食物？它真的没有比这更好的了，有时，在任何城市或城镇做的最好的事情就是坐下来观看人们，同时享受气氛和良好的氛围。到目前为止，最好的地方是箭镇的慢切。不仅是为之而死的食物，而且他们还提供 Lake and Wood Brew Co 啤酒，这是 Arrowtown 的一家当地啤酒厂。这家小啤酒厂还没有酒吧，所以唯一可以品尝到美味精酿啤酒的地方就是箭镇和皇后镇周围的餐厅。如果您在午餐高峰前到达慢切，请在外面找个座位。这真的是在箭镇享用轻松午餐的理想场所。");
+      $(".qttitle4").text("在秋天探索箭镇");
+      $(".pqttitle4").text("秋天的南岛没有比箭镇更美丽的地方了。在三月和五月之间的几个月里，箭镇周围的树木变成了黄色、红色和橙色的海洋。秋季访问箭镇实际上是新西兰著名的旅行清单体验，我每年都会多次访问。");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("找到我们");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("计划和去");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("探索");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("预订");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("厄恩斯劳");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("旅游优惠");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables 雪地出租");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("喷射快艇出租");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("饮食");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("远足和流浪");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("步行");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("骑自行车");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("直升机租金");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy 飞机");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("酒店");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("汽车出租");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("小屋");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("背包客和流浪者");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("家");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("关于");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("服务");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("价钱");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("博客");
+      $(".text-center").text("版权所有©2022 |伊桑·门多萨 (Ethan Mendoza) 的皇后镇指南")
+    });
+  });
+
+  // russian
+  $(function() {
+    $(".ru").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Сообщества");
+      $(".menu ul li").children().eq(1).text("карта");
+      $(".menu ul li").children().eq(2).text("Направления");
+      $(".menu ul li").children().eq(3).text("Помощь");
+      $(".selected-lang").text("Русский");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-ru");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      //section
+      $(".title").text("Эрроутаун");
+      $(".descriptiontranslate").text("Эрроутаун очаровательный и причудливый, восхитительная деревня золотой лихорадки, расположенная рядом со сверкающей рекой Эрроу и ниже великолепных пиков. Всего в 20 минутах езды от аэропорта Квинстауна, это идеальное место для проживания во время изучения региона. Эрроутаун — это процветающее сообщество со своим характером, а также одними из лучших ресторанов и магазинов в стране. Вы будете очарованы исторической главной улицей и красивыми пешеходными и велосипедными дорожками. Это сокровище Новой Зеландии!");
+      $(".qttitle1").text("Прогуляйтесь по главной улице Эрроутауна");
+      $(".pqttitle1").text("Каждая поездка в Эрроутаун должна включать прогулку по Букингем-стрит. На этой оживленной улице расположены многие из лучших мест Эрроутауна, включая рестораны, бары и потрясающую архитектуру. Я часто прихожу сюда, чтобы насладиться теплой погодой в хороший день и посетить ресторан или бар, чтобы выпить под солнцем. Если вы хотите купить сувенир или два, сделайте это в Эрроутауне. В Эрроутауне почти больше сувенирных магазинов, чем в Квинстауне, и все они забиты множеством крутых подарков, которые можно забрать домой. Есть также множество небольших бутиков, продающих высококачественные товары, такие как одежда из новозеландской шерсти и даже мед в Honey & Cocoa Gift Co. Что мне так нравится в шоппинге в Эрроутауне, так это то, что вы можете увидеть все это. на одной улице – это в основном торговый центр под открытым небом! Что касается архитектуры, то она везде! Просто осмотритесь, полюбуйтесь видами и обязательно посетите старую почту и телефонную будку — многие дети в наши дни никогда бы их не увидели!");
+      $(".qttitle2").text("Букингемская улица");
+      $(".pqttitle2").text("Букингемская улица была местом, где европейцы хотели жить во времена золотодобычи. Однако китайские горняки были вынуждены жить в небольших хижинах вдоль Буш-Крик недалеко от главного города. Эти хижины, конечно, не были причудливыми, и сравнение того, как обе культуры жили в Эрроутауне, легко увидеть. Китайское поселение Эрроутаун демонстрирует это с настоящими хижинами тех дней, которые все еще стоят сегодня. Некоторые хижины также были отреставрированы, чтобы посетители могли вернуться в прошлое и увидеть, как тяжело приходилось тогда китайским поселенцам. Только представьте себе холодные ночи! Чтобы добраться до поселка, идите по Букингемской улице в сторону Буш-Крик. Китайское поселение расположено на травянистой территории, и посетить его можно совершенно бесплатно.");
+      $(".qttitle3").text("Пить крафтовое пиво в Slow Cuts");
+      $(".pqttitle3").text("Крафтовое пиво и вкусная еда в милом городке? На самом деле это не может быть лучше, чем это, и иногда лучшее, что можно сделать в любом городе или поселке, — это просто сидеть сложа руки и наблюдать за людьми, наслаждаясь атмосферой и хорошим настроением. Безусловно, лучшее место для этого — Slow Cuts в Эрроутауне. Это не только еда, за которую можно умереть, но и пиво Lake and Wood Brew Co, которое является местной пивоварней в Эрроутауне. У этой небольшой пивоварни пока нет таверны, поэтому единственное место, где можно попробовать их восхитительное крафтовое пиво, — это рестораны в Эрроутауне и Квинстауне. Если вы доберетесь до Slow Cuts до обеденного ажиотажа, займите место снаружи. Это действительно идеальное место для спокойного обеда в Эрроутауне.");
+      $(".qttitle4").text("Исследуйте Эрроутаун осенью");
+      $(".pqttitle4").text("Осенью на Южном острове нет более красивого места для посещения, чем Эрроутаун. В период с марта по май деревья вокруг Эрроутауна превращаются в море желтого, красного и оранжевого цветов. Посещение Эрроутауна осенью на самом деле является известным событием в Новой Зеландии, и я посещаю его несколько раз каждый год.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Найди нас");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Планируй и иди");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Исследования");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Бронирование");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Эрнслоу");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Туристические предложения");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Аренда снега Coronet&Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Аренда катера");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Еда и напитки");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Пешие прогулки и походы");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Ходьба");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Езда на велосипеде");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Аренда вертолета");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Милфорд и Гленорчи Плэйн");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Отель");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Прокат автомобилей");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Лодж");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Пешие туристы и бродяги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Дом");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("об условиях");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Услуги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Цены");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Блог");
+      $(".text-center").text("Copyright ©2022 | Путеводитель по Квинстауну от Ethan Mendoza")
+    });
+  });
+
+  // spanish
+  $(function() {
+    $(".es").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Comunidades");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Destinos");
+      $(".menu ul li").children().eq(3).text("Ayuda");
+      $(".selected-lang").text("Español");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-es");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-en");
+      //section
+      $(".title").text("Arrowtown");
+      $(".descriptiontranslate").text("Arrowtown es encantador y peculiar, un encantador pueblo de la fiebre del oro ubicado junto al resplandeciente río Arrow y debajo de magníficos picos. A solo 20 minutos del aeropuerto de Queenstown, es el lugar perfecto para hospedarse mientras explora la región. Arrowtown es una comunidad próspera llena de carácter, así como algunos de los mejores restaurantes y tiendas del país. Te encantará la calle principal patrimonial y los hermosos senderos para caminar y andar en bicicleta. ¡Es un tesoro de Nueva Zelanda!");
+      $(".qttitle1").text("Pasea por la calle principal de Arrowtown");
+      $(".pqttitle1").text("Cada viaje a Arrowtown debería implicar un paseo por Buckingham Street. Esta calle vibrante alberga muchos de los mejores lugares para visitar de Arrowtown, incluidos restaurantes, bares y una arquitectura impresionante. A menudo vengo aquí para disfrutar del clima cálido en un día agradable y visitar un restaurante o un bar para tomar una copa bajo el sol. Si quieres comprar uno o dos recuerdos, hazlo en Arrowtown. Hay casi más tiendas de recuerdos en Arrowtown que en Queenstown y todas están repletas de regalos geniales para llevar a casa. También hay un montón de pequeñas boutiques que venden productos de alta calidad, como ropa hecha con lana de Nueva Zelanda e incluso miel en Honey & Cocoa Gift Co. Lo que más me gusta de ir de compras en Arrowtown es que puedes verlo prácticamente todo. en una calle, ¡es básicamente un centro comercial al aire libre! En cuanto a la arquitectura, ¡está en todas partes! Solo mire a su alrededor, disfrute de las vistas y asegúrese de visitar la antigua oficina de correos y la cabina telefónica: ¡muchos niños en estos días nunca habrían visto una!");
+      $(".qttitle2").text("Calle Buckingham");
+      $(".pqttitle2").text("Buckingham Street era el lugar donde los europeos querían vivir en la época de la minería del oro. Sin embargo, los mineros chinos se vieron obligados a vivir en pequeñas cabañas a lo largo de Bush Creek, en las afueras de la ciudad principal. Estas cabañas ciertamente no eran lujosas y la comparación de cómo vivían ambas culturas en Arrowtown es fácil de ver. El asentamiento chino de Arrowtown muestra esto con cabañas reales de esos días que aún se mantienen en pie. Algunas de las cabañas también han sido restauradas para que los visitantes puedan retroceder en el tiempo y ver lo difícil que lo pasaron los colonos chinos en ese entonces. ¡Imagínese las noches frías! Para llegar al asentamiento, camine por Buckingham Street hacia Bush Creek. Ubicado en el área de césped se encuentra el Asentamiento chino y es completamente gratuito para visitar.");
+      $(".qttitle3").text("Bebe cerveza artesanal en Slow Cuts");
+      $(".pqttitle3").text("¿Cerveza artesanal y comida increíble en una linda ciudad? Realmente no hay nada mejor que eso y, a veces, lo mejor que se puede hacer en cualquier ciudad o pueblo es simplemente sentarse y observar a la gente mientras disfruta del ambiente y las buenas vibraciones. De lejos, el mejor lugar para hacerlo es Slow Cuts en Arrowtown. La comida no solo es para morirse, sino que también sirven cerveza Lake and Wood Brew Co, que es una cervecería local en Arrowtown. Esta pequeña cervecería aún no tiene una taberna, por lo que el único lugar para probar su deliciosa cerveza artesanal es en los restaurantes de Arrowtown y Queenstown. Si llega a Slow Cuts antes de la hora pico del almuerzo, tome asiento afuera. Es realmente el lugar perfecto para un almuerzo relajado en Arrowtown.");
+      $(".qttitle4").text("Explora Arrowtown en otoño");
+      $(".pqttitle4").text("No hay un lugar más hermoso para visitar en la Isla Sur durante el otoño que Arrowtown. En los meses entre marzo y mayo, los árboles alrededor de Arrowtown se vuelven un mar de amarillo, rojo y naranja. Visitar Arrowtown en el otoño es en realidad una experiencia muy conocida de la lista de deseos en Nueva Zelanda y la visito en múltiples ocasiones cada año.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // french
+  $(function() {
+    $(".fr").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communautés");
+      $(".menu ul li").children().eq(1).text("Carte");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Aider");
+      $(".selected-lang").text("Français");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-fr");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-es");
+      $(".selected-lang").removeClass("change-en");
+      //section
+      $(".title").text("Arrowtown");
+      $(".descriptiontranslate").text("Arrowtown est charmant et original, un charmant village de la ruée vers l'or niché à côté de la rivière Arrow scintillante et sous de magnifiques sommets. À seulement 20 minutes de l'aéroport de Queenstown, c'est l'endroit idéal où séjourner pendant que vous explorez la région. Arrowtown est une communauté florissante pleine de caractère, ainsi que certains des meilleurs restaurants et boutiques du pays. Vous serez enchanté par la rue principale patrimoniale et les magnifiques sentiers pédestres et cyclables. C'est un trésor néo-zélandais !");
+      $(".qttitle1").text("Promenez-vous dans la rue principale d'Arrowtown");
+      $(".pqttitle1").text("Chaque voyage à Arrowtown devrait impliquer une promenade dans Buckingham Street. Cette rue animée abrite bon nombre des meilleurs endroits à visiter d'Arrowtown, notamment des restaurants, des bars et une architecture époustouflante. Je viens souvent ici pour profiter du temps chaud par une belle journée et visiter un restaurant ou un bar pour prendre un verre au soleil. Si vous voulez acheter un souvenir ou deux, faites-le à Arrowtown. Il y a presque plus de boutiques de souvenirs à Arrowtown qu'à Queenstown et elles regorgent de nombreux cadeaux sympas à rapporter à la maison. Il y a aussi une tonne de petites boutiques vendant des produits de haute qualité tels que des vêtements en laine de Nouvelle-Zélande et même du miel chez Honey & Cocoa Gift Co. Ce que j'aime tant dans le shopping à Arrowtown, c'est que vous pouvez à peu près tout voir. sur une rue - c'est essentiellement un centre commercial en plein air ! Quant à l'architecture, eh bien elle est partout ! Il suffit de regarder autour de soi, d'admirer la vue et de visiter l'ancien bureau de poste et la cabine téléphonique - de nos jours, beaucoup d'enfants n'en auraient jamais vu !");
+      $(".qttitle2").text("Rue Buckingham");
+      $(".pqttitle2").text("Buckingham Street était l'endroit où les Européens voulaient vivre à l'époque des mines d'or. Cependant, les mineurs chinois ont été contraints de vivre dans de petites huttes le long de Bush Creek, juste à l'extérieur de la ville principale. Ces huttes n'étaient certainement pas fantaisistes et la comparaison de la façon dont les deux cultures vivaient à Arrowtown est facile à voir. La colonie chinoise d'Arrowtown en est la preuve avec de véritables huttes de l'époque encore debout aujourd'hui. Certaines des huttes ont également été restaurées afin que les visiteurs puissent remonter dans le temps et voir à quel point les colons chinois l'ont eu à l'époque. Imaginez les nuits froides! Pour atteindre la colonie, marchez le long de Buckingham Street en direction de Bush Creek. Situé sur la zone herbeuse se trouve la colonie chinoise et sa visite est entièrement gratuite.");
+      $(".qttitle3").text("Buvez de la bière artisanale à Slow Cuts");
+      $(".pqttitle3").text("De la bière artisanale et de la nourriture incroyable dans une jolie ville ? Ça ne va vraiment pas mieux que ça et parfois, la meilleure chose à faire dans n'importe quelle ville ou village est simplement de s'asseoir et de regarder les gens tout en profitant de l'atmosphère et des bonnes vibrations. De loin, le meilleur endroit pour le faire est à Slow Cuts à Arrowtown. Non seulement la nourriture est à tomber par terre, mais ils servent de la bière Lake and Wood Brew Co, une brasserie locale à Arrowtown. Cette petite brasserie n'a pas encore de bar, donc le seul endroit pour essayer leur délicieuse bière artisanale est dans les restaurants autour d'Arrowtown et de Queenstown. Si vous arrivez à Slow Cuts avant le rush du déjeuner, prenez un siège à l'extérieur. C'est vraiment l'endroit idéal pour un déjeuner décontracté à Arrowtown.");
+      $(".qttitle4").text("Explorez Arrowtown à l'automne");
+      $(".pqttitle4").text("Il n'y a pas de plus bel endroit à visiter sur l'île du Sud en automne qu'Arrowtown. Entre mars et mai, les arbres autour d'Arrowtown se transforment en une mer de jaune, de rouge et d'orange. Visiter Arrowtown à l'automne est en fait une expérience de liste de seaux bien connue en Nouvelle-Zélande et je visite à plusieurs reprises chaque année.");
+      //footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+  </script>
+
   <section class="toptowncontainer">
     <section class="welcome">
       <img src="Images/arrowtowntownimage.jpg" alt="arrowtown">
-      <p>Arrowtown</p>
-      <p>Welcome to queenstown, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, mollitia, tenetur. Cum ab, obcaecati reiciendis at rerum, dicta accusamus vel voluptatibus quos maxime distinctio, beatae ut dolor natus architecto. Nemo tempora magni iure dolorem. Odit accusamus enim eveniet, saepe maxime. Impedit autem quis enim accusamus porro rerum tempora veritatis dignissimos.</p>
+      <h1 class="title">Arrowtown</h1>
+      <p class="descriptiontranslate">Arrowtown is charming and quirky, a delightful gold rush village nestled beside the sparkling Arrow River and below magnificent peaks. Just 20 minutes from Queenstown Airport, it's the perfect place to stay while you're exploring the region. Arrowtown is a thriving community that is packed with character – as well as some of the best dining and shopping in the country. You’ll be enchanted by the heritage main street and the beautiful walking and biking trails. It's a New Zealand treasure!</p>
     </section>
   </section>
 
   <section class="container1">
     <img src="Images/arrowtownbkhamst.jpg" alt="buckinghamst">
     <div class="description1">
-      <h1>Wander the main street of Arrowtown</h1>
-      <p>Every trip to Arrowtown should involve a wander of Buckingham Street. This vibrant street is home to many of Arrowtown’s best places to visit including restaurants, bars, and stunning architecture. I often come here to enjoy the warm weather on a nice day and visit a restaurant or bar for a drink under the sun. If you want to pick up a souvenir or two do it in Arrowtown. There are almost more souvenir shops in Arrowtown than in Queenstown and they are all stacked with lots of cool gifts to take back home. There are also a ton of small boutique stores selling high-quality products such as clothing made of New Zealand wool and even honey at Honey & Cocoa Gift Co. What I love so much about shopping in Arrowtown is that you can pretty much see it all on one street – it’s basically an outdoor mall! As for the architecture, well it’s everywhere! Just look around, take in the views, and be sure to visit the old post office and telephone box – lots of kids these days would’ve never seen one!</p>
+      <h1 class="qttitle1">Wander the main street of Arrowtown</h1>
+      <p class="pqttitle1">Every trip to Arrowtown should involve a wander of Buckingham Street. This vibrant street is home to many of Arrowtown’s best places to visit including restaurants, bars, and stunning architecture. I often come here to enjoy the warm weather on a nice day and visit a restaurant or bar for a drink under the sun. If you want to pick up a souvenir or two do it in Arrowtown. There are almost more souvenir shops in Arrowtown than in Queenstown and they are all stacked with lots of cool gifts to take back home. There are also a ton of small boutique stores selling high-quality products such as clothing made of New Zealand wool and even honey at Honey & Cocoa Gift Co. What I love so much about shopping in Arrowtown is that you can pretty much see it all on one street – it’s basically an outdoor mall! As for the architecture, well it’s everywhere! Just look around, take in the views, and be sure to visit the old post office and telephone box – lots of kids these days would’ve never seen one!</p>
     </div>
   </section>
 
   <section class="container1">
     <img src="Images/arrowtownchinesesttmt.jpg" alt="arrowtownchinesesttmt">
     <div class="description1">
-      <h1>Lorem ipsum.</h1>
-      <p>Buckingham Street was the place where Europeans wanted to live back in the gold mining days. However, Chinese miners were forced to live in small huts along Bush Creek just outside the main town. These huts certainly weren’t fancy and the comparison of how both cultures lived in Arrowtown is easy to see. The Arrowtown Chinese Settlement showcases this with actual huts from those days still standing today. Some of the huts have also been restored so visitors can step back in time and see just how hard Chinese settlers had it back then. Just imagine the cold nights! To reach the settlement walk along Buckingham Street towards Bush Creek. Located on the grassed area is the Chinese Settlement and it’s completely free to visit.</p>
+      <h1 class="qttitle2">Buckingham Street</h1>
+      <p class="pqttitle2">Buckingham Street was the place where Europeans wanted to live back in the gold mining days. However, Chinese miners were forced to live in small huts along Bush Creek just outside the main town. These huts certainly weren’t fancy and the comparison of how both cultures lived in Arrowtown is easy to see. The Arrowtown Chinese Settlement showcases this with actual huts from those days still standing today. Some of the huts have also been restored so visitors can step back in time and see just how hard Chinese settlers had it back then. Just imagine the cold nights! To reach the settlement walk along Buckingham Street towards Bush Creek. Located on the grassed area is the Chinese Settlement and it’s completely free to visit.</p>
     </div>
   </section>
 
   <section class="container1">
     <img src="Images/arrowtownbeerslowcuts.jpg" alt="arrowtowndrinkbeer">
     <div class="description1">
-      <h1>Drink craft beer at Slow Cuts</h1>
-      <p>Craft beer and amazing food in a cute town? It really doesn’t get better than that and sometimes, the best thing to do in any city or town is just to sit back and people-watch while enjoying the atmosphere and good vibes. By far the best place to do that is at Slow Cuts in Arrowtown. Not only is the food to die for but they serve Lake and Wood Brew Co beer which is a local brewery in Arrowtown. This small brewery doesn’t have a taproom just yet, so the only place to try their delicious craft beer is at restaurants around Arrowtown and Queenstown.
+      <h1 class="qttitle3">Drink craft beer at Slow Cuts</h1>
+      <p class="pqttitle3">Craft beer and amazing food in a cute town? It really doesn’t get better than that and sometimes, the best thing to do in any city or town is just to sit back and people-watch while enjoying the atmosphere and good vibes. By far the best place to do that is at Slow Cuts in Arrowtown. Not only is the food to die for but they serve Lake and Wood Brew Co beer which is a local brewery in Arrowtown. This small brewery doesn’t have a taproom just yet, so the only place to try their delicious craft beer is at restaurants around Arrowtown and Queenstown.
 If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s really the perfect place for a relaxed lunch in Arrowtown.</p>
     </div>
   </section>
@@ -121,8 +435,8 @@ If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s reall
   <section class="container1">
     <img src="Images/arrowtownfall.jpg" alt="arrowtownfall">
     <div class="description1">
-      <h1>Explore Arrowtown in the fall</h1>
-      <p>There isn’t a more beautiful place to visit in the South Island during fall than Arrowtown. In the months between March and May, the trees around Arrowtown turn into a sea of yellow, red, and orange. Visiting Arrowtown in the fall is actually a well-known bucket list experience around New Zealand and I visit on multiple occasions every year.</p>
+      <h1 class="qttitle4">Explore Arrowtown in the fall</h1>
+      <p class="pqttitle4">There isn’t a more beautiful place to visit in the South Island during fall than Arrowtown. In the months between March and May, the trees around Arrowtown turn into a sea of yellow, red, and orange. Visiting Arrowtown in the fall is actually a well-known bucket list experience around New Zealand and I visit on multiple occasions every year.</p>
     </div>
   </section>
   <!--footer starts from here-->
@@ -182,7 +496,7 @@ If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s reall
       <li><a href="#">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <p class="text-center">Copyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
     <ul class="social_footer_ul">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>

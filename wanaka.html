@@ -26,7 +26,7 @@
         <ul>
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
           <li><a href="#">Communities</a></li>
-          <li><a href="#">Map</a></li>
+          <li><a href="maps.html">Map</a></li>
           <li><a href="#">Destinations</a></li>
           <li><a href="help.html">Help</a></li>
         </ul>
@@ -42,40 +42,28 @@
             </div>
           </li>
           <li>
-            <div class="btndarkmode">
-              <div class="btndarkmodeindicator">
-                <div class="btndarkmodecontainer">
-                  <i class="btndarkmodeicon fa-solid fa-sun"></i>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
             <div class="lang-menu">
               <div class="selected-lang">
                   English
               </div>
               <ul>
                 <li>
-                  <a href="mainweb.html" class="eng">English</a>
+                  <a href="#" class="en">English</a>
                 </li>
                 <li>
                   <a href="#" class="fil">Filipino</a>
                 </li>
                 <li>
-                  <a href="#" class="cn">Chinese</a>
+                  <a href="#" class="zh">Chinese</a>
                 </li>
                 <li>
                   <a href="#" class="ru">Russian</a>
                 </li>
                 <li>
-                  <a href="#" class="spa">Spanish</a>
+                  <a href="#" class="es">Spanish</a>
                 </li>
                 <li>
                   <a href="#" class="fr">French</a>
-                </li>
-                <li>
-                  <a href="#" class="ar">Arabic</a>
                 </li>
               </ul>
             </div>
@@ -85,44 +73,405 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  // english //
+  $(function() {
+    $(".en").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communities");
+      $(".menu ul li").children().eq(1).text("Map");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Help");
+      $(".selected-lang").text("English");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      $(".en").text("English (US)")
+      $(".fil").text("Tagalog")
+      $(".zh").text("Chinese")
+      $(".ru").text("Russian")
+      $(".es").text("Spanish")
+      $(".fr").text("French")
+      //section
+      $(".title").text("Wanaka");
+      $(".descriptiontranslate").text("Wanaka has the buzz of a genuine alpine town and is the ultimate hub for outdoor adventures, and with Mount Aspiring National Park located close by it’s the perfect destination for exploring the Southern Alps.");
+      $(".qttitle1").text("Visit #ThatWanakaTree");
+      $(".pqttitle1").text("#ThatWanakaTree, a tree so famous that it has its own hashtag. This lone willow tree is the most photographed tree in New Zealand and visiting is one of the best free things to do in Wanaka. The best times to visit are for sunrise or sunset for that gorgeous glow on Lake Wanaka and the Southern Alps behind the tree. This spot is one of the reasons Wanaka is considered one of the most romantic getaways in NZ. At sunset though, be prepared for a large crowd!");
+      $(".qttitle2").text("Explore the Wanaka Lavender Farm");
+      $(".pqttitle2").text("Lavender is, in my opinion, the world’s most photogenic flower. So, as you can imagine the photo opportunities at the Wanaka Lavender Farm are endless. Spread across 20 acres, the farm is also home to yummy lavender ice cream as well as Lakes Honey. And if you’re traveling with little ones, there’s an on-site petting zoo to keep them occupied. The best time to visit is from November through to the beginning of March when the lavender is blooming. Entrance fees to the Wanaka Lavender Farm are $5 NZD per adult in the winter and $10 in the summer.");
+      $(".qttitle3").text("Check out the Cardrona Bras");
+      $(".pqttitle3").text("A cheeky stop along Crown Range Road that links Queenstown to Wanaka is the Cardrona Bras! The bras are located next to Cardrona Distillery just down the road from the Cardona Hotel. The cause of some controversy locally, it is believed the first bras appeared on the fence here in late 1998. Today, Cardrona’s population of bras has grown into thousands and the donation box at the site has raised thousands for cancer research. The stop has become so popular with tourists that the town of Cardrona has earned the cheeky nickname ‘Bradrona’.");
+      $(".qttitle4").text("Hike Roy’s Peak");
+      $(".pqttitle4").text("Not for the faint-hearted, this famed hike has easily the most famous viewpoint in all of New Zealand near its summit. Roy’s Peak Track is a favorite with Instagram-lovers due to the phenomenal view of the Southern Alps from the famous viewpoint. This view makes it one of the best hikes on the South Island and easily one of the most popular things to do in New Zealand. But don’t be fooled by its popularity, you have to work for that view! Roy’s Peak is a 16-kilometer (10 miles) trek that takes around 7 hours to complete. The hike itself is mostly uphill with the odd viewpoint along the way, but for the majority of the hike, there isn’t a whole lot to see. For such a steep hike, the track is wide and well-trodden – so, that’s a plus.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Find us");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Plan&Go");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Explorations");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Booking");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Travel Deals");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Jet Boat Rent");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Eat&Drinks");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking & Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Walking");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Biking");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Helicopter Rent");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Car Rent");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Home");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("About");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Services");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pricing");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // filipino
+  $(function() {
+    $(".fil").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Komunidad");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Mga destinasyon");
+      $(".menu ul li").children().eq(3).text("Tulong");
+      $(".selected-lang").text("Tagalog");
+      $(".selected-lang").addClass("change-fil");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      $(".en").text("Ingles (US)")
+      $(".fil").text("Tagalog")
+      $(".zh").text("Tsino")
+      $(".ru").text("Ruso")
+      $(".es").text("Kastila")
+      $(".fr").text("Pranses")
+      //section
+      $(".title").text("Wanaka");
+      $(".descriptiontranslate").text("Ang Wanaka ay may buzz ng isang tunay na alpine town at ito ang pinakahuling hub para sa mga panlabas na pakikipagsapalaran, at sa Mount Aspiring National Park na matatagpuan malapit sa ito ang perpektong destinasyon para sa pagtuklas sa Southern Alps.");
+      $(".qttitle1").text("Bisitahin ang #ThatWanakaTree");
+      $(".pqttitle1").text("#ThatWanakaTree, isang puno na sikat na may sariling hashtag. Ang nag-iisang puno ng willow na ito ang pinakanakuhaan ng larawan sa New Zealand at ang pagbisita ay isa sa mga pinakamahusay na libreng bagay na maaaring gawin sa Wanaka. Ang pinakamahusay na mga oras upang bisitahin ay para sa pagsikat o paglubog ng araw para sa napakarilag na liwanag sa Lake Wanaka at sa Southern Alps sa likod ng puno. Ang lugar na ito ay isa sa mga dahilan kung bakit ang Wanaka ay itinuturing na isa sa mga pinaka-romantikong getaway sa NZ. Sa paglubog ng araw, maghanda para sa maraming tao!");
+      $(".qttitle2").text("I-explore ang Wanaka Lavender Farm");
+      $(".pqttitle2").text("Ang Lavender ay, sa palagay ko, ang pinaka-photogenic na bulaklak sa mundo. Kaya, tulad ng maaari mong isipin ang mga pagkakataon sa larawan sa Wanaka Lavender Farm ay walang katapusan. Kumalat sa 20 ektarya, tahanan din ang sakahan ng masarap na lavender ice cream pati na rin ng Lakes Honey. At kung naglalakbay ka kasama ang mga maliliit na bata, mayroong on-site na petting zoo upang panatilihing abala sila. Ang pinakamahusay na oras upang bisitahin ay mula Nobyembre hanggang sa simula ng Marso kapag ang lavender ay namumulaklak. Ang mga bayad sa pagpasok sa Wanaka Lavender Farm ay $5 NZD bawat matanda sa taglamig at $10 sa tag-araw.");
+      $(".qttitle3").text("Tingnan ang Cardrona Bras");
+      $(".pqttitle3").text("Ang isang bastos na hintuan sa kahabaan ng Crown Range Road na nag-uugnay sa Queenstown sa Wanaka ay ang Cardrona Bras! Matatagpuan ang mga bra sa tabi ng Cardrona Distillery sa tabi lamang ng kalsada mula sa Cardona Hotel. Ang sanhi ng ilang kontrobersya sa lokal, pinaniniwalaan na ang mga unang bra ay lumitaw sa bakod dito noong huling bahagi ng 1998. Ngayon, ang populasyon ng mga bra ng Cardrona ay lumago sa libu-libo at ang kahon ng donasyon sa site ay nakataas ng libu-libo para sa pananaliksik sa kanser. Ang paghinto ay naging napakapopular sa mga turista na ang bayan ng Cardrona ay nakakuha ng bastos na palayaw na 'Bradrona'.");
+      $(".qttitle4").text("Maglakad sa Roy's Peak");
+      $(".pqttitle4").text("Hindi para sa mga mahina ang loob, ang sikat na paglalakad na ito ay may pinakatanyag na pananaw sa buong New Zealand malapit sa summit nito. Ang Roy's Peak Track ay paborito ng mga Instagram-lover dahil sa kahanga-hangang view ng Southern Alps mula sa sikat na viewpoint. Ang view na ito ay ginagawa itong isa sa mga pinakamahusay na paglalakad sa South Island at madaling isa sa mga pinakasikat na bagay na maaaring gawin sa New Zealand. Ngunit huwag magpalinlang sa kasikatan nito, kailangan mong magtrabaho para sa pananaw na iyon! Ang Roy's Peak ay isang 16-kilometro (10 milya) na paglalakbay na tumatagal ng humigit-kumulang 7 oras upang makumpleto. Ang hike mismo ay halos pataas na may kakaibang viewpoint sa daan, ngunit para sa karamihan ng hike, walang masyadong makikita. Para sa ganoong matarik na pag-hike, ang track ay malawak at mahusay na tinatahak - kaya, iyon ay isang plus.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Hanapin kami");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Magplano at Pumunta");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Mga Paggalugad");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Pagbu-book");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Mga Deal sa Paglalakbay");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Mga Coronet&Remarkables na Renta ng Niyebe");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Pagrenta Jet Boat");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Kumain & inumin");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking at Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Naglalakad");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Nagbibisikleta");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Renta ng Helicopter");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Arkilahan ng Kotse");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Bahay");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Tungkol sa");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Mga serbisyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pagpepresyo");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // chinese
+  $(function() {
+    $(".zh").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("社区");
+      $(".menu ul li").children().eq(1).text("地图");
+      $(".menu ul li").children().eq(2).text("目的地");
+      $(".menu ul li").children().eq(3).text("帮助");
+      $(".selected-lang").text("中文");
+      $(".selected-lang").addClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      $(".en").text("英语")
+      $(".fil").text("他加禄语")
+      $(".zh").text("中文")
+      $(".ru").text("俄语")
+      $(".es").text("西班牙语")
+      $(".fr").text("法语")
+      //section
+      $(".title").text("瓦纳卡");
+      $(".descriptiontranslate").text("瓦纳卡拥有真正的高山小镇的喧嚣，是户外探险的终极中心，附近有阿斯帕林山国家公园，是探索南阿尔卑斯山的理想目的地。");
+      $(".qttitle1").text("访问#ThatWanakaTree");
+      $(".pqttitle1").text("#ThatWanakaTree，一棵非常有名的树，它有自己的标签。这棵孤独的柳树是新西兰出镜率最高的树，参观是瓦纳卡最好的免费活动之一。最佳游览时间是日出或日落，欣赏瓦纳卡湖和树后南阿尔卑斯山的绚丽光芒。这个地方是瓦纳卡被认为是新西兰最浪漫的度假胜地之一的原因之一。不过，在日落时，要为一大群人做好准备！");
+      $(".qttitle2").text("探索瓦纳卡薰衣草农场");
+      $(".pqttitle2").text("在我看来，薰衣草是世界上最上镜的花。因此，您可以想象，瓦纳卡薰衣草农场的拍照机会是无穷无尽的。该农场占地 20 英亩，也是美味薰衣草冰淇淋和 Lakes Honey 的所在地。如果您和小孩一起旅行，这里有一个宠物动物园，可以让他们忙碌起来。最佳参观时间是从 11 月到 3 月初，此时薰衣草盛开。瓦纳卡薰衣草农场的入场费是冬季每位成人 5 新西兰元，夏季每位成人 10 美元。");
+      $(".qttitle3").text("看看 Cardrona 胸罩");
+      $(".pqttitle3").text("沿着连接皇后镇和瓦纳卡的皇冠山脉路的一个厚脸皮站是卡德罗纳胸罩！胸罩位于卡多纳酒厂旁边，就在卡多纳酒店的路上。在当地引起一些争议的原因是，人们相信 1998 年末，这里的栅栏上出现了第一个胸罩。今天，卡德罗纳的胸罩数量已经增长到数千，现场的捐款箱已经筹集了数千用于癌症研究。该站点已变得如此受游客欢迎，以至于卡德罗纳镇赢得了厚颜无耻的绰号“布拉德罗纳”。");
+      $(".qttitle4").text("远足罗伊峰");
+      $(".pqttitle4").text("不适合胆小的人，这个著名的徒步旅行很容易成为新西兰最有名的景点，靠近其顶峰。 Roy's Peak Track 是 Instagram 爱好者的最爱，因为从著名的观点可以看到南阿尔卑斯山的壮丽景色。这种观点使它成为南岛最好的徒步旅行之一，并且很容易成为新西兰最受欢迎的活动之一。但是不要被它的受欢迎程度所迷惑，你必须为这种观点而努力！罗伊峰是一条 16 公里（10 英里）的徒步路线，大约需要 7 小时才能完成。徒步旅行本身主要是上坡，沿途有奇怪的观点，但在徒步旅行的大部分时间里，并没有太多可看的。对于如此陡峭的徒步旅行，这条路很宽而且人迹罕至——所以，这是一个加分项。");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("找到我们");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("计划和去");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("探索");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("预订");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("厄恩斯劳");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("旅游优惠");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables 雪地出租");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("喷射快艇出租");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("饮食");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("远足和流浪");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("步行");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("骑自行车");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("直升机租金");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy 飞机");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("酒店");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("汽车出租");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("小屋");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("背包客和流浪者");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("家");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("关于");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("服务");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("价钱");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("博客");
+      $(".text-center").text("版权所有©2022 |伊桑·门多萨 (Ethan Mendoza) 的皇后镇指南")
+    });
+  });
+
+  // russian
+  $(function() {
+    $(".ru").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Сообщества");
+      $(".menu ul li").children().eq(1).text("карта");
+      $(".menu ul li").children().eq(2).text("Направления");
+      $(".menu ul li").children().eq(3).text("Помощь");
+      $(".selected-lang").text("Русский");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-ru");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-en");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-es");
+      $(".en").text("английский")
+      $(".fil").text("тагальский")
+      $(".zh").text("китайский")
+      $(".ru").text("русский")
+      $(".es").text("испанский")
+      $(".fr").text("французский")
+      //section
+      $(".title").text("Ванака");
+      $(".descriptiontranslate").text("В Ванаке царит атмосфера настоящего альпийского городка, и он является идеальным центром приключений на свежем воздухе, а расположенный поблизости национальный парк Маунт-Аспайринг — идеальное место для изучения Южных Альп.");
+      $(".qttitle1").text("Посетите #ЭтоВанакаДерево");
+      $(".pqttitle1").text("#ThatWanakaTree, дерево настолько известное, что у него есть собственный хэштег. Это одинокое дерево ивы — самое фотографируемое дерево в Новой Зеландии, и его посещение — одно из лучших бесплатных занятий в Ванаке. Лучшее время для посещения — восход или закат, чтобы насладиться великолепным сиянием озера Ванака и Южных Альп за деревом. Это место — одна из причин, по которой Ванака считается одним из самых романтичных мест Новой Зеландии. Однако на закате будьте готовы к большой толпе!");
+      $(".qttitle2").text("Исследуйте лавандовую ферму Ванака");
+      $(".pqttitle2").text("Лаванда, на мой взгляд, самый фотогеничный цветок в мире. Итак, как вы можете себе представить, возможности для фото на лавандовой ферме Ванака безграничны. Раскинувшаяся на 20 акрах ферма также является домом для вкусного лавандового мороженого, а также Lakes Honey. А если вы путешествуете с маленькими детьми, на территории отеля есть контактный зоопарк, чтобы занять их. Лучшее время для посещения — с ноября по начало марта, когда цветет лаванда. Входная плата на лавандовую ферму Ванака составляет 5 новозеландских долларов на взрослого зимой и 10 долларов летом.");
+      $(".qttitle3").text("Обратите внимание на бюстгальтеры Cardrona.");
+      $(".pqttitle3").text("Дерзкая остановка вдоль Краун-Рейндж-роуд, которая соединяет Квинстаун с Ванакой, — это бюстгальтеры Кардрона! Бюстгальтеры расположены рядом с ликеро-водочным заводом Cardrona, чуть дальше по дороге от отеля Cardona. Причиной некоторых разногласий на местном уровне считается то, что первые бюстгальтеры появились на заборе здесь в конце 1998 года. Сегодня количество бюстгальтеров в Кардроне выросло до тысяч, а ящик для пожертвований на этом месте собрал тысячи на исследования рака. Остановка стала настолько популярной среди туристов, что город Кардрона получил дерзкое прозвище «Брадрона».");
+      $(".qttitle4").text("Поход на пик Роя");
+      $(".pqttitle4").text("Не для слабонервных, этот знаменитый поход имеет самую известную смотровую площадку во всей Новой Зеландии рядом с ее вершиной. Roy’s Peak Track является фаворитом среди любителей Instagram из-за феноменального вида на Южные Альпы со знаменитой смотровой площадки. Этот вид делает его одним из лучших походов на Южном острове и одним из самых популярных занятий в Новой Зеландии. Но не ведитесь на его популярность, для этого нужно работать! Пик Роя — это 16-километровый (10 миль) поход, который занимает около 7 часов. Сам поход в основном идет в гору со странной смотровой площадкой по пути, но на большей части похода особо не на что смотреть. Для такого крутого подъема дорожка широкая и хорошо протоптанная — так что это плюс.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Найди нас");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Планируй и иди");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Исследования");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Бронирование");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Эрнслоу");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Туристические предложения");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Аренда снега Coronet&Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Аренда катера");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Еда и напитки");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Пешие прогулки и походы");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Ходьба");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Езда на велосипеде");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Аренда вертолета");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Милфорд и Гленорчи Плэйн");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Отель");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Прокат автомобилей");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Лодж");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Пешие туристы и бродяги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Дом");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("об условиях");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Услуги");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Цены");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Блог");
+      $(".text-center").text("Copyright ©2022 | Путеводитель по Квинстауну от Ethan Mendoza")
+    });
+  });
+
+  // spanish
+  $(function() {
+    $(".es").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Comunidades");
+      $(".menu ul li").children().eq(1).text("Mapa");
+      $(".menu ul li").children().eq(2).text("Destinos");
+      $(".menu ul li").children().eq(3).text("Ayuda");
+      $(".selected-lang").text("Español");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-es");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-fr");
+      $(".selected-lang").removeClass("change-en");
+      $(".en").text("Inglés")
+      $(".fil").text("Tagalo")
+      $(".zh").text("Chino")
+      $(".ru").text("Ruso")
+      $(".es").text("Español")
+      $(".fr").text("Francés")
+      //section
+      $(".title").text("Wanaka");
+      $(".descriptiontranslate").text("Wanaka tiene el bullicio de una ciudad alpina genuina y es el centro definitivo para las aventuras al aire libre, y con el Parque Nacional Mount Aspiring ubicado cerca, es el destino perfecto para explorar los Alpes del Sur.");
+      $(".qttitle1").text("Visita #EseWanakaTree");
+      $(".pqttitle1").text("#ThatWanakaTree, un árbol tan famoso que tiene su propio hashtag. Este sauce solitario es el árbol más fotografiado de Nueva Zelanda y visitarlo es una de las mejores actividades gratuitas que se pueden hacer en Wanaka. Los mejores momentos para visitar son al amanecer o al atardecer para disfrutar de ese hermoso resplandor en el lago Wanaka y los Alpes del sur detrás del árbol. Este lugar es una de las razones por las que Wanaka se considera una de las escapadas más románticas de Nueva Zelanda. Sin embargo, al atardecer, ¡prepárate para una gran multitud!");
+      $(".qttitle2").text("Explora la granja de lavanda de Wanaka");
+      $(".pqttitle2").text("La lavanda es, en mi opinión, la flor más fotogénica del mundo. Entonces, como puede imaginar, las oportunidades para tomar fotografías en Wanaka Lavender Farm son infinitas. Distribuida en 20 acres, la granja también alberga un delicioso helado de lavanda y Lakes Honey. Y si viaja con niños pequeños, hay un zoológico de mascotas en el lugar para mantenerlos ocupados. La mejor época para visitar es desde noviembre hasta principios de marzo, cuando florece la lavanda. Las tarifas de entrada a Wanaka Lavender Farm son de $ 5 NZD por adulto en invierno y $ 10 en verano.");
+      $(".qttitle3").text("Echa un vistazo a los sujetadores Cardrona");
+      $(".pqttitle3").text("¡Una parada descarada a lo largo de Crown Range Road que une Queenstown con Wanaka es Cardrona Bras! Los sostenes están ubicados al lado de la Destilería Cardrona justo bajando la calle desde el Hotel Cardona. La causa de cierta controversia a nivel local, se cree que los primeros sostenes aparecieron en la cerca aquí a fines de 1998. Hoy, la población de sostenes de Cardrona ha crecido a miles y la caja de donaciones en el sitio ha recaudado miles para la investigación del cáncer. La parada se ha vuelto tan popular entre los turistas que el pueblo de Cardrona se ha ganado el descarado apodo de 'Bradrona'.");
+      $(".qttitle4").text("Caminata al pico de Roy");
+      $(".pqttitle4").text("No apta para los débiles de corazón, esta famosa caminata tiene fácilmente el mirador más famoso de toda Nueva Zelanda cerca de su cumbre. Roy's Peak Track es uno de los favoritos entre los amantes de Instagram debido a la vista fenomenal de los Alpes del Sur desde el famoso mirador. Esta vista la convierte en una de las mejores caminatas en la Isla Sur y fácilmente una de las cosas más populares para hacer en Nueva Zelanda. Pero no te dejes engañar por su popularidad, ¡tienes que trabajar para esa vista! Roy's Peak es una caminata de 16 kilómetros (10 millas) que tarda alrededor de 7 horas en completarse. La caminata en sí es principalmente cuesta arriba con algún punto de vista extraño en el camino, pero durante la mayor parte de la caminata, no hay mucho que ver. Para una caminata tan empinada, la pista es ancha y bien transitada, por lo que es una ventaja.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+
+  // french
+  $(function() {
+    $(".fr").click(function() {
+      // Nav
+      $(".menu ul li").children().eq(0).text("Communautés");
+      $(".menu ul li").children().eq(1).text("Carte");
+      $(".menu ul li").children().eq(2).text("Destinations");
+      $(".menu ul li").children().eq(3).text("Aider");
+      $(".selected-lang").text("Français");
+      $(".selected-lang").removeClass("change-fil");
+      $(".selected-lang").addClass("change-fr");
+      $(".selected-lang").removeClass("change-zh");
+      $(".selected-lang").removeClass("change-ru");
+      $(".selected-lang").removeClass("change-es");
+      $(".selected-lang").removeClass("change-en");
+      $(".en").text("Anglais")
+      $(".fil").text("Philippine")
+      $(".zh").text("Chinois")
+      $(".ru").text("Russe")
+      $(".es").text("Espagnol")
+      $(".fr").text("Français")
+      //section
+      $(".title").text("Wanaka");
+      $(".descriptiontranslate").text("Wanaka a le bourdonnement d'une véritable ville alpine et est la plaque tournante ultime pour les aventures en plein air, et avec le parc national du mont Aspiring situé à proximité, c'est la destination idéale pour explorer les Alpes du Sud.");
+      $(".qttitle1").text("Visitez #ThatWanakaTree");
+      $(".pqttitle1").text("#ThatWanakaTree, un arbre si célèbre qu'il a son propre hashtag. Ce saule solitaire est l'arbre le plus photographié de Nouvelle-Zélande et la visite est l'une des meilleures choses gratuites à faire à Wanaka. Les meilleurs moments pour visiter sont le lever ou le coucher du soleil pour cette magnifique lueur sur le lac Wanaka et les Alpes du Sud derrière l'arbre. Cet endroit est l'une des raisons pour lesquelles Wanaka est considérée comme l'une des escapades les plus romantiques de Nouvelle-Zélande. Au coucher du soleil, préparez-vous à une grande foule !");
+      $(".qttitle2").text("Explorez la ferme de lavande de Wanaka");
+      $(".pqttitle2").text("La lavande est, à mon avis, la fleur la plus photogénique du monde. Ainsi, comme vous pouvez l'imaginer, les opportunités de photos à la Wanaka Lavender Farm sont infinies. Répartie sur 20 acres, la ferme abrite également de délicieuses glaces à la lavande ainsi que du miel des lacs. Et si vous voyagez avec des tout-petits, il y a un zoo pour enfants sur place pour les occuper. Le meilleur moment pour visiter est de novembre à début mars lorsque la lavande est en fleurs. Les frais d'entrée à la Wanaka Lavender Farm sont de 5 NZD par adulte en hiver et de 10 $ en été.");
+      $(".qttitle3").text("Découvrez les soutiens-gorge Cardrona");
+      $(".pqttitle3").text("Un arrêt effronté le long de Crown Range Road qui relie Queenstown à Wanaka est le Cardrona Bras ! Les soutiens-gorge sont situés à côté de la distillerie Cardrona, juste en bas de la route de l'hôtel Cardona. La cause d'une controverse locale, on pense que les premiers soutiens-gorge sont apparus sur la clôture ici à la fin de 1998. Aujourd'hui, la population de soutiens-gorge de Cardrona s'est élevée à des milliers et la boîte de dons sur le site a recueilli des milliers de dollars pour la recherche sur le cancer. L'arrêt est devenu si populaire auprès des touristes que la ville de Cardrona a gagné le surnom effronté de 'Bradrona'.");
+      $(".qttitle4").text("Randonnée au Roy's Peak");
+      $(".pqttitle4").text("Pas pour les timides, cette randonnée célèbre a facilement le point de vue le plus célèbre de toute la Nouvelle-Zélande près de son sommet. Roy's Peak Track est un favori des amateurs d'Instagram en raison de la vue phénoménale sur les Alpes du Sud depuis le célèbre point de vue. Cette vue en fait l'une des meilleures randonnées de l'île du Sud et facilement l'une des choses les plus populaires à faire en Nouvelle-Zélande. Mais ne vous laissez pas berner par sa popularité, vous devez travailler pour cette vue ! Roy's Peak est une randonnée de 16 kilomètres (10 miles) qui dure environ 7 heures. La randonnée elle-même est principalement en montée avec un point de vue étrange le long du chemin, mais pour la majorité de la randonnée, il n'y a pas grand-chose à voir. Pour une randonnée aussi raide, la piste est large et bien tracée - c'est donc un plus.");
+      // footer
+      $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+      $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+      $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+      $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+      $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+      $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+      $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+      $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+      $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+      $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+      $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+      $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+      $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+      $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+      $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+      $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+      $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+      $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+      $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+      $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+    });
+  });
+  </script>
+
   <section class="toptowncontainer">
     <section class="welcome">
       <img src="Images/wanakaimg2.jpg" alt="arrowtown">
-      <p>Arrowtown</p>
-      <p>Welcome to queenstown, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, mollitia, tenetur. Cum ab, obcaecati reiciendis at rerum, dicta accusamus vel voluptatibus quos maxime distinctio, beatae ut dolor natus architecto. Nemo tempora magni iure dolorem. Odit accusamus enim eveniet, saepe maxime. Impedit autem quis enim accusamus porro rerum tempora veritatis dignissimos.</p>
+      <h1 class="title">Wanaka</h1>
+      <p class="descriptiontranslate">Wanaka has the buzz of a genuine alpine town and is the ultimate hub for outdoor adventures, and with Mount Aspiring National Park located close by it’s the perfect destination for exploring the Southern Alps.</p>
     </section>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownbkhamst.jpg" alt="buckinghamst">
+    <img src="Images/wanakaimg1.jpg" alt="wanakatree">
     <div class="description1">
-      <h1>Wander the main street of Arrowtown</h1>
-      <p>Every trip to Arrowtown should involve a wander of Buckingham Street. This vibrant street is home to many of Arrowtown’s best places to visit including restaurants, bars, and stunning architecture. I often come here to enjoy the warm weather on a nice day and visit a restaurant or bar for a drink under the sun. If you want to pick up a souvenir or two do it in Arrowtown. There are almost more souvenir shops in Arrowtown than in Queenstown and they are all stacked with lots of cool gifts to take back home. There are also a ton of small boutique stores selling high-quality products such as clothing made of New Zealand wool and even honey at Honey & Cocoa Gift Co. What I love so much about shopping in Arrowtown is that you can pretty much see it all on one street – it’s basically an outdoor mall! As for the architecture, well it’s everywhere! Just look around, take in the views, and be sure to visit the old post office and telephone box – lots of kids these days would’ve never seen one!</p>
+      <h1 class="qttitle1">Visit #ThatWanakaTree</h1>
+      <p class="pqttitle1">#ThatWanakaTree, a tree so famous that it has its own hashtag. This lone willow tree is the most photographed tree in New Zealand and visiting is one of the best free things to do in Wanaka. The best times to visit are for sunrise or sunset for that gorgeous glow on Lake Wanaka and the Southern Alps behind the tree. This spot is one of the reasons Wanaka is considered one of the most romantic getaways in NZ. At sunset though, be prepared for a large crowd!</p>
     </div>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownchinesesttmt.jpg" alt="arrowtownchinesesttmt">
+    <img src="Images/wanakalavenderfarm.jpg" alt="wanakalavenderfarm">
     <div class="description1">
-      <h1>Lorem ipsum.</h1>
-      <p>Buckingham Street was the place where Europeans wanted to live back in the gold mining days. However, Chinese miners were forced to live in small huts along Bush Creek just outside the main town. These huts certainly weren’t fancy and the comparison of how both cultures lived in Arrowtown is easy to see. The Arrowtown Chinese Settlement showcases this with actual huts from those days still standing today. Some of the huts have also been restored so visitors can step back in time and see just how hard Chinese settlers had it back then. Just imagine the cold nights! To reach the settlement walk along Buckingham Street towards Bush Creek. Located on the grassed area is the Chinese Settlement and it’s completely free to visit.</p>
+      <h1 class="qttitle2">Explore the Wanaka Lavender Farm</h1>
+      <p class="pqttitle2">Lavender is, in my opinion, the world’s most photogenic flower. So, as you can imagine the photo opportunities at the Wanaka Lavender Farm are endless. Spread across 20 acres, the farm is also home to yummy lavender ice cream as well as Lakes Honey. And if you’re traveling with little ones, there’s an on-site petting zoo to keep them occupied. The best time to visit is from November through to the beginning of March when the lavender is blooming. Entrance fees to the Wanaka Lavender Farm are $5 NZD per adult in the winter and $10 in the summer.</p>
     </div>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownbeerslowcuts.jpg" alt="arrowtowndrinkbeer">
+    <img src="Images/cardronabras.jpg" alt="cardronasbras">
     <div class="description1">
-      <h1>Drink craft beer at Slow Cuts</h1>
-      <p>Craft beer and amazing food in a cute town? It really doesn’t get better than that and sometimes, the best thing to do in any city or town is just to sit back and people-watch while enjoying the atmosphere and good vibes. By far the best place to do that is at Slow Cuts in Arrowtown. Not only is the food to die for but they serve Lake and Wood Brew Co beer which is a local brewery in Arrowtown. This small brewery doesn’t have a taproom just yet, so the only place to try their delicious craft beer is at restaurants around Arrowtown and Queenstown.
-If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s really the perfect place for a relaxed lunch in Arrowtown.</p>
+      <h1 class="qttitle3">Check out the Cardrona Bras</h1>
+      <p class="pqttitle3">A cheeky stop along Crown Range Road that links Queenstown to Wanaka is the Cardrona Bras! The bras are located next to Cardrona Distillery just down the road from the Cardona Hotel. The cause of some controversy locally, it is believed the first bras appeared on the fence here in late 1998. Today, Cardrona’s population of bras has grown into thousands and the donation box at the site has raised thousands for cancer research. The stop has become so popular with tourists that the town of Cardrona has earned the cheeky nickname ‘Bradrona’.</p>
     </div>
   </section>
 
   <section class="container1">
-    <img src="Images/arrowtownfall.jpg" alt="arrowtownfall">
+    <img src="Images/wanakaimg2.jpg" alt="roy's peak">
     <div class="description1">
-      <h1>Explore Arrowtown in the fall</h1>
-      <p>There isn’t a more beautiful place to visit in the South Island during fall than Arrowtown. In the months between March and May, the trees around Arrowtown turn into a sea of yellow, red, and orange. Visiting Arrowtown in the fall is actually a well-known bucket list experience around New Zealand and I visit on multiple occasions every year.</p>
+      <h1 class="qttitle4">Hike Roy’s Peak</h1>
+      <p class="pqttitle4">Not for the faint-hearted, this famed hike has easily the most famous viewpoint in all of New Zealand near its summit. Roy’s Peak Track is a favorite with Instagram-lovers due to the phenomenal view of the Southern Alps from the famous viewpoint. This view makes it one of the best hikes on the South Island and easily one of the most popular things to do in New Zealand. But don’t be fooled by its popularity, you have to work for that view! Roy’s Peak is a 16-kilometer (10 miles) trek that takes around 7 hours to complete. The hike itself is mostly uphill with the odd viewpoint along the way, but for the majority of the hike, there isn’t a whole lot to see. For such a steep hike, the track is wide and well-trodden – so, that’s a plus.</p>
     </div>
   </section>
   <!--footer starts from here-->
@@ -182,7 +531,7 @@ If you get to Slow Cuts before the lunch rush, grab a seat outside. It’s reall
       <li><a href="#">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
-    <p class="text-center"><Co></Co>pyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
+    <p class="text-center">Copyright &copy2022 | Queenstown Guide by Ethan Mendoza</p>
     <ul class="social_footer_ul">
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
