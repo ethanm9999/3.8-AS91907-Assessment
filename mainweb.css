@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
 }
 
-a {
+a:hover {
+  text-decoration: none;
+}
+
+a:active{
   text-decoration: none;
 }
 
@@ -75,89 +80,75 @@ iframe{
   display: none;
 }
 
-input[type="checkbox"]{
-  -webkit-appearance: none;
-  display: none;
-}
-
-.navbar {
+.navibar{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  height: 70px;
   padding: 0 100px;
-  height: 80px;
 }
 
-.navbar .nav-items{
-  display: flex;
-  list-style: none;
-  flex: 1;
-  padding: 0 0 0 40px;
-}
-
-.navbar {
-  color: white;
-}
-
-.navbar .nav-items li {
-  padding: 0 15px;
-}
-
-.navbar .nav-items li a{
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-}
-
-.searchbar {
+.wrapper .search-input {
   position: relative;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
-.searchbar input[type="text"]{
-  border: 0;
-  padding: 0 0px;
-  width: 0px;
-  height: 35px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
 }
 
-.searchbar .icon{
+.search-input .searchbaricon{
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
   position: absolute;
   top: 0;
   right: 0;
-  background: none;
-  width: 35px;
-  height: 100%;
-  border-radius: 3px;
-  color: black;
-  transition: all 0.5s 0.2s ease;
-}
-
-.searchbar .icon i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  color: blue;
+  font-size: 20px;
   cursor: pointer;
 }
 
-.searchbar .icon.active{
-  background: #062333;
-  color: lightblue;
-  transition: all 0.3s ease;
+.search-input .autocom-box{
+  padding: 0px;
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.searchbar input[type="text"].active{
-  width: 250px;
-  padding: 0 10px;
-  transition: all 0.5s 0.2s ease;
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.rightmenu ul li{
-  display: inline-block;
+.search-input.active .autocom-box li{
+  display: block;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+
+.autocom-box li:hover{
+  background: #efefef;
 }
 
 .container1 img{
@@ -332,7 +323,7 @@ a.fr:before{
 
 .topcontainerbtmtext {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -370,30 +361,24 @@ a.fr:before{
 
 /* Welcome when accessing towns by users */
 
-.toptowncontainer .welcome img {
+.toptowncontainer img {
   background-size: cover;
   width: 100%;
   object-fit: contain;
+  position: relative;
 }
 
-.toptowncontainer .welcome {
+.topcontainer {
   color: white;
   position: relative;
 }
 
-.toptowncontainer .welcome p{
+.toptowncontainer p{
   position: absolute;
   top: 55%;
   width: 100%;
   text-align: center;
   font-size: 18px;
-}
-.toptowncontainer .welcome h1{
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  font-size: 80px;
 }
 
 /* Date and Time*/
@@ -402,14 +387,14 @@ a.fr:before{
   color: #fff;
   width: 380px;
   padding: 15px 10px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .date {
-  font-size: 20px;
+  font-size: 60px;
   font-weight: 600;
   display:flex;
   letter-spacing: 3px;
@@ -420,7 +405,7 @@ a.fr:before{
 }
 
 .time {
-  font-size: 60px;
+  font-size: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,6 +426,7 @@ a.fr:before{
   margin-top: 10px;
   padding: 0 5px;
   border-radius: 3px;
+  font-size: 60px;
 }
 
 .reveal{
@@ -453,16 +439,6 @@ a.fr:before{
 .reveal.active{
   transform: translateY(0px);
   opacity: 1;
-}
-
-input[type=text] {
-  width: 50px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus{
-  width: 100%;
 }
 
 .welcomecontainer {
@@ -481,6 +457,7 @@ input[type=text]:focus{
 }
 
 .sectcontainer{
+  width: 100%;
   text-align: center;
   align-items: center;
 }
@@ -506,14 +483,13 @@ input[type=text]:focus{
 .slider-frame {
   overflow: hidden;
   height: 800px;
-  width: 1200px;
-  margin-left: 360px;
-  margin-top: 20px;
+  width: 100%;
+  margin: 0px auto;
 }
 
 .img-container img {
   background-size: cover;
-  width: 1200px;
+  width: 100%;
 }
 
 /* Slide animation */
@@ -721,15 +697,47 @@ footer p {
   display: none;
 }
 
-@media (max-width: 1245px) {
+@media (max-width: 1600px){
+  .date{
+    font-size: 60px;
+  }
+  .time{
+    font-size: 60px;
+  }
+  .time span:not(:last-child){
+    font-size: 60px;
+  }
+  .time span:last-child{
+    font-size: 60px;
+  }
+}
+@media (max-width: 1280px) {
   .navbar{
     padding: 0 50px;
   }
+  .date{
+    font-size: 45px;
+  }
+  .time{
+    font-size: 45px;
+  }
+  .time span:not(:last-child){
+    font-size: 45px;
+  }
+  .time span:last-child{
+    font-size: 45px;
+  }
 }
 
-@media (max-width: 1150px){
-  ::-webkit-scrollbar{
-    display: none;
+@media (max-width: 750px){
+  body{
+    overflow: hidden;
+  }
+  .nav-items li{
+    display: block;
+  }
+  .wrapper{
+    color: gray;
   }
   .navbar{
     padding: 0px;
@@ -746,21 +754,150 @@ footer p {
     height: 100%;
     left: -100%;
     background: lightgray;
-    display: inline-block;
+    display: none;
     padding: 10px 50px 0 50px;
     text-align: center;
     transition: left 0.3s ease;
   }
 
-.navbar .nav-items {
-  left: 0%;
-}
+  .navbar .nav-items {
+    left: 0%;
+  }
+
   .navbar .nav-items li{
     line-height: 40px;
-    margin: 30px 0;
+    margin: 60px 0;
+    display: block;
   }
   .navbar .nav-items li a{
+    font-size: 30px;
+  }
+  .navbar .searchbar{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+  .navbar .searchbar.active{
+    opacity: 1;
+    top: 95px;
+  }
+  .navbar input::before{
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0;
+    width: 0;
+    height: 0;
+    /* z-index: -4; */
+    margin: -20px 0 0;
+    border: 10px solid transparent;
+    border-bottom-color: black;
+  }
+  .navbar input::after{
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: calc(100% + 20px);
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    z-index: -5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar .searchbar{
+    display: none;
+  }
+  .navbar .menu-icon{
+    display: block;
+  }
+  .navbar .search-icon,
+  .navbar .menu-icon span{
+    display: block;
+  }
+  .navbar .search-icon span.hide,
+  .navbar .menu-icon.hide{
+    display: none;
+  }
+  .navbar .cancel-icon.show{
+    display: block;
+  }
+  .datetime{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1020px){
+  .nav-items li{
+    display: none;
+  }
+  .date{
+    font-size: 30px;
+  }
+  .time{
+    font-size: 30px;
+  }
+  .time span:not(:last-child){
+    font-size: 30px;
+  }
+  .time span:last-child{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px){
+  body{
+    overflow: hidden;
+  }
+  .datetime{
+    flex-direction: column;
+  }
+  .date{
     font-size: 20px;
+  }
+  .time{
+    font-size: 30px;
+  }
+  .wrapper{
+    color: gray;
+  }
+  .navbar{
+    padding: 0px;
+  }
+  .navbar .logo{
+    flex: 2;
+    text-align: center;
+  }
+  .navbar .nav-items {
+    position: fixed;
+    top: 80px;
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    background: lightgray;
+    display: none;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    transition: left 0.3s ease;
+  }
+
+  .navbar .nav-items {
+    left: 0%;
+  }
+  .lang-menu ul li{
+    z-index: 0;
+  }
+  .navbar .nav-items li{
+    line-height: 40px;
+    margin: 60px 0;
+    display: block;
+  }
+  .navbar .nav-items li a{
+    font-size: 25px;
   }
   .navbar .searchbar{
     position: absolute;

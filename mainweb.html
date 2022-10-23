@@ -24,12 +24,8 @@
   <title>Queenstown Guide</title>
 </head>
 <body onload="initClock()">
-  <input type="checkbox" id="check">
   <div class="wrapper">
-    <div id="navbar" class="navbar">
-        <div class="menu-icon">
-          <span class="fas fa-bars"></span>
-        </div>
+    <div id="navbar" class="navibar">
         <div class="logo">
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
         </div>
@@ -39,17 +35,22 @@
             <li><a href="#">Destinations</a></li>
             <li><a href="help.html">Help</a></li>
         </div>
-        <div class="rightmenu">
-          <ul>
-            <li>
-              <div class="searchbar">
-                <input type="text" placeholder="Search towns..">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="searchsuggdiv">
+              <div class="search-input">
+                <input type="text" placeholder="Search towns..." class="inputtranslate">
+                <div class="autocom-box">
+                  <li><a href="queenstown.html">Queenstown</a></li>
+                  <li><a href="#">Cromwell</a></li>
+                  <li><a href="#">Wanaka</a></li>
+                  <li><a href="#">Glenorchy</a></li>
+                  <li><a href="#">Arrowtown</a></li>
+                </div>
+                <div class="searchbaricon">
+                  <i class="fas fa-search"></i>
                 </div>
               </div>
-            </li>
-            <li>
+        </div>
+        <div class="languagebtn">
               <div class="lang-menu">
                 <div class="selected-lang">
                     English
@@ -75,14 +76,6 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </ul>
-        </div>
-        <div class="search-icon">
-          <span class="fas fa-search"></span>
-        </div>
-        <div class="cancel-icon">
-          <span class="fas fa-times"></span>
         </div>
     </div>
   </div>
@@ -110,6 +103,7 @@
       $(".es").text("Spanish")
       $(".fr").text("French")
       //section
+      $(".inputtranslate").attr('placeholder', 'Search towns..');
       $(".kiaora").text("KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE")
       $(".qttranslate").text("Queenstown")
       $(".qtptranslate").text("Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.")
@@ -171,6 +165,7 @@
       $(".es").text("Kastila")
       $(".fr").text("Pranses")
       //section
+      $(".inputtranslate").attr('placeholder', 'Maghanap ng mga bayan..');
       $(".kiaora").text("MAGING MALUSOG, ITO ANG IYONG QUEENSTOWN GUIDE")
       $(".qttranslate").text("Queenstown")
       $(".qtptranslate").text("Nakatayo ang Queenstown sa baybayin ng Lake Wakatipu sa gitna ng mga dramatikong alpine range. Nabalitaan na ang mga gold prospector - na nabighani ng marilag na kagandahan ng nakapalibot na mga bundok at ilog - ang nagbigay sa ngayong cosmopolitan town na ito ng pangalan.")
@@ -231,6 +226,7 @@
       $(".ru").text("俄语")
       $(".es").text("西班牙语")
       $(".fr").text("法语")
+      $(".inputtranslate").attr('placeholder', '搜索城镇..');
       //section
       $(".kiaora").text("“保持健康，这是您的皇后镇指南")
       $(".qttranslate").text("皇后镇")
@@ -292,6 +288,7 @@
       $(".ru").text("русский")
       $(".es").text("испанский")
       $(".fr").text("французский")
+      $(".inputtranslate").attr('placeholder', 'Искать города..');
       //section
       $(".kiaora").text("БУДЬТЕ ЗДОРОВЫ, ЭТО ВАШ ПУТЕВОДИТЕЛЬ ПО КВИНСТАУНУ")
       $(".qttranslate").text("Квинстаун")
@@ -353,6 +350,7 @@
       $(".ru").text("Ruso")
       $(".es").text("Español")
       $(".fr").text("Francés")
+      $(".inputtranslate").attr('placeholder', 'Buscar pueblos..');
       //section
       $(".kiaora").text("SÉ SALUDABLE, ESTA ES TU GUÍA DE QUEENSTOWN")
       $(".qttranslate").text("Queenstown")
@@ -414,6 +412,7 @@
       $(".ru").text("Russe")
       $(".es").text("Espagnol")
       $(".fr").text("Français")
+      $(".inputtranslate").attr('placeholder', 'Rechercher des villes..');
       //section
       $(".kiaora").text("KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE")
       $(".qttranslate").text("Queenstown")
@@ -464,6 +463,7 @@
   <section class="topcontainer">
     <div class="topcontainerbtmtext">
       <img src="Images/Otagoimage.jpg" alt="otago">
+      <p class="kiaora">KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
       <div class="datetime">
         <div class="date">
           <span id="dayname">Day</span>,
@@ -478,7 +478,6 @@
           <span id="period">AM</span>
         </div>
       </div>
-      <p class="kiaora">KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
       <a class="weatherwidget-io" href="https://forecast7.com/en/n45d03168d66/queenstown/" data-label_1="QUEENSTOWN" data-label_2="WEATHER" data-mode="Current" data-theme="original" >QUEENSTOWN WEATHER</a>
     </div>
   </section>
@@ -554,25 +553,6 @@
    <a href="wanaka.html" class="watranslate">Wanaka</a>
    <p class="waptranslate">A lively town buzzing with a carefree spirit, Wanaka’s picture-perfect location and easy access to the outdoors makes it the ultimate base for your holiday.</p>
  </section>
-
- <section class="sectcontainer">
-   <div class="slider-frame">
-     <div class="slide-images">
-       <div class="img-container">
-         <img src="Images/cromwell.jpeg" alt="cromwell">
-       </div>
-       <div class="img-container">
-         <img src="Images/cromwellimg2.jpg" alt="cromwell">
-       </div>
-       <div class="img-container">
-         <img src="Images/cromwellimg3.jpg" alt="cromwell">
-       </div>
-     </div>
-   </div>
-   <a href="cromwell.html" class="crtranslate">Cromwell</a>
-   <p class="crptranslate">Cromwell was established by gold miners, but now its treasure is stone fruit. Explore nearby ghost towns and soak up the tranquil lakeside scenery.</p>
- </section>
-
 
   <!--footer starts from here-->
 <footer class="footer">
@@ -671,42 +651,6 @@
   window.addEventListener('scroll', changewp);
 </script>
 
-<!-- Javascript Scroll fade in -->
-<script type="text/javascript">
-
-function observe(entries, observer){
-  for (entry of entries) {
-    if (entry.isIntersecting) {
-      console.log(entry.target)
-      entry.target.style.transform = "none"
-      entry.target.style.opacity = "1"
-    }
-  }
-}
-const intersectionObserver = new IntersectionObserver(observe, {
-  threshold: 0.5
-})
-
-const elements = [
-    ...document.querySelectorAll("sectcontainer img"),
-    ...document.querySelectorAll("sectcontainer p"),
-    ...document.querySelectorAll("sectcontainer a"),
-    ...document.querySelectorAll("sectcontainer"),
-
-]
-
-for (let obj of elements) {
-    let direction = obj.getAttribute("data-direction")
-    if(direction){
-      obj.classList.add("fade-${direction}")
-    }
-    else{
-      obj.classList.add("fade-left")
-    }
-    intersectionObserver.observe(obj);
-}
-</script>
-
 <!-- Phones, Tablets nav -->
 <script type="text/javascript">
   const menuBtn = document.querySelector(".menu-icon span");
@@ -735,6 +679,65 @@ for (let obj of elements) {
     cancelBtn.classList.add("show");
   }
 </script>
+
+<!-- Suggestions search bar input -->
+<script type="text/javascript">
+    let suggestions = [
+      "Maps",
+      "Communities",
+      "Help",
+      "Queenstown",
+      "Cromwell",
+      "Wanaka",
+      "Glenorchy",
+      "Arrowtown",
+    ];
+  </script>
+
+  <script type="text/javascript">
+    const searchWrapper = document.querySelector(".search-input");
+    const inputBox = searchWrapper.querySelector("input");
+    const suggBox = searchWrapper.querySelector(".autocom-box");
+
+    inputBox.onkeyup = (e)=>{
+      let userData = e.target.value;
+      let emptyArray = [];
+      if(userData){
+        emptyArray = suggestions.filter((data)=>{
+          return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArray = emptyArray.map((data)=>{
+          return data = '<li>' + data + '</li>';
+        });
+        console.log(emptyArray);
+        searchWrapper.classList.add("active");
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++){
+          allList[i].setAttribute("onclick", "select(this)");
+        }
+      }else{
+        searchWrapper.classList.remove("active");
+      }
+    }
+
+    function select(element){
+      let selectUserData = element.textContent;
+      inputBox.value = selectUserData;
+      searchWrapper.classList.remove("active");
+    }
+
+    function showSuggestions(list){
+      let listData;
+      if(!list.length){
+        userValue = inputBox.value;
+        listData = '<li>' + userValue + '</li>';
+      }else{
+        listData = list.join('');
+      }
+      suggBox.innerHTML = listData;
+    }
+  </script>
 
 <!-- Cookies -->
 <script type="text/javascript">
