@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image" href="Images/leaficon.jpg">
+  <link rel="shortcut icon" href="Images/leaficon.png">
   <link rel="stylesheet" href="mainweb.css">
   <link rel="stylesheet" href="mainweb.js">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -26,6 +26,9 @@
 <body onload="initClock()">
   <div class="wrapper">
     <div id="navbar" class="navibar">
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
         <div class="logo">
           <a href="mainweb.html"><i class="fa-solid fa-leaf"></i></a>
         </div>
@@ -39,11 +42,11 @@
               <div class="search-input">
                 <input type="text" placeholder="Search towns..." class="inputtranslate">
                 <div class="autocom-box">
-                  <li><a href="queenstown.html">Queenstown</a></li>
-                  <li><a href="#">Cromwell</a></li>
-                  <li><a href="#">Wanaka</a></li>
-                  <li><a href="#">Glenorchy</a></li>
-                  <li><a href="#">Arrowtown</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="#">Cromwell</a></li>
+                    <li><a href="#">Wanaka</a></li>
+                    <li><a href="#">Glenorchy</a></li>
+                    <li><a href="#">Arrowtown</a></li>
                 </div>
                 <div class="searchbaricon">
                   <i class="fas fa-search"></i>
@@ -77,18 +80,24 @@
                 </ul>
               </div>
         </div>
+        <div class="search-icon">
+          <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+          <span class="fas fa-times"></span>
+        </div>
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script>
   // english //
   $(function() {
     $(".en").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("Communities");
-      $(".menu ul li").children().eq(1).text("Map");
-      $(".menu ul li").children().eq(2).text("Destinations");
-      $(".menu ul li").children().eq(3).text("Help");
+      $(".nav-items li").children().eq(0).text("Communities");
+      $(".nav-items li").children().eq(1).text("Map");
+      $(".nav-items li").children().eq(2).text("Destinations");
+      $(".nav-items li").children().eq(3).text("Help");
       $(".selected-lang").text("English");
       $(".selected-lang").removeClass("change-fil");
       $(".selected-lang").addClass("change-en");
@@ -147,10 +156,10 @@
   $(function() {
     $(".fil").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("Komunidad");
-      $(".menu ul li").children().eq(1).text("Mapa");
-      $(".menu ul li").children().eq(2).text("Mga destinasyon");
-      $(".menu ul li").children().eq(3).text("Tulong");
+      $(".nav-items li").children().eq(0).text("Komunidad");
+      $(".nav-items li").children().eq(1).text("Mapa");
+      $(".nav-items li").children().eq(2).text("Mga destinasyon");
+      $(".nav-items li").children().eq(3).text("Tulong");
       $(".selected-lang").text("Tagalog");
       $(".selected-lang").addClass("change-fil");
       $(".selected-lang").removeClass("change-en");
@@ -209,10 +218,10 @@
   $(function() {
     $(".zh").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("社区");
-      $(".menu ul li").children().eq(1).text("地图");
-      $(".menu ul li").children().eq(2).text("目的地");
-      $(".menu ul li").children().eq(3).text("帮助");
+      $(".nav-items li").children().eq(0).text("社区");
+      $(".nav-items li").children().eq(1).text("地图");
+      $(".nav-items li").children().eq(2).text("目的地");
+      $(".nav-items li").children().eq(3).text("帮助");
       $(".selected-lang").text("中文");
       $(".selected-lang").addClass("change-zh");
       $(".selected-lang").removeClass("change-en");
@@ -271,10 +280,10 @@
   $(function() {
     $(".ru").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("Сообщества");
-      $(".menu ul li").children().eq(1).text("карта");
-      $(".menu ul li").children().eq(2).text("Направления");
-      $(".menu ul li").children().eq(3).text("Помощь");
+      $(".nav-items li").children().eq(0).text("Сообщества");
+      $(".nav-items li").children().eq(1).text("карта");
+      $(".nav-items li").children().eq(2).text("Направления");
+      $(".nav-items li").children().eq(3).text("Помощь");
       $(".selected-lang").text("Русский");
       $(".selected-lang").removeClass("change-fil");
       $(".selected-lang").addClass("change-ru");
@@ -333,10 +342,10 @@
   $(function() {
     $(".es").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("Comunidades");
-      $(".menu ul li").children().eq(1).text("Mapa");
-      $(".menu ul li").children().eq(2).text("Destinos");
-      $(".menu ul li").children().eq(3).text("Ayuda");
+      $(".nav-items li").children().eq(0).text("Comunidades");
+      $(".nav-items li").children().eq(1).text("Mapa");
+      $(".nav-items li").children().eq(2).text("Destinos");
+      $(".nav-items li").children().eq(3).text("Ayuda");
       $(".selected-lang").text("Español");
       $(".selected-lang").removeClass("change-fil");
       $(".selected-lang").addClass("change-es");
@@ -395,10 +404,10 @@
   $(function() {
     $(".fr").click(function() {
       // Nav
-      $(".menu ul li").children().eq(0).text("Communautés");
-      $(".menu ul li").children().eq(1).text("Carte");
-      $(".menu ul li").children().eq(2).text("Destinations");
-      $(".menu ul li").children().eq(3).text("Aider");
+      $(".nav-items li").children().eq(0).text("Communautés");
+      $(".nav-items li").children().eq(1).text("Carte");
+      $(".nav-items li").children().eq(2).text("Destinations");
+      $(".nav-items li").children().eq(3).text("Aider");
       $(".selected-lang").text("Français");
       $(".selected-lang").removeClass("change-fil");
       $(".selected-lang").addClass("change-fr");
@@ -456,12 +465,11 @@
 
   <div class="cookie-content">
       <h1>Allow Cookies</h1>
-      <p>by clicking termsand conditions you agree to our policy..... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat cum sequi, in aperiam optio error, soluta nisi saepe asperiores dolore quaerat magnam quae aliquam voluptas ad quibusdam temporibus a. Facilis sapiente, ducimus assumenda fugiat esse, distinctio non quaerat consequuntur quod dignissimos repellendus nulla minus cum laudantium aspernatur necessitatibus blanditiis neque eum! Modi, totam quibusdam nemo ad tenetur, velit voluptatem eligendi, harum voluptatum labore placeat adipisci.</p>
+      <p>By clicking terms and conditions you agree to our policy.</p>
       <button class="cookiebtn">Accept</button>
   </div>
 
-  <section class="topcontainer">
-    <div class="topcontainerbtmtext">
+  <section class="topcontainerbtmtext">
       <img src="Images/Otagoimage.jpg" alt="otago">
       <p class="kiaora">KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
       <div class="datetime">
@@ -479,7 +487,6 @@
         </div>
       </div>
       <a class="weatherwidget-io" href="https://forecast7.com/en/n45d03168d66/queenstown/" data-label_1="QUEENSTOWN" data-label_2="WEATHER" data-mode="Current" data-theme="original" >QUEENSTOWN WEATHER</a>
-    </div>
   </section>
 
   <section class="sectcontainer">
@@ -561,51 +568,50 @@
       <!--Grid row-->
       <div class="row mt-4">
         <!--Grid column-->
-        <div class=".footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Find us</h5>
-
           <ul class="list-unstyled mb-0">
-            <p><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </p>
-            <p><i class="fa fa-phone"></i>  +64273941923  </p>
-            <p><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </p>
+            <li><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </li>
+            <li><i class="fa fa-phone"></i>  +64273941923  </li>
+            <li><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
           </ul>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class=".footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Plan&Go</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Earnslaw</a></li>
-            <li><a href="#">Travel Deals</a></li>
-            <li><a href="#">Coronet&Remarkables Snow Rentals</a></li>
-            <li><a href="#">Jet Boat Rent</a></li>
-            <li><a href="#">Eat&Drinks</a></li>
+            <li><a href="#" class="text-decoration-none">Earnslaw</a></li>
+            <li><a href="#" class="text-decoration-none">Travel Deals</a></li>
+            <li><a href="#" class="text-decoration-none">Coronet&Remarkables Snow Rentals</a></li>
+            <li><a href="#" class="text-decoration-none">Jet Boat Rent</a></li>
+            <li><a href="#" class="text-decoration-none">Eat&Drinks</a></li>
           </ul>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class=".footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Explorations</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Hiking & Tramping</a></li>
-            <li><a href="#">Walking</a></li>
-            <li><a href="#">Biking</a></li>
-            <li><a href="#">Helicopter Rent</a></li>
-            <li><a href="#">Milford&Glenorchy Plane</a></li>
+            <li><a href="#" class="text-decoration-none">Hiking & Tramping</a></li>
+            <li><a href="#" class="text-decoration-none">Walking</a></li>
+            <li><a href="#" class="text-decoration-none">Biking</a></li>
+            <li><a href="#" class="text-decoration-none">Helicopter Rent</a></li>
+            <li><a href="#" class="text-decoration-none">Milford&Glenorchy Plane</a></li>
           </ul>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class=".footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="footer-container col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Booking</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Hotel</a></li>
-            <li><a href="#">Car Rent</a></li>
-            <li><a href="#">Lodge</a></li>
-            <li><a href="#">Backpackers & Trampers</a></li>
+            <li><a href="#" class="text-decoration-none">Hotel</a></li>
+            <li><a href="#" class="text-decoration-none">Car Rent</a></li>
+            <li><a href="#" class="text-decoration-none">Lodge</a></li>
+            <li><a href="#" class="text-decoration-none">Backpackers & Trampers</a></li>
           </ul>
         </div>
         <!--Grid column-->
@@ -615,11 +621,11 @@
     <!-- Grid container -->
   <div class="container">
     <ul class="foote_bottom_ul_amrc">
-      <li><a href="mainweb.html">Home</a></li>
-      <li><a href="help.html">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="mainweb.html" class="text-decoration-none">Home</a></li>
+      <li><a href="help.html" class="text-decoration-none">About</a></li>
+      <li><a href="#" class="text-decoration-none">Services</a></li>
+      <li><a href="#" class="text-decoration-none">Pricing</a></li>
+      <li><a href="#" class="text-decoration-none">Blog</a></li>
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
     <p class="text-center">Copyright &copy;2022 | Queenstown Guide by Ethan Mendoza</p>
@@ -636,7 +642,7 @@
 <script src="mainweb.js"></script>
 
 <!-- Transition navbar on scroll -->
-<script type="text/javascript">
+<script>
   function changewp(){
     var navbar = document.getElementById('navbar');
     var scrollValue = window.scrollY;
@@ -652,7 +658,7 @@
 </script>
 
 <!-- Phones, Tablets nav -->
-<script type="text/javascript">
+<script>
   const menuBtn = document.querySelector(".menu-icon span");
   const searchBtn = document.querySelector(".search-icon");
   const cancelBtn = document.querySelector(".cancel-icon");
@@ -681,7 +687,7 @@
 </script>
 
 <!-- Suggestions search bar input -->
-<script type="text/javascript">
+<script>
     let suggestions = [
       "Maps",
       "Communities",
@@ -694,7 +700,7 @@
     ];
   </script>
 
-  <script type="text/javascript">
+  <script>
     const searchWrapper = document.querySelector(".search-input");
     const inputBox = searchWrapper.querySelector("input");
     const suggBox = searchWrapper.querySelector(".autocom-box");
@@ -739,8 +745,36 @@
     }
   </script>
 
+<!-- Javascript for responsive navbar -->
+<script>
+  const menuBtn = document.querySelector(".menu-icon span");
+  const searchBtn = document.querySelector(".search-icon");
+  const cancelBtn = document.querySelector(".cancel-icon");
+  const items = document.querySelector(".nav-items");
+  const form = document.querySelector(".search-input");
+  menuBtn.onclick = ()=>{
+    items.classList.add("active");
+    menuBtn.classList.add("hide");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+  }
+  cancelBtn.onclick = ()=>{
+    items.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    searchBtn.classList.remove("hide");
+    cancelBtn.classList.remove("show");
+    cancelBtn.style.color = "blue";
+    form.classList.remove("active");
+  }
+  searchBtn.onclick = ()=>{
+    form.classList.add("active");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+  }
+</script>
+
 <!-- Cookies -->
-<script type="text/javascript">
+<script>
 const cookieContainer = document.querySelector(".cookie-content")
 const cookieButton = document.querySelector(".cookiebtn")
 
