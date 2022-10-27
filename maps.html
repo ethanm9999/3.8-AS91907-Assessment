@@ -501,63 +501,155 @@ $(function() {
   </ul>
   <!--social_footer_ul ends here-->
 </div>
-</footer>s
+</footer>
 <script src="mainweb.js"></script>
 
 <!-- Transition navbar on scroll -->
-<script type="text/javascript">
-  function changewp(){
-    var navbar = document.getElementById('navbar');
-    var scrollValue = window.scrollY;
-    if(scrollValue < 1){
-      navbar.classList.remove('navColor');
-    }
-    else{
-      navbar.classList.add('navColor');
+<script>
+function changewp(){
+  var navbar = document.getElementById('navbar');
+  var scrollValue = window.scrollY;
+  if(scrollValue < 1){
+    navbar.classList.remove('navColor');
+  }
+  else{
+    navbar.classList.add('navColor');
+  }
+}
+
+window.addEventListener('scroll', changewp);
+</script>
+
+<!-- Phones, Tablets nav -->
+<script>
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const menuBtn = document.querySelector(".menu-icon");
+const form = document.querySelector(".searchbar");
+menuBtn.onclick = ()=>{
+  items.classList.add("active");
+  menuBtn.classList.add("hide");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
+cancelBtn.onclick = ()=>{
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.style.color = "$ff3d00";
+  cancelBtn.classList.remove("show");
+  form.classList.remove("active");
+}
+searchBtn.onclick = ()=>{
+  form.classList.add("active");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
+</script>
+
+<!-- Suggestions search bar input -->
+<script>
+  let suggestions = [
+    "Maps",
+    "Communities",
+    "Help",
+    "Queenstown",
+    "Cromwell",
+    "Wanaka",
+    "Glenorchy",
+    "Arrowtown",
+  ];
+</script>
+
+<script>
+  const searchWrapper = document.querySelector(".search-input");
+  const inputBox = searchWrapper.querySelector("input");
+  const suggBox = searchWrapper.querySelector(".autocom-box");
+
+  inputBox.onkeyup = (e)=>{
+    let userData = e.target.value;
+    let emptyArray = [];
+    if(userData){
+      emptyArray = suggestions.filter((data)=>{
+        return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+      });
+      emptyArray = emptyArray.map((data)=>{
+        return data = '<li>' + data + '</li>';
+      });
+      console.log(emptyArray);
+      searchWrapper.classList.add("active");
+      showSuggestions(emptyArray);
+      let allList = suggBox.querySelectorAll("li");
+      for (let i = 0; i < allList.length; i++){
+        allList[i].setAttribute("onclick", "select(this)");
+      }
+    }else{
+      searchWrapper.classList.remove("active");
     }
   }
 
-  window.addEventListener('scroll', changewp);
-</script>
+  function select(element){
+    let selectUserData = element.textContent;
+    inputBox.value = selectUserData;
+    searchWrapper.classList.remove("active");
+  }
 
-<!-- Javascript Scroll fade in -->
-<script type="text/javascript">
-  window.addEventListener('scroll', reveal);
-
-  function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
-
-    for(var i = 0; i < reveals.length; i++){
-
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
-
-      if(revealtop < windowheight - revealpoint){
-        reveals[i].classList.add('active');
-      }
-      else{
-        reveals[i].classList.remove('active');
-      }
+  function showSuggestions(list){
+    let listData;
+    if(!list.length){
+      userValue = inputBox.value;
+      listData = '<li>' + userValue + '</li>';
+    }else{
+      listData = list.join('');
     }
+    suggBox.innerHTML = listData;
   }
 </script>
 
-<script type="text/javascript">
+<!-- Javascript for responsive navbar -->
+<script>
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector(".search-input");
+menuBtn.onclick = ()=>{
+  items.classList.add("active");
+  menuBtn.classList.add("hide");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
+cancelBtn.onclick = ()=>{
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  cancelBtn.style.color = "blue";
+  form.classList.remove("active");
+}
+searchBtn.onclick = ()=>{
+  form.classList.add("active");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
+</script>
+
+<!-- Cookies -->
+<script>
 const cookieContainer = document.querySelector(".cookie-content")
 const cookieButton = document.querySelector(".cookiebtn")
 
 cookieButton.addEventListener("click", () => {
-  cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed", "true");
+cookieContainer.classList.remove("active");
+localStorage.setItem("cookieBannerDisplayed", "true");
 });
 
 setTimeout(() => {
-  if (!localStorage.getItem("cookieBannerDisplayed"))
-  cookieContainer.classList.add("active");
+if (!localStorage.getItem("cookieBannerDisplayed"))
+cookieContainer.classList.add("active");
 }, 2000);
 </script>
-</body>
-
 </body>
 </html>
