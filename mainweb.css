@@ -241,6 +241,7 @@ iframe{
   justify-content: space-between;
   line-height: 2;
   width: 100px;
+  color: white;
 }
 
 .selected-lang:before{
@@ -367,12 +368,10 @@ a.fr:before{
   text-align: center;
 }
 
-.topcontainerbtmtext p{
-  position: absolute;
+.topcontainerbtmtext .datetime p{
   margin: 0 auto;
   text-align: center;
-  font-size: 18px;
-  width: 100%;
+  font-size: 72px;
 }
 .topcontainerbtmtext a{
   position: absolute;
@@ -380,7 +379,28 @@ a.fr:before{
 }
 
 .toptowncontainer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   border-bottom: 5px gray solid;
+  color: white;
+}
+
+.toptowncontainer .overlap{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.toptowncontainer .overlap h1{
+  margin: 0 auto;
+  font-size: 72px;
+  transform: translate(0%, -50%);
+}
+
+.toptowncontainer .overlap p{
+  font-size: 24px;
 }
 
 /* Towns section contents */
@@ -689,34 +709,14 @@ footer p {
   color: #fff;
 }
 
-.social_footer_ul {
-  display:table;
-  margin:15px auto 0 auto;
-  list-style-type:none;
-  align-items: center;
-}
-
-.social_footer_ul li {
-  padding-left:10px;
-  padding-top:10px;
-  float:left;
-}
-
-.social_footer_ul li a {
-  color:#CCC;
-  border:1px solid #CCC;
-  padding:8px;
-  border-radius:50%;
-}
-
-.social_footer_ul li i {
-  width:20px;
-  height:20px;
-  text-align:center;
-}
-
 .social_footer_ul a:hover{
   color: #fff;
+}
+
+@media (max-width: 1634px){
+  .datetime{
+    transform: translate(0%, -50%);
+  }
 }
 
 @media (min-width: 1101px){
@@ -814,9 +814,15 @@ footer p {
   .time span:last-child{
     font-size: 60px;
   }
+  .container1{
+    display: block;
+  }
 }
 
 @media (max-width: 945px){
+  .topcontainerbtmtext .datetime p{
+    font-size: 44px;
+  }
   .date{
     font-size: 50px;
   }
@@ -825,6 +831,18 @@ footer p {
   }
   .time span:last-child{
     font-size: 40px;
+  }
+}
+
+@media (max-width: 896px){
+  .topcontainerbtmtext .datetime p{
+    font-size: 32px;
+  }
+  .toptowncontainer .overlap h1{
+    font-size: 48px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 24px;
   }
 }
 
@@ -838,6 +856,18 @@ footer p {
   .time span:last-child{
     font-size: 33px;
   }
+  .topcontainerbtmtext .datetime p{
+    font-size: 28px;
+  }
+  .toptowncontainer .overlap h1{
+    font-size: 48px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 20px;
+  }
+  .container1 img{
+    width: 100%;
+  }
 }
 
 @media (max-width:619px){
@@ -849,6 +879,15 @@ footer p {
   }
   .time span:last-child{
     font-size: 29px;
+  }
+  .topcontainerbtmtext .datetime p{
+    font-size: 24px;
+  }
+  .toptowncontainer .overlap h1{
+    font-size: 48px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 19px;
   }
 }
 
@@ -876,8 +915,29 @@ footer p {
   .sectcontainer p{
     margin: 0 5px;
   }
+  .topcontainerbtmtext .datetime p{
+    font-size: 18px;
+  }
+  .toptowncontainer .overlap h1{
+    font-size: 36px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 16px;
+  }
 }
 
+@media (max-width:447px){
+  .foote_bottom_ul_amrc{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .toptowncontainer .overlap h1{
+    font-size: 30px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 12px;
+  }
+}
 @media (max-width: 432px) {
   .datetime{
     bottom: 90%;
@@ -893,8 +953,26 @@ footer p {
   }
 }
 
+@media (max-width: 367px) {
+  .datetime{
+    transform: translate(0%, -150%);
+  }
+}
+
 @media (max-width: 358px) {
   .time{
     display: none;
+  }
+}
+
+@media (max-width: 292px){
+  .foote_bottom_ul_amrc{
+    grid-template-columns: 1fr;
+  }
+  .selected-lang{
+    display: none;
+  }
+  .bbb{
+    font-size: 11px;
   }
 }

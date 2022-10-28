@@ -9,14 +9,7 @@
   <link rel="stylesheet" href="mainweb.css">
   <link rel="stylesheet" href="mainweb.js">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".fa-magnifying-glass").click(function(){
-        $(".icon").toggleClass("active");
-        $("input[type='text']").toggleClass("active");
-      });
-    });
-  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Queenstown</title>
 </head>
 <body>
@@ -411,11 +404,11 @@ $(function() {
 </script>
 
   <section class="toptowncontainer">
-    <section class="welcome">
       <img src="Images/queenstownweb.jpg" alt="arrowtown">
-      <h1 class="title">Queenstown</h1>
-      <p class="descriptiontranslate">Welcome! Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
-    </section>
+      <div class="overlap">
+        <h1 class="title">Queenstown</h1>
+        <p class="descriptiontranslate">Welcome! Queenstown sits on the shore of Lake Wakatipu among dramatic alpine ranges. It’s rumoured that gold prospectors - captivated by the majestic beauty of the surrounding mountains and rivers - gave this now cosmopolitan town its name.</p>
+      </div>
   </section>
 
   <section class="townsweather">
@@ -424,6 +417,7 @@ $(function() {
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
   </section>
+
   <section class="container1">
     <img src="Images/queenstownheli.jpg" alt="buckinghamst">
     <div class="description1">
@@ -455,6 +449,7 @@ $(function() {
       <p class="pqttitle4">Head out of Queenstown and the drama of the Central Otago landscape unfolds around you. If you’re a Lord of the Rings fan you’ll recognise many Middle‑earth™ locations here. Nearby Arrowtown’s gold-mining history is alive and vibrant; visit the Lakes District Museum or go gold panning. At the northern tip of Lake Wakatipu is rural Glenorchy and Paradise Valley. From here it’s a short drive into the Mt Aspiring National Park and the start of some of New Zealand’s great walks.</p>
     </div>
   </section>
+
   <!--footer starts from here-->
 <footer class="footer">
   <!-- Grid container -->
@@ -467,7 +462,7 @@ $(function() {
           <ul class="list-unstyled mb-0">
             <li><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </li>
             <li><i class="fa fa-phone"></i>  +64273941923  </li>
-            <li><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
+            <li class="bbb"><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
           </ul>
         </div>
         <!--Grid column-->
@@ -523,13 +518,31 @@ $(function() {
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
     <p class="text-center">Copyright &copy;2022 | Queenstown Guide by Ethan Mendoza</p>
-    <ul class="social_footer_ul">
-      <li><a href="https://www.facebook.com/Chien3136"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://twitter.com/ethanmendoza999"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.youtube.com/channel/UCHi-yjiwvVEGGG6rOjduDYg"><i class="fa-brands fa-youtube"></i></a></li>
-      <li><a href="https://www.instagram.com/ethan.mendoza999/"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-    </ul>
+    <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
     <!--social_footer_ul ends here-->
   </div>
 </footer>
@@ -582,16 +595,54 @@ $(function() {
 
 <!-- Suggestions search bar input -->
 <script>
-    let suggestions = [
-      "Maps",
-      "Communities",
-      "Help",
-      "Queenstown",
-      "Cromwell",
-      "Wanaka",
-      "Glenorchy",
-      "Arrowtown",
-    ];
+let suggestions = [
+  "Map",
+  "Communities",
+  "Help",
+  "Queenstown",
+  "Cromwell",
+  "Wanaka",
+  "Glenorchy",
+  "Arrowtown",
+  "Mapa",
+  "Mga Komunidad",
+  "Tulong",
+  "Queenstown",
+  "Cromwell",
+  "Wanaka",
+  "Glenorchy",
+  "Arrowtown",
+  "Карта",
+  "Сообщества",
+  "Помощь",
+  "Квинстаун",
+  "Кромвель",
+  "Ванака",
+  "Гленорчи",
+  "Эрроутаун",
+  "地图"，
+  "社区"，
+  "帮助",
+  "皇后镇",
+  "克伦威尔",
+  "瓦纳卡",
+  "格伦诺基",
+  "箭镇",
+  "Carte",
+  "Communautés",
+  "Aide", "Queenstown",
+  "Cromwell",
+  "Wanaka",
+  "Glenorchie",
+  "Ville fléchée",
+  "Mapa",
+  "Comunidades",
+  "Ayuda", "Queenstown",
+  "Cromwell",
+  "wanaka",
+  "Glenorquía",
+  "Pueblo de las flechas",
+];
   </script>
 
   <script>

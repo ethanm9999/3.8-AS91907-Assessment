@@ -11,14 +11,6 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script>
-    $(document).ready(function(){
-      $(".fa-magnifying-glass").click(function(){
-        $(".icon").toggleClass("active");
-        $("input[type='text']").toggleClass("active");
-      });
-    });
-  </script>
-  <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
   <title>Queenstown Guide</title>
@@ -471,8 +463,8 @@
 
   <section class="topcontainerbtmtext">
       <img src="Images/Otagoimage.jpg" alt="otago">
-      <p class="kiaora">KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
       <div class="datetime">
+        <p class="kiaora">KIA ORA, THIS IS YOUR QUEENSTOWN GUIDE</p>
         <div class="date">
           <span id="dayname">Day</span>,
           <span id="month">Month</span>
@@ -573,7 +565,7 @@
           <ul class="list-unstyled mb-0">
             <li><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </li>
             <li><i class="fa fa-phone"></i>  +64273941923  </li>
-            <li><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
+            <li class="bbb"><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
           </ul>
         </div>
         <!--Grid column-->
@@ -629,13 +621,31 @@
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
     <p class="text-center">Copyright &copy;2022 | Queenstown Guide by Ethan Mendoza</p>
-    <ul class="social_footer_ul">
-      <li><a href="https://www.facebook.com/Chien3136"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://twitter.com/ethanmendoza999"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.youtube.com/channel/UCHi-yjiwvVEGGG6rOjduDYg"><i class="fa-brands fa-youtube"></i></a></li>
-      <li><a href="https://www.instagram.com/ethan.mendoza999/"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-    </ul>
+    <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
     <!--social_footer_ul ends here-->
   </div>
 </footer>
@@ -689,7 +699,7 @@
 <!-- Suggestions search bar input -->
 <script>
     let suggestions = [
-      "Maps",
+      "Map",
       "Communities",
       "Help",
       "Queenstown",
@@ -697,6 +707,44 @@
       "Wanaka",
       "Glenorchy",
       "Arrowtown",
+      "Mapa",
+      "Mga Komunidad",
+      "Tulong",
+      "Queenstown",
+      "Cromwell",
+      "Wanaka",
+      "Glenorchy",
+      "Arrowtown",
+      "Карта",
+      "Сообщества",
+      "Помощь",
+      "Квинстаун",
+      "Кромвель",
+      "Ванака",
+      "Гленорчи",
+      "Эрроутаун",
+      "地图"，
+      "社区"，
+      "帮助",
+      "皇后镇",
+      "克伦威尔",
+      "瓦纳卡",
+      "格伦诺基",
+      "箭镇",
+      "Carte",
+      "Communautés",
+      "Aide", "Queenstown",
+      "Cromwell",
+      "Wanaka",
+      "Glenorchie",
+      "Ville fléchée",
+      "Mapa",
+      "Comunidades",
+      "Ayuda", "Queenstown",
+      "Cromwell",
+      "wanaka",
+      "Glenorquía",
+      "Pueblo de las flechas",
     ];
   </script>
 
