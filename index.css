@@ -91,10 +91,9 @@ iframe{
 .navibar{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   height: 70px;
-  padding: 0 100px;
+  padding: 20px 100px;
 }
 
 .navibar .nav-items{
@@ -125,6 +124,7 @@ iframe{
   background: #fff;
   border-radius: 5px;
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  margin: -13px 0 0 0;
 }
 
 .search-input input{
@@ -726,13 +726,13 @@ footer p {
 }
 @media (max-width: 1205px){
   .navibar{
-    padding: 0 50px;
+    padding: 20px 50px;
   }
 }
 
 @media (max-width: 1100px){
   .navibar{
-    padding: 0px;
+    padding: 20px 0 0 0;
   }
   .navibar .logo{
     text-align: center;
