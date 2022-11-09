@@ -11,6 +11,347 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Help</title>
 </head>
+
+<script>
+// english //
+$(function() {
+  $(".en").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("Communities");
+    $(".nav-items li").children().eq(1).text("Map");
+    $(".nav-items li").children().eq(2).text("Destinations");
+    $(".nav-items li").children().eq(3).text("Help");
+    $(".selected-lang").text("English");
+    $(".selected-lang").removeClass("change-fil");
+    $(".selected-lang").addClass("change-en");
+    $(".selected-lang").removeClass("change-zh");
+    $(".selected-lang").removeClass("change-ru");
+    $(".selected-lang").removeClass("change-fr");
+    $(".selected-lang").removeClass("change-es");
+    $(".en").text("English")
+    $(".fil").text("Tagalog")
+    $(".zh").text("Chinese")
+    $(".ru").text("Russian")
+    $(".es").text("Spanish")
+    $(".fr").text("French")
+    //section
+    $(".inputtranslate").attr('placeholder', 'Search towns..');
+    $(".helpaboutqt").text("Help/About Queenstown")
+    $(".helpsec1").text("This website is used for tourism purposes, which may subject to change by season, weather, and number of people visiting through.")
+    $(".helpsec2").text("It is sourced to their respective authors in which it is used to read the sections only and for research purposes. The sections are only popular tourism spots, in which it is subject to change.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("Find us");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("Plan&Go");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("Explorations");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("Booking");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("Travel Deals");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("Jet Boat Rent");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("Eat&Drinks");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking & Tramping");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("Walking");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("Biking");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("Helicopter Rent");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("Car Rent");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Home");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("About");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Services");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pricing");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+    $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+  });
+});
+
+// filipino
+$(function() {
+  $(".fil").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("Komunidad");
+    $(".nav-items li").children().eq(1).text("Mapa");
+    $(".nav-items li").children().eq(2).text("Mga destinasyon");
+    $(".nav-items li").children().eq(3).text("Tulong");
+    $(".selected-lang").text("Tagalog");
+    $(".selected-lang").addClass("change-fil");
+    $(".selected-lang").removeClass("change-en");
+    $(".selected-lang").removeClass("change-zh");
+    $(".selected-lang").removeClass("change-ru");
+    $(".selected-lang").removeClass("change-fr");
+    $(".selected-lang").removeClass("change-es");
+    $(".en").text("Ingles")
+    $(".fil").text("Tagalog")
+    $(".zh").text("Tsino")
+    $(".ru").text("Ruso")
+    $(".es").text("Kastila")
+    $(".fr").text("Pranses")
+    //section
+    $(".inputtranslate").attr('placeholder', 'Maghanap ng mga bayan..');
+    $(".helpaboutqt").text("Tulong/Tungkol sa Queenstown")
+    $(".helpsec1").text("Ginagamit ang website na ito para sa mga layunin ng turismo, na maaaring magbago ayon sa panahon, lagay ng panahon, at bilang ng mga taong bumibisita.")
+    $(".helpsec2").text("Ito ay mula sa kani-kanilang mga may-akda kung saan ito ay ginagamit upang basahin ang mga seksyon lamang at para sa mga layunin ng pananaliksik. Ang mga seksyon ay mga sikat na lugar ng turismo lamang, kung saan maaari itong magbago.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("Hanapin kami");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("Magplano at Pumunta");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("Mga Paggalugad");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("Pagbu-book");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("Mga Deal sa Paglalakbay");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Mga Coronet&Remarkables na Renta ng Niyebe");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("Pagrenta Jet Boat");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("Kumain & inumin");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("Hiking at Tramping");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("Naglalakad");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("Nagbibisikleta");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("Renta ng Helicopter");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Plane");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("Arkilahan ng Kotse");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("Lodge");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("Backpackers&Trampers");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Bahay");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Tungkol sa");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Mga serbisyo");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Pagpepresyo");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+    $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+  });
+});
+
+// chinese
+$(function() {
+  $(".zh").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("社区");
+    $(".nav-items li").children().eq(1).text("地图");
+    $(".nav-items li").children().eq(2).text("目的地");
+    $(".nav-items li").children().eq(3).text("帮助");
+    $(".selected-lang").text("中文");
+    $(".selected-lang").addClass("change-zh");
+    $(".selected-lang").removeClass("change-en");
+    $(".selected-lang").removeClass("change-fil");
+    $(".selected-lang").removeClass("change-ru");
+    $(".selected-lang").removeClass("change-fr");
+    $(".selected-lang").removeClass("change-es");
+    $(".en").text("英语")
+    $(".fil").text("他加禄语")
+    $(".zh").text("中文")
+    $(".ru").text("俄语")
+    $(".es").text("西班牙语")
+    $(".fr").text("法语")
+    $(".inputtranslate").attr('placeholder', '搜索城镇..');
+    //section
+    $(".inputtranslate").attr('placeholder', 'Search towns..');
+    $(".helpaboutqt").text("帮助/关于皇后镇")
+    $(".helpsec1").text("本网站用于旅游目的，可能会因季节、天气和访问人数而有所变化。")
+    $(".helpsec2").text("它来自各自的作者，仅用于阅读部分和用于研究目的。这些部分仅为热门旅游景点，其中可能会发生变化。")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("找到我们");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("计划和去");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("探索");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("预订");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("厄恩斯劳");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("旅游优惠");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables 雪地出租");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("喷射快艇出租");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("饮食");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("远足和流浪");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("步行");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("骑自行车");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("直升机租金");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy 飞机");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("酒店");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("汽车出租");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("小屋");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("背包客和流浪者");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("家");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("关于");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("服务");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("价钱");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("博客");
+    $(".text-center").text("版权所有©2022 |伊桑·门多萨 (Ethan Mendoza) 的皇后镇指南")
+  });
+});
+
+// russian //
+$(function() {
+  $(".ru").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("Сообщества");
+    $(".nav-items li").children().eq(1).text("карта");
+    $(".nav-items li").children().eq(2).text("Направления");
+    $(".nav-items li").children().eq(3).text("Помощь");
+    $(".selected-lang").text("Русский");
+    $(".selected-lang").removeClass("change-fil");
+    $(".selected-lang").addClass("change-ru");
+    $(".selected-lang").removeClass("change-zh");
+    $(".selected-lang").removeClass("change-en");
+    $(".selected-lang").removeClass("change-fr");
+    $(".selected-lang").removeClass("change-es");
+    $(".en").text("английский")
+    $(".fil").text("тагальский")
+    $(".zh").text("китайский")
+    $(".ru").text("русский")
+    $(".es").text("испанский")
+    $(".fr").text("французский")
+    $(".inputtranslate").attr('placeholder', 'Искать города..');
+    //section
+    $(".inputtranslate").attr('placeholder', 'Search towns..');
+    $(".helpaboutqt").text("Помощь/О Квинстауне")
+    $(".helpsec1").text("Этот веб-сайт используется в туристических целях, которые могут меняться в зависимости от сезона, погоды и количества людей, посещающих его.")
+    $(".helpsec2").text("Он предоставляется их соответствующим авторам, в которых он используется только для чтения разделов и в исследовательских целях. В разделах представлены только популярные туристические места, в которых это может быть изменено.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("Найди нас");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("Планируй и иди");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("Исследования");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("Бронирование");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("Эрнслоу");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("Туристические предложения");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Аренда снега Coronet&Remarkables");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("Аренда катера");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("Еда и напитки");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("Пешие прогулки и походы");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("Ходьба");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("Езда на велосипеде");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("Аренда вертолета");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Милфорд и Гленорчи Плэйн");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("Отель");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("Прокат автомобилей");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("Лодж");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("Пешие туристы и бродяги");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Дом");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("об условиях");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Услуги");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Цены");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Блог");
+    $(".text-center").text("Copyright ©2022 | Путеводитель по Квинстауну от Ethan Mendoza")
+  });
+});
+
+// spanish //
+$(function() {
+  $(".es").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("Comunidades");
+    $(".nav-items li").children().eq(1).text("Mapa");
+    $(".nav-items li").children().eq(2).text("Destinos");
+    $(".nav-items li").children().eq(3).text("Ayuda");
+    $(".selected-lang").text("Español");
+    $(".selected-lang").removeClass("change-fil");
+    $(".selected-lang").addClass("change-es");
+    $(".selected-lang").removeClass("change-zh");
+    $(".selected-lang").removeClass("change-ru");
+    $(".selected-lang").removeClass("change-fr");
+    $(".selected-lang").removeClass("change-en");
+    $(".en").text("Inglés")
+    $(".fil").text("Tagalo")
+    $(".zh").text("Chino")
+    $(".ru").text("Ruso")
+    $(".es").text("Español")
+    $(".fr").text("Francés")
+    $(".inputtranslate").attr('placeholder', 'Buscar pueblos..');
+    //section
+    $(".helpaboutqt").text("Ayuda/Acerca de Queenstown")
+    $(".helpsec1").text("Este sitio web se utiliza con fines turísticos, que pueden estar sujetos a cambios según la temporada, el clima y la cantidad de personas que lo visitan.")
+    $(".helpsec2").text("Tiene como fuente a sus respectivos autores en los que se utiliza para leer las secciones únicamente y con fines de investigación. Las secciones son solo lugares turísticos populares, en los que está sujeto a cambios.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("Encuéntranos");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planificar y seguir");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("Exploraciones");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("Reserva");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("Ofertas de viajes");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Alquiler de nieve en Coronet y Remarkables");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("Alquiler de lanchas motoras");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("Comer y beber");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("Senderismo y Tramping");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("Caminando");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("Ciclismo");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("Alquiler de helicóptero");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Avión Milford&Glenorchy");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hotel");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("Alquiler de coches");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("Presentar");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("Mochileros y vagabundos");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Hogar");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("Acerca");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Servicios");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Precios");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+    $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+  });
+});
+
+// french //
+$(function() {
+  $(".fr").click(function() {
+    // Nav
+    $(".nav-items li").children().eq(0).text("Communautés");
+    $(".nav-items li").children().eq(1).text("Carte");
+    $(".nav-items li").children().eq(2).text("Destinations");
+    $(".nav-items li").children().eq(3).text("Aider");
+    $(".selected-lang").text("Français");
+    $(".selected-lang").removeClass("change-fil");
+    $(".selected-lang").addClass("change-fr");
+    $(".selected-lang").removeClass("change-zh");
+    $(".selected-lang").removeClass("change-ru");
+    $(".selected-lang").removeClass("change-es");
+    $(".selected-lang").removeClass("change-en");
+    $(".en").text("Anglais")
+    $(".fil").text("Philippine")
+    $(".zh").text("Chinois")
+    $(".ru").text("Russe")
+    $(".es").text("Espagnol")
+    $(".fr").text("Français")
+    $(".inputtranslate").attr('placeholder', 'Rechercher des villes..');
+    //section
+    $(".helpaboutqt").text("Aide/À propos de Queenstown")
+    $(".helpsec1").text("Ce site Web est utilisé à des fins touristiques, qui peuvent être soumises à des changements en fonction de la saison, de la météo et du nombre de personnes visitant.")
+    $(".helpsec2").text("Il provient de leurs auteurs respectifs dans lesquels il est utilisé pour lire les sections uniquement et à des fins de recherche. Les sections ne sont que des lieux touristiques populaires, dans lesquels elles sont susceptibles de changer.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    $(".dummytext").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.")
+    // footer
+    $(".footer-container:nth-child(1) h5:nth-child(1)").text("Trouve nous");
+    $(".footer-container:nth-child(2) h5:nth-child(1)").text("Planifiez et partez");
+    $(".footer-container:nth-child(3) h5:nth-child(1)").text("Explorations");
+    $(".footer-container:nth-child(4) h5:nth-child(1)").text("Réservation");
+    $(".footer-container:nth-child(2) li:nth-child(1) a").text("Earnslaw");
+    $(".footer-container:nth-child(2) li:nth-child(2) a").text("Offres de voyage");
+    $(".footer-container:nth-child(2) li:nth-child(3) a").text("Coronet&Remarkables Snow Rentals");
+    $(".footer-container:nth-child(2) li:nth-child(4) a").text("Location de bateaux à réaction");
+    $(".footer-container:nth-child(2) li:nth-child(5) a").text("Manger et boire");
+    $(".footer-container:nth-child(3) li:nth-child(1) a").text("Randonnée et Piétinement");
+    $(".footer-container:nth-child(3) li:nth-child(2) a").text("En marchant");
+    $(".footer-container:nth-child(3) li:nth-child(3) a").text("Cyclisme");
+    $(".footer-container:nth-child(3) li:nth-child(4) a").text("Location d'hélicoptère");
+    $(".footer-container:nth-child(3) li:nth-child(5) a").text("Milford&Glenorchy Avion");
+    $(".footer-container:nth-child(4) li:nth-child(1) a").text("Hôtel");
+    $(".footer-container:nth-child(4) li:nth-child(2) a").text("Location de voitures");
+    $(".footer-container:nth-child(4) li:nth-child(3) a").text("Loge");
+    $(".footer-container:nth-child(4) li:nth-child(4) a").text("Routards et Vagabonds");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(1) a").text("Maison");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(2) a").text("À propos de");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(3) a").text("Prestations de service");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(4) a").text("Tarification");
+    $(".footer .container:nth-child(2) ul:nth-child(1) li:nth-child(5) a").text("Blog");
+    $(".text-center").text("Copyright ©2022 | Queenstown Guide by Ethan Mendoza")
+  });
+});
+</script>
+
 <body>
   <div class="wrapper">
     <div id="navbar" class="navibar">
@@ -77,8 +418,24 @@
     </div>
   </div>
 
+  <section class="helptitle">
+    <h1 class="helpaboutqt">Help/About Queenstown</h1>
+  </section>
+
   <section class="helpexplain">
-    <p>This website is used for tourism purposes, which may subject to change by season, weather, and number of people visiting through.</p>
+    <p class="helpsec1">This website is used for tourism purposes, which may subject to change by season, weather, and number of people visiting through.</p>
+  </section>
+
+  <section class="helpexplain">
+    <p class="helpsec2">It is sourced to their respective authors in which it is used to read the sections only and for research purposes. The sections are only popular tourism spots, in which it is subject to change.</p>
+  </section>
+
+  <section class="helpexplain">
+    <p class="dummytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum vel hic sunt accusamus, facilis. Dolorem reprehenderit, illo quaerat repellendus dolorum sequi. Illo quis perferendis asperiores facilis fugiat ut minima perspiciatis labore voluptatibus atque, nam qui, quia deleniti tempore sapiente possimus veritatis repudiandae adipisci rerum! Rem eius, maiores fugiat similique cumque quasi commodi deserunt, beatae voluptate qui saepe. Obcaecati reiciendis officia id soluta deserunt, modi maiores ipsam veritatis amet totam facilis omnis repellat fugiat enim, saepe cum, natus ullam quisquam et nam cupiditate mollitia unde laudantium dolorum? Quos consequatur, itaque eum ab, tempore minima sunt deserunt eaque a veniam maiores.</p>
+  </section>
+
+  <section class="helpexplain">
+    <p class="dummytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iusto, voluptatem numquam hic porro blanditiis commodi soluta suscipit vitae! Veritatis a qui, delectus exercitationem neque, aliquid libero quo nam iusto quis nostrum velit itaque facilis fuga iure earum reprehenderit suscipit ab ipsam ipsum molestias magni porro. Commodi nemo asperiores, id tenetur. Qui numquam laboriosam quae autem, dignissimos quam tempora natus voluptatum similique voluptate explicabo, commodi error aliquid nisi corrupti consequuntur aspernatur iste incidunt! Dicta placeat fuga, veniam itaque repudiandae unde quis, iure delectus illo possimus. Nulla id sequi impedit quasi, doloribus, accusamus cumque deleniti molestiae nesciunt in, adipisci corrupti quibusdam.</p>
   </section>
 
   <!--footer starts from here-->
@@ -93,7 +450,7 @@
           <ul class="list-unstyled mb-0">
             <li><i class="fa fa-location-arrow"></i> Frankton, Queenstown, NZ, 9300 </li>
             <li><i class="fa fa-phone"></i>  +64273941923  </li>
-            <li><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
+            <li class="bbb"><i class="fa fa fa-envelope"></i> terrenceethan10mendoza@gmail.com  </li>
           </ul>
         </div>
         <!--Grid column-->
@@ -149,13 +506,28 @@
     </ul>
     <!--foote_bottom_ul_amrc ends here-->
     <p class="text-center">Copyright &copy;2022 | Queenstown Guide by Ethan Mendoza</p>
-    <ul class="social_footer_ul">
-      <li><a href="https://www.facebook.com/Chien3136"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://twitter.com/ethanmendoza999"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.youtube.com/channel/UCHi-yjiwvVEGGG6rOjduDYg"><i class="fa-brands fa-youtube"></i></a></li>
-      <li><a href="https://www.instagram.com/ethan.mendoza999/"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-    </ul>
+    <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Chien3136/" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ethanmendoza999" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Youtube -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCHi-yjiwvVEGGG6rOjduDYg" role="button"><i class="fa-brands fa-youtube"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ethan.mendoza999/" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Tiktok -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@ethan.mendoza999" role="button"><i class="fa-brands fa-tiktok"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
     <!--social_footer_ul ends here-->
   </div>
 </footer>

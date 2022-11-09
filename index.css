@@ -434,6 +434,17 @@ a.fr:before{
   font-size: 18px;
 }
 
+/* Help */
+
+.helptitle{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.helpexplain{
+  padding-top: 120px;
+  text-align: center;
+}
 /* Date and Time*/
 
 .datetime {
