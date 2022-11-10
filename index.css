@@ -94,6 +94,7 @@ iframe{
   justify-content: space-between;
   height: 70px;
   padding: 20px 100px;
+  background-color: gray;
 }
 
 .navibar .nav-items{
@@ -104,6 +105,10 @@ iframe{
 
 .navibar .nav-items li{
   padding: 0 15px;
+}
+
+.navibar .menu-icon{
+  padding-top: 3px;
 }
 
 .navibar .menu-icon, .navibar .search-icon, .navibar .cancel-icon{
@@ -186,14 +191,6 @@ iframe{
   length: 700px;
 }
 
-
-/* Change color on scroll Navbar */
-.navColor{
-  background-color: gray;
-  border-bottom: 1px solid lightgray;
-  transition: all 1s ease;
-}
-
 /* awesome hover on navlinks */
 .nav-items li a {
   position: relative;
@@ -242,6 +239,7 @@ iframe{
   line-height: 2;
   width: 100px;
   color: white;
+  height: 50px;
 }
 
 .selected-lang:before{
@@ -434,15 +432,24 @@ a.fr:before{
   font-size: 18px;
 }
 
+/* Destinations */
+
+.destinationtitle {
+  text-align: center;
+  margin: 0 20px;
+  padding-top: 100px;
+}
+
+
+
 /* Help */
 
 .helptitle{
-  margin: 0 auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .helpexplain{
-  padding-top: 120px;
+  margin: 20px 20px;
   text-align: center;
 }
 /* Date and Time*/
@@ -788,8 +795,8 @@ footer p {
   .navibar .search-input:before{
     position: absolute;
     content: "";
-    top: -13px;
-    right: 0;
+    top: -10px;
+    right: 10px;
     width: 0;
     height: 0;
     z-index: -1;
@@ -828,6 +835,12 @@ footer p {
   .container1{
     display: block;
   }
+  .toptowncontainer .overlap h1{
+    font-size: 50px;
+  }
+  .toptowncontainer .overlap p{
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 945px){
@@ -850,10 +863,10 @@ footer p {
     font-size: 32px;
   }
   .toptowncontainer .overlap h1{
-    font-size: 48px;
+    font-size: 50px;
   }
   .toptowncontainer .overlap p{
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -871,10 +884,10 @@ footer p {
     font-size: 28px;
   }
   .toptowncontainer .overlap h1{
-    font-size: 48px;
+    font-size: 50px;
   }
   .toptowncontainer .overlap p{
-    font-size: 20px;
+    font-size: 16px;
   }
   .container1 img{
     width: 100%;
@@ -898,7 +911,7 @@ footer p {
     font-size: 48px;
   }
   .toptowncontainer .overlap p{
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
@@ -933,7 +946,7 @@ footer p {
     font-size: 36px;
   }
   .toptowncontainer .overlap p{
-    font-size: 16px;
+    font-size: 11px;
   }
 }
 
@@ -946,7 +959,7 @@ footer p {
     font-size: 30px;
   }
   .toptowncontainer .overlap p{
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 @media (max-width: 432px) {
