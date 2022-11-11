@@ -78,23 +78,14 @@ iframe{
   color: black;
 }
 
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
 .navibar{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 70px;
-  padding: 20px 100px;
+  padding: 0px 100px;
   background-color: gray;
+  align-items: center;
 }
 
 .navibar .nav-items{
@@ -107,20 +98,12 @@ iframe{
   padding: 0 15px;
 }
 
-.navibar .menu-icon{
-  padding-top: 3px;
-}
-
 .navibar .menu-icon, .navibar .cancel-icon{
   width: 20px;
   text-align: center;
-  margin: 0 50px;
-  font-size: 18px;
+  font-size: 24px;
   display: none;
-}
-
-.navibar .menu-icon span, .navibar .cancel-icon{
-  display: none;
+  cursor: pointer;
 }
 
 .container1 img{
@@ -176,7 +159,6 @@ iframe{
   line-height: 2;
   width: 100px;
   color: white;
-  height: 50px;
 }
 
 .selected-lang:before{
@@ -639,16 +621,13 @@ footer p {
     flex-direction: column;
   }
 }
-@media (max-width: 1270px){
+@media (max-width: 1285px){
   .navibar{
-    padding: 20px 50px;
+    padding: 0px 50px;
   }
 }
 
-@media (max-width: 1164px){
-  .navibar{
-    padding: 20px 50px 0 0;
-  }
+@media (max-width: 1184px){
   .navibar .logo{
     text-align: center;
     flex: 2;
@@ -683,7 +662,7 @@ footer p {
   .navibar .menu-icon{
     display: block;
   }
-  .navibar .menu-icon span.hide{
+  .navibar .menu-icon.hide{
     display: none;
   }
   .navibar .cancel-icon.show{
@@ -793,13 +772,6 @@ footer p {
 }
 
 @media (max-width: 500px){
-  .navibar .cancel-icon, .navibar .menu-icon{
-    margin: 0 10px;
-    font-size: 16px;
-  }
-  .navibar {
-    padding-right: 10px;
-  }
   .datetime{
     flex-direction: column;
     bottom: 50%;

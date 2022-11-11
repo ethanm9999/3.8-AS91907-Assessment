@@ -18,12 +18,12 @@
 <body onload="initClock()">
   <div class="wrapper">
     <div id="navbar" class="navibar">
-      <div class="cancel-icon">
-        <span class="fas fa-times"></span>
-      </div>
-      <div class="menu-icon">
-        <span class="fas fa-bars"></span>
-      </div>
+        <div class="cancel-icon">
+          <span class="fas fa-times"></span>
+        </div>
+        <div class="menu-icon">
+          <span class="fas fa-bars"></span>
+        </div>
         <div class="logo">
           <a href="index.html"><i class="fa-solid fa-leaf"></i></a>
         </div>
@@ -36,8 +36,7 @@
             <li><a href="https://www.queenstownnz.co.nz/listing/queenstown-expeditions/1683/">Explorations</a></li>
             <li><a href="https://www.booking.com/discover/city/nz/queenstown.html">Booking</a></li>
         </div>
-        <div class="languagebtn">
-              <div class="lang-menu">
+        <div class="lang-menu">
                 <div class="selected-lang">
                     English
                 </div>
@@ -61,7 +60,6 @@
                     <a href="#" class="fr">Français</a>
                   </li>
                 </ul>
-              </div>
         </div>
     </div>
   </div>
@@ -633,11 +631,11 @@
 </footer>
 <script src="index.js"></script>
 
+<!-- Toggle menu button -->
 <script>
-  const menuBtn = document.querySelector(".menu-icon span");
+  const menuBtn = document.querySelector(".menu-icon");
   const cancelBtn = document.querySelector(".cancel-icon");
   const items = document.querySelector(".nav-items");
-  const menuBtn = document.querySelector(".menu-icon");
   menuBtn.onclick = ()=>{
     items.classList.add("active");
     cancelBtn.classList.add("show");
@@ -652,7 +650,7 @@
 </script>
 
 <script>
-  const menuBtn = document.querySelector(".menu-icon span");
+  const menuBtn = document.querySelector(".menu-icon");
   const cancelBtn = document.querySelector(".cancel-icon");
   const items = document.querySelector(".nav-items");
   menuBtn.onclick = ()=>{
