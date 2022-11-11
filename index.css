@@ -769,7 +769,7 @@ footer p {
   }
   .navibar .nav-items{
     display: inline-block;
-    height: 60%;
+    height: 70%;
   }
 }
 
@@ -829,8 +829,19 @@ footer p {
 }
 
 @media (max-width: 367px) {
+  .navibar{
+    height: 60px;
+    margin-top: -10px;
+  }
+  .navibar .nav-items{
+    top: 50px;
+    height: 50%;
+  }
+  .navibar .nav-items li{
+    line-height: 50px;
+  }
   .datetime{
-    transform: translate(0%, -150%);
+    transform: translate(0%, -200%);
   }
 }
 
@@ -840,15 +851,14 @@ footer p {
   }
 }
 
-@media (max-width: 292px){
-  .logo{
-    right: 200px;
+@media (max-width: 337px){
+  .navibar{
+    padding: 0px 10px;
   }
+}
+@media (max-width: 292px){
   .foote_bottom_ul_amrc{
     grid-template-columns: 1fr;
-  }
-  .selected-lang{
-    width:
   }
   .bbb{
     font-size: 11px;
