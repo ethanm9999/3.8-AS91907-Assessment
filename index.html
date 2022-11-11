@@ -18,6 +18,9 @@
 <body onload="initClock()">
   <div class="wrapper">
     <div id="navbar" class="navibar">
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
       <div class="menu-icon">
         <span class="fas fa-bars"></span>
       </div>
@@ -29,18 +32,9 @@
             <li><a href="maps.html">Map</a></li>
             <li><a href="https://www.queenstownnz.co.nz/">Destinations</a></li>
             <li><a href="help.html">Help</a></li>
-        </div>
-        <div class="search-input">
-                <input type="text" placeholder="Search towns..." class="inputtranslate">
-                <div class="autocom-box">
-                    <li><a href="queenstown.html">Queenstown</a></li>
-                    <li><a href="wanaka.html">Wanaka</a></li>
-                    <li><a href="glenorchy.html">Glenorchy</a></li>
-                    <li><a href="arrowtown.html">Arrowtown</a></li>
-                </div>
-                <div class="searchbaricon">
-                  <i class="fas fa-search"></i>
-                </div>
+            <li><a href="https://www.queenstownnz.co.nz/plan/">Plan&Go</a></li>
+            <li><a href="https://www.queenstownnz.co.nz/listing/queenstown-expeditions/1683/">Explorations</a></li>
+            <li><a href="https://www.booking.com/discover/city/nz/queenstown.html">Booking</a></li>
         </div>
         <div class="languagebtn">
               <div class="lang-menu">
@@ -68,12 +62,6 @@
                   </li>
                 </ul>
               </div>
-        </div>
-        <div class="search-icon">
-          <span class="fas fa-search"></span>
-        </div>
-        <div class="cancel-icon">
-          <span class="fas fa-times"></span>
         </div>
     </div>
   </div>
@@ -645,151 +633,38 @@
 </footer>
 <script src="index.js"></script>
 
-<!-- Phones, Tablets nav -->
 <script>
   const menuBtn = document.querySelector(".menu-icon span");
-  const searchBtn = document.querySelector(".search-icon");
   const cancelBtn = document.querySelector(".cancel-icon");
   const items = document.querySelector(".nav-items");
   const menuBtn = document.querySelector(".menu-icon");
-  const form = document.querySelector(".searchbar");
   menuBtn.onclick = ()=>{
     items.classList.add("active");
-    menuBtn.classList.add("hide");
-    searchBtn.classList.add("hide");
     cancelBtn.classList.add("show");
+    menuBtn.classList.add("hide");
   }
   cancelBtn.onclick = ()=>{
     items.classList.remove("active");
     menuBtn.classList.remove("hide");
-    searchBtn.classList.remove("hide");
     cancelBtn.style.color = "$ff3d00";
     cancelBtn.classList.remove("show");
-    form.classList.remove("active");
-  }
-  searchBtn.onclick = ()=>{
-    form.classList.add("active");
-    searchBtn.classList.add("hide");
-    cancelBtn.classList.add("show");
   }
 </script>
 
-<!-- Suggestions search bar input -->
-<script>
-    let suggestions = [
-      "Map",
-      "Communities",
-      "Help",
-      "Queenstown",
-      "Cromwell",
-      "Wanaka",
-      "Glenorchy",
-      "Arrowtown",
-      "Mapa",
-      "Mga Komunidad",
-      "Tulong",
-      "Queenstown",
-      "Cromwell",
-      "Wanaka",
-      "Glenorchy",
-      "Arrowtown",
-      "Карта",
-      "Сообщества",
-      "Помощь",
-      "Квинстаун",
-      "Кромвель",
-      "Ванака",
-      "Гленорчи",
-      "Эрроутаун",
-      "Carte",
-      "Communautés",
-      "Aide",
-      "Queenstown",
-      "Cromwell",
-      "Wanaka",
-      "Glenorchie",
-      "Ville fléchée",
-      "Mapa",
-      "Comunidades",
-      "Ayuda",
-      "Queenstown",
-      "Cromwell",
-      "wanaka",
-      "Glenorquía",
-      "Pueblo de las flechas",
-    ];
-  </script>
-
-  <script>
-    const searchWrapper = document.querySelector(".search-input");
-    const inputBox = searchWrapper.querySelector("input");
-    const suggBox = searchWrapper.querySelector(".autocom-box");
-
-    inputBox.onkeyup = (e)=>{
-      let userData = e.target.value;
-      let emptyArray = [];
-      if(userData){
-        emptyArray = suggestions.filter((data)=>{
-          return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
-        });
-        emptyArray = emptyArray.map((data)=>{
-          return data = '<li>' + data + '</li>';
-        });
-        console.log(emptyArray);
-        searchWrapper.classList.add("active");
-        showSuggestions(emptyArray);
-        let allList = suggBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++){
-          allList[i].setAttribute("onclick", "select(this)");
-        }
-      }else{
-        searchWrapper.classList.remove("active");
-      }
-    }
-
-    function select(element){
-      let selectUserData = element.textContent;
-      inputBox.value = selectUserData;
-      searchWrapper.classList.remove("active");
-    }
-
-    function showSuggestions(list){
-      let listData;
-      if(!list.length){
-        userValue = inputBox.value;
-        listData = '<li>' + userValue + '</li>';
-      }else{
-        listData = list.join('');
-      }
-      suggBox.innerHTML = listData;
-    }
-  </script>
-
-<!-- Javascript for responsive navbar -->
 <script>
   const menuBtn = document.querySelector(".menu-icon span");
-  const searchBtn = document.querySelector(".search-icon");
   const cancelBtn = document.querySelector(".cancel-icon");
   const items = document.querySelector(".nav-items");
-  const form = document.querySelector(".search-input");
   menuBtn.onclick = ()=>{
     items.classList.add("active");
     menuBtn.classList.add("hide");
-    searchBtn.classList.add("hide");
     cancelBtn.classList.add("show");
   }
   cancelBtn.onclick = ()=>{
     items.classList.remove("active");
     menuBtn.classList.remove("hide");
-    searchBtn.classList.remove("hide");
     cancelBtn.classList.remove("show");
     cancelBtn.style.color = "blue";
-    form.classList.remove("active");
-  }
-  searchBtn.onclick = ()=>{
-    form.classList.add("active");
-    searchBtn.classList.add("hide");
-    cancelBtn.classList.add("show");
   }
 </script>
 

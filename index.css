@@ -111,80 +111,16 @@ iframe{
   padding-top: 3px;
 }
 
-.navibar .menu-icon, .navibar .search-icon, .navibar .cancel-icon{
-  width: 40px;
+.navibar .menu-icon, .navibar .cancel-icon{
+  width: 20px;
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  cursor: pointer;
   display: none;
 }
 
-.navibar .menu-icon span, .navibar .search-icon, .navibar .cancel-icon{
+.navibar .menu-icon span, .navibar .cancel-icon{
   display: none;
-}
-
-.wrapper .search-input {
-  position: relative;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
-  margin: -5px 0 0 0;
-  top: -8px;
-}
-
-.search-input input{
-  height: 55px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 0 60px 0 20px;
-  font-size: 18px;
-}
-
-.search-input .searchbaricon{
-  height: 55px;
-  width: 55px;
-  line-height: 55px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-  color: blue;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.search-input .autocom-box{
-  padding: 0px;
-  max-height: 280px;
-  overflow-y: auto;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.search-input.active .autocom-box{
-  padding: 12px 8px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.search-input.active .autocom-box li{
-  display: block;
-}
-
-.autocom-box li{
-  list-style: none;
-  padding: 8px 12px;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
-  display: none;
-}
-
-.autocom-box li:hover{
-  background: #efefef;
 }
 
 .container1 img{
@@ -441,8 +377,6 @@ a.fr:before{
   padding-top: 100px;
 }
 
-
-
 /* Help */
 
 .helptitle{
@@ -499,18 +433,6 @@ a.fr:before{
   padding: 0 5px;
   border-radius: 3px;
   font-size: 60px;
-}
-
-.reveal{
-  position: relative;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
 }
 
 .welcomecontainer {
@@ -717,15 +639,15 @@ footer p {
     flex-direction: column;
   }
 }
-@media (max-width: 1205px){
+@media (max-width: 1270px){
   .navibar{
     padding: 20px 50px;
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1164px){
   .navibar{
-    padding: 20px 0 0 0;
+    padding: 20px 50px 0 0;
   }
   .navibar .logo{
     text-align: center;
@@ -737,10 +659,11 @@ footer p {
     top: 70px;
     width: 100%;
     left: -100%;
-    height: 100%;
+    height: 50%;
     background: #5A5A5A;
-    display: inline-block;
-    padding: 10px 50px 0 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0px 50px 0 50px;
     text-align: center;
     transition: left 0.3s ease;
   }
@@ -748,44 +671,19 @@ footer p {
     left: 0%;
   }
   .navibar .nav-items li{
-    line-height: 40px;
-    margin: 30px 0;
+    line-height: 70px;
+    margin: 5px 0;
   }
   .navibar .nav-items li a{
     font-size: 20px;
   }
-  .navibar .search-input{
-    position: absolute;
-    top: 95px;
-    right: 50px;
-    opacity: 0;
-    pointer-events: none;
-    transition: top 0.3s ease, opacity 0.1s ease;
-  }
-  .navibar .search-input.active{
-    opacity: 1;
-    top: 95px;
-    pointer-events: auto;
-  }
-  .navibar .search-input:before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    z-index: -1;
-    margin: -10px 0 0;
-    border: 10px solid transparent;
-    border-bottom-color: #5A5A5A;
-  }
-  .navibar .search-icon, .navibar .menu-icon span{
+  .navibar .menu-icon span{
     display: block;
   }
   .navibar .menu-icon{
     display: block;
   }
-  .navibar .search-icon.hide, .navibar .menu-icon span.hide{
+  .navibar .menu-icon span.hide{
     display: none;
   }
   .navibar .cancel-icon.show{
@@ -888,15 +786,19 @@ footer p {
   .toptowncontainer .overlap p{
     font-size: 15px;
   }
+  .navibar .nav-items{
+    display: inline-block;
+    height: 60%;
+  }
 }
 
 @media (max-width: 500px){
-  .navibar .search-icon, .navibar .cancel-icon, .navibar .menu-icon{
+  .navibar .cancel-icon, .navibar .menu-icon{
     margin: 0 10px;
     font-size: 16px;
   }
-  .navibar .search-input{
-    right: 30px;
+  .navibar {
+    padding-right: 10px;
   }
   .datetime{
     flex-direction: column;
@@ -965,11 +867,14 @@ footer p {
 }
 
 @media (max-width: 292px){
+  .logo{
+    right: 200px;
+  }
   .foote_bottom_ul_amrc{
     grid-template-columns: 1fr;
   }
   .selected-lang{
-    display: none;
+    width:
   }
   .bbb{
     font-size: 11px;
