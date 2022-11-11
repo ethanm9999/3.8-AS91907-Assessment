@@ -830,11 +830,11 @@ footer p {
 
 @media (max-width: 367px) {
   .navibar{
-    height: 60px;
+    height: 50px;
     margin-top: -10px;
   }
   .navibar .nav-items{
-    top: 50px;
+    top: 40px;
     height: 50%;
   }
   .navibar .nav-items li{
@@ -842,6 +842,18 @@ footer p {
   }
   .datetime{
     transform: translate(0%, -200%);
+  }
+  .selected-lang{
+    line-height: 3.3;
+  }
+  .selected-lang:before{
+    margin-top: 13px;
+  }
+  .fa-leaf{
+    font-size: 24px;
+  }
+  .menu-icon span{
+    font-size: 20px;
   }
 }
 
